@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level>
+
+  <types>
+    <decor id="s001" image="sidewalk1.png"/>
+    <decor id="s002" image="sidewalk2.png"/>
+    <decor id="s003" image="sand.png"/>
+    <decor id="r003" image="river2.png"/>
+    <decor id="r002" image="road1.png"/>
+    <decor id="grass" image="grass1.png"/>
+    <decor id="fishbowl" image="fishbowl.png"/>
+    <car id="green" name="GreenCar" width="2" image1="greencar.png" image2="greencar.png"/>
+    <car id="purple" name="PurpleCar" width="2" image1="purplecar.png" image2="purplecar.png"/>
+    <car id="pink" name="PinkCar" width="2" image1="lightpinkcar.png" image2="lightpinkcar.png"/>
+    <car id="fuischa" name="FuischaCar" width="2" image1="brightpinkcar.png" image2="brightpinkcar.png"/>
+    <boat id="b2" width="2" image="green-raft.png"/>
+    <boat id="b4c" width="4" image="green-canoe.png"/>
+    <boat id="b3c" width="4" image="yellow-boat.png"/>
+    <boat id="b3b" width="3" image="red-boat.png"/>
+    <boat id="bpp" width="3" image="purple-power-boat.png"/>
+    <boat id="b3r" width="3" image="red-raft.png"/>
+  </types>
+  <background>
+    <decor id="s003" x="0" y="0" repeat-x="16" repeat-y="2"/>
+    <decor id="r003" x="0" y="2" repeat-x="16" repeat-y="2"/>
+    <decor id="s002" x="0" y="4" repeat-x="16" repeat-y="1"/>
+    <decor id="r002" x="0" y="5" repeat-x="16" repeat-y="3"/>
+    <decor id="fishbowl" x="4.5" y="0" repeat-x="1" repeat-y="1"/>
+    <decor id="fishbowl" x="7.5" y="0" repeat-x="1" repeat-y="1"/>
+    <decor id="fishbowl" x="10.5" y="0" repeat-x="1" repeat-y="1"/>
+    <rect color="255,240,0" x="0" y="5" height="0.0625" width="16"/>
+    <rect color="255,240,0" x="0.15" y="6" height="0.0625" width="0.7" repeat-x="16" repeat-y="2"/>
+    <decor id="s002" x="0" y="8" repeat-x="16" repeat-y="1"/>
+    <rect color="255,240,0" x="0" y="8" height="0.0625" width="16"/>
+    <decor id="r003" x="0" y="9" repeat-x="16" repeat-y="3"/>
+    <decor id="r002" x="0" y="12" repeat-x="16" repeat-y="3" />
+    <rect color="255,255, 255" x="0" y="12" height="0.0625" width="16"/>
+    <rect color="255,255, 255" x="0.15" y="13" height="0.0625" width="0.7" repeat-x="16" repeat-y="1"/>
+    <decor id="s003" x="0" y="14" repeat-x="16" repeat-y="2"/> 
+    <rect color="255,255, 255" x="0" y="14" height="0.0625" width="16"/>
+    <rect color="0, 0, 0" x="0" y="2" height="0.0625" width="16"/>
+    <rect color="0, 0, 0" x="0" y="4" height="0.0625" width="16"/>
+    <rect color="0, 0, 0" x="0" y="9" height="0.0625" width="16"/>
+  </background>
+  <hero image="sparty.png" name="Sparty" hit-image="sparty-hit.png"/>
+  <cargo id="shrimp" x="4.5" name="Shrimp" image="shrimp.png" carried-image="shrimp-carried.png"/>
+  <cargo id="fish" x="7.5" name="Fish" image="blowfish.png" carried-image="blowfish-carried.png" eats="shrimp"/>
+  <cargo id="whale" x="10.5" name="Whale" image="purplewhale.png" carried-image="purplewhale-carried.png" eats="fish"/>
+  <protector id="lucky black cat" x="13.5" name="Kitty" image="blackcat.png"/>
+  <river y="2" speed="1.5" width="20">
+    <boat id="b2" x="7"/>
+    <boat id="b3b" x="12"/>
+  </river>
+  <river y="3" speed="-4.5" width="20">
+    <boat id="b2" x="7"/>
+    <boat id="b3c" x="12"/>
+  </river>
+  <river y="9" speed="-4.1" width="20">
+    <boat id="bpp" x="7"/>
+    <boat id="b4c" x="20"/>
+  </river>
+  <river y="10" speed="2" width="20">
+    <boat id="b2" x="7"/>
+    <boat id="b3b" x="12"/>
+  </river>
+  <river y="11" speed="-3" width="20">
+    <boat id="bpp" x="7"/>
+    <boat id="b3r" x="12"/>
+  </river>
+  <road y="5" speed="-2" width="18">
+    <car id="fuischa" x="2"/>
+    <car id="green" x="6" swap-time="0.3"/>
+  </road>
+  <road y="6" speed="3" width="20">
+    <car id="purple" x="4"/>
+    <car id="pink" x="14" swap-time="0.3"/>
+  </road>
+  <road y="12" speed="4" width="25">
+    <car id="purple" x="10"/>
+    <car id="pink" x="1" swap-time="0.3"/>
+  </road>
+  <road y="13" speed="-1.5" width="18">
+    <car id="fuischa" x="5"/>
+    <car id="green" x="14" swap-time="0.3"/>
+  </road>
+
+</level> 

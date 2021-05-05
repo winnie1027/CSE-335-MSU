@@ -1,0 +1,125 @@
+\hypertarget{class_c_tubing}{}\doxysection{C\+Tubing Class Reference}
+\label{class_c_tubing}\index{CTubing@{CTubing}}
+
+
+{\ttfamily \#include $<$Tubing.\+h$>$}
+
+Inheritance diagram for C\+Tubing\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_tubing}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_tubing_a61df27856cfec7e7f2e5418e8593a657}\label{class_c_tubing_a61df27856cfec7e7f2e5418e8593a657}} 
+\mbox{\hyperlink{class_c_tubing_a61df27856cfec7e7f2e5418e8593a657}{C\+Tubing}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_tubing_a7ba085a8a0240577ced1cae02a3f9cad}\label{class_c_tubing_a7ba085a8a0240577ced1cae02a3f9cad}} 
+virtual \mbox{\hyperlink{class_c_tubing_a7ba085a8a0240577ced1cae02a3f9cad}{$\sim$\+C\+Tubing}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_tubing_a0f76b28a156d411b4642f43aaf8fa2bf}\label{class_c_tubing_a0f76b28a156d411b4642f43aaf8fa2bf}} 
+\mbox{\hyperlink{class_c_tubing_a0f76b28a156d411b4642f43aaf8fa2bf}{C\+Tubing}} (const \mbox{\hyperlink{class_c_tubing}{C\+Tubing}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor/disabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_tubing_a7ad2ccbe1e39693f4eaaa06478166fd6}\label{class_c_tubing_a7ad2ccbe1e39693f4eaaa06478166fd6}} 
+void \mbox{\hyperlink{class_c_tubing_a7ad2ccbe1e39693f4eaaa06478166fd6}{operator=}} (const \mbox{\hyperlink{class_c_tubing}{C\+Tubing}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator/disabled. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_tubing_a91abe01319261ebbd02d0bffaef9e9e0}{Draw}} (Graphics $\ast$graphics, Point position) override
+\item 
+virtual void \mbox{\hyperlink{class_c_tubing_a2c32fecbe86364e515e3e8ed774a97ad}{Set\+Air\+Pressure}} (double pressure) override
+\item 
+\mbox{\hyperlink{class_c_air_sink}{C\+Air\+Sink}} $\ast$ \mbox{\hyperlink{class_c_tubing_addb0d9ea71236043aca40a0498f682cd}{Get\+Sink}} ()
+\item 
+void \mbox{\hyperlink{class_c_tubing_a9d84d0c1d1a66b36202424d32a6abff7}{Set\+Source}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_air_source}{C\+Air\+Source}} $>$ source)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_air_source}{C\+Air\+Source}} $>$ \mbox{\hyperlink{class_c_tubing_aaa3801cdf84337546dc774ce4c502dcb}{Get\+Source}} ()
+\item 
+void \mbox{\hyperlink{class_c_tubing_a6fdd799f6a61135b1e40c2cf90818571}{Add\+Clamp}} (int x, int y, double rotation, double speed)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Tubing for instrument which connects sources to sinks. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_tubing_a6fdd799f6a61135b1e40c2cf90818571}\label{class_c_tubing_a6fdd799f6a61135b1e40c2cf90818571}} 
+\index{CTubing@{CTubing}!AddClamp@{AddClamp}}
+\index{AddClamp@{AddClamp}!CTubing@{CTubing}}
+\doxysubsubsection{\texorpdfstring{AddClamp()}{AddClamp()}}
+{\footnotesize\ttfamily void C\+Tubing\+::\+Add\+Clamp (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{double}]{rotation,  }\item[{double}]{speed }\end{DoxyParamCaption})}
+
+Adds clamp for tubing. 
+\begin{DoxyParams}{Parameters}
+{\em x} & X \\
+\hline
+{\em y} & Y \\
+\hline
+{\em rotation} & Rotation \\
+\hline
+{\em speed} & Speed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_tubing_a91abe01319261ebbd02d0bffaef9e9e0}\label{class_c_tubing_a91abe01319261ebbd02d0bffaef9e9e0}} 
+\index{CTubing@{CTubing}!Draw@{Draw}}
+\index{Draw@{Draw}!CTubing@{CTubing}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void C\+Tubing\+::\+Draw (\begin{DoxyParamCaption}\item[{Graphics $\ast$}]{graphics,  }\item[{Point}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Draw the machine at the currently specified location 
+\begin{DoxyParams}{Parameters}
+{\em graphics} & G\+D\+I+ Graphics object \\
+\hline
+{\em position} & Position of the graphics object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_tubing_addb0d9ea71236043aca40a0498f682cd}\label{class_c_tubing_addb0d9ea71236043aca40a0498f682cd}} 
+\index{CTubing@{CTubing}!GetSink@{GetSink}}
+\index{GetSink@{GetSink}!CTubing@{CTubing}}
+\doxysubsubsection{\texorpdfstring{GetSink()}{GetSink()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_air_sink}{C\+Air\+Sink}}$\ast$ C\+Tubing\+::\+Get\+Sink (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the sink for components. \begin{DoxyReturn}{Returns}
+air sink 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_tubing_aaa3801cdf84337546dc774ce4c502dcb}\label{class_c_tubing_aaa3801cdf84337546dc774ce4c502dcb}} 
+\index{CTubing@{CTubing}!GetSource@{GetSource}}
+\index{GetSource@{GetSource}!CTubing@{CTubing}}
+\doxysubsubsection{\texorpdfstring{GetSource()}{GetSource()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_c_air_source}{C\+Air\+Source}}$>$ C\+Tubing\+::\+Get\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the air source for tubing. \begin{DoxyReturn}{Returns}
+Air source 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_tubing_a2c32fecbe86364e515e3e8ed774a97ad}\label{class_c_tubing_a2c32fecbe86364e515e3e8ed774a97ad}} 
+\index{CTubing@{CTubing}!SetAirPressure@{SetAirPressure}}
+\index{SetAirPressure@{SetAirPressure}!CTubing@{CTubing}}
+\doxysubsubsection{\texorpdfstring{SetAirPressure()}{SetAirPressure()}}
+{\footnotesize\ttfamily void C\+Tubing\+::\+Set\+Air\+Pressure (\begin{DoxyParamCaption}\item[{double}]{pressure }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Setter for air pressure. 
+\begin{DoxyParams}{Parameters}
+{\em pressure} & Air pressure \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_c_air_sink_destination_af3b07200a2e1af6affe7686bbf0f7bad}{C\+Air\+Sink\+Destination}}.
+
+\mbox{\Hypertarget{class_c_tubing_a9d84d0c1d1a66b36202424d32a6abff7}\label{class_c_tubing_a9d84d0c1d1a66b36202424d32a6abff7}} 
+\index{CTubing@{CTubing}!SetSource@{SetSource}}
+\index{SetSource@{SetSource}!CTubing@{CTubing}}
+\doxysubsubsection{\texorpdfstring{SetSource()}{SetSource()}}
+{\footnotesize\ttfamily void C\+Tubing\+::\+Set\+Source (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_air_source}{C\+Air\+Source}} $>$}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the air source for tubing. 
+\begin{DoxyParams}{Parameters}
+{\em source} & Air source \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_tubing_8h}{Tubing.\+h}}\item 
+\mbox{\hyperlink{_tubing_8cpp}{Tubing.\+cpp}}\end{DoxyCompactItemize}

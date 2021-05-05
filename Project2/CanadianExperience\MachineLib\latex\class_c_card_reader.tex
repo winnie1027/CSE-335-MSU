@@ -1,0 +1,270 @@
+\hypertarget{class_c_card_reader}{}\doxysection{C\+Card\+Reader Class Reference}
+\label{class_c_card_reader}\index{CCardReader@{CCardReader}}
+
+
+{\ttfamily \#include $<$Card\+Reader.\+h$>$}
+
+Inheritance diagram for C\+Card\+Reader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_card_reader}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_card_reader_ad42f76c160213a7b72ea4a58471948df}\label{class_c_card_reader_ad42f76c160213a7b72ea4a58471948df}} 
+\mbox{\hyperlink{class_c_card_reader_ad42f76c160213a7b72ea4a58471948df}{C\+Card\+Reader}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_card_reader_a761a548d6248275391c0a889fb9f693d}\label{class_c_card_reader_a761a548d6248275391c0a889fb9f693d}} 
+virtual \mbox{\hyperlink{class_c_card_reader_a761a548d6248275391c0a889fb9f693d}{$\sim$\+C\+Card\+Reader}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_card_reader_a02e094f900a47a0616b2e0e4bdae2209}\label{class_c_card_reader_a02e094f900a47a0616b2e0e4bdae2209}} 
+\mbox{\hyperlink{class_c_card_reader_a02e094f900a47a0616b2e0e4bdae2209}{C\+Card\+Reader}} (const \mbox{\hyperlink{class_c_card_reader}{C\+Card\+Reader}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor/disabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_card_reader_a78e1edc32c02ea2ec7749c396deecd97}\label{class_c_card_reader_a78e1edc32c02ea2ec7749c396deecd97}} 
+void \mbox{\hyperlink{class_c_card_reader_a78e1edc32c02ea2ec7749c396deecd97}{operator=}} (const \mbox{\hyperlink{class_c_card_reader}{C\+Card\+Reader}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator/disabled. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_card_reader_a57a1f96138eb7306c1bb167e8399b362}{Draw}} (Gdiplus\+::\+Graphics $\ast$graphics, Gdiplus\+::\+Point position) override
+\item 
+virtual void \mbox{\hyperlink{class_c_card_reader_a1940d649ab95107e7f4e39aa9ec2fad1}{Set\+Time}} (double seconds) override
+\item 
+bool \mbox{\hyperlink{class_c_card_reader_ab44a34b04eb29b6872c022b3c3efec63}{Is\+Punched}} (int column, int row)
+\item 
+void \mbox{\hyperlink{class_c_card_reader_a3dc965543d0905b1565fc8d7d465b578}{Set\+Card}} (const std\+::wstring \&filename)
+\item 
+void \mbox{\hyperlink{class_c_card_reader_a924dabb948e0b024274ebb10d01d135c}{Set\+Reader\+Back}} (const std\+::wstring \&filename)
+\item 
+void \mbox{\hyperlink{class_c_card_reader_a9329e331baebb38b0dddb57c50c8d249}{Set\+Reader\+Front}} (const std\+::wstring \&filename)
+\item 
+virtual void \mbox{\hyperlink{class_c_card_reader_a7254d9e38df40b9f16931896b8592116}{Set\+Position}} (int x, int y) override
+\item 
+void \mbox{\hyperlink{class_c_card_reader_a8b000cebd49d99a4a7e89b1218fed55d}{Set\+Rotation}} (double rotate)
+\item 
+void \mbox{\hyperlink{class_c_card_reader_ae45171ab5ed1334cc20f56251652fd5c}{Rectangle\+Card}} (int x, int y, int wid=0, int hit=0)
+\item 
+void \mbox{\hyperlink{class_c_card_reader_ad6871bf3767250195f63b54eed816ab0}{Rectangle\+Card\+Reader\+Back}} (int x, int y, int wid=0, int hit=0)
+\item 
+void \mbox{\hyperlink{class_c_card_reader_ac14260cee94f6f7486f84414fc471790}{Rectangle\+Card\+Reader\+Front}} (int x, int y, int wid=0, int hit=0)
+\item 
+int \mbox{\hyperlink{class_c_card_reader_acb414037d1eb17d43e9b4dad8bc7111b}{Get\+Card\+Width}} ()
+\item 
+int \mbox{\hyperlink{class_c_card_reader_a626b4315d40c846a905de7dbf757c7b4}{Get\+Card\+Reader\+Front\+Width}} ()
+\item 
+int \mbox{\hyperlink{class_c_card_reader_a9eeb5e988de16a4a9e1088d74e57bc12}{Get\+Card\+Reader\+Back\+Width}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_air_source}{C\+Air\+Source}} $>$ \mbox{\hyperlink{class_c_card_reader_acf1ce0326f7f5bc73c6ae97d79aaec83}{Get\+Source}} (int source)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The card reader. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_card_reader_a57a1f96138eb7306c1bb167e8399b362}\label{class_c_card_reader_a57a1f96138eb7306c1bb167e8399b362}} 
+\index{CCardReader@{CCardReader}!Draw@{Draw}}
+\index{Draw@{Draw}!CCardReader@{CCardReader}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void C\+Card\+Reader\+::\+Draw (\begin{DoxyParamCaption}\item[{Gdiplus\+::\+Graphics $\ast$}]{graphics,  }\item[{Gdiplus\+::\+Point}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Draw the machine at the currently specified location 
+\begin{DoxyParams}{Parameters}
+{\em graphics} & G\+D\+I+ Graphics object \\
+\hline
+{\em position} & Position of the graphics object \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_component_a28b8818808248f3bd77cd36e233d2a8b}{C\+Component}}.
+
+\mbox{\Hypertarget{class_c_card_reader_a9eeb5e988de16a4a9e1088d74e57bc12}\label{class_c_card_reader_a9eeb5e988de16a4a9e1088d74e57bc12}} 
+\index{CCardReader@{CCardReader}!GetCardReaderBackWidth@{GetCardReaderBackWidth}}
+\index{GetCardReaderBackWidth@{GetCardReaderBackWidth}!CCardReader@{CCardReader}}
+\doxysubsubsection{\texorpdfstring{GetCardReaderBackWidth()}{GetCardReaderBackWidth()}}
+{\footnotesize\ttfamily int C\+Card\+Reader\+::\+Get\+Card\+Reader\+Back\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the width of any set image for this polygon. This may not be the width we actually draw, but is the size of the polygon itself. \begin{DoxyReturn}{Returns}
+Width in pixels 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_card_reader_a626b4315d40c846a905de7dbf757c7b4}\label{class_c_card_reader_a626b4315d40c846a905de7dbf757c7b4}} 
+\index{CCardReader@{CCardReader}!GetCardReaderFrontWidth@{GetCardReaderFrontWidth}}
+\index{GetCardReaderFrontWidth@{GetCardReaderFrontWidth}!CCardReader@{CCardReader}}
+\doxysubsubsection{\texorpdfstring{GetCardReaderFrontWidth()}{GetCardReaderFrontWidth()}}
+{\footnotesize\ttfamily int C\+Card\+Reader\+::\+Get\+Card\+Reader\+Front\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the width of any set image for this polygon. This may not be the width we actually draw, but is the size of the polygon itself. \begin{DoxyReturn}{Returns}
+Width in pixels 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_card_reader_acb414037d1eb17d43e9b4dad8bc7111b}\label{class_c_card_reader_acb414037d1eb17d43e9b4dad8bc7111b}} 
+\index{CCardReader@{CCardReader}!GetCardWidth@{GetCardWidth}}
+\index{GetCardWidth@{GetCardWidth}!CCardReader@{CCardReader}}
+\doxysubsubsection{\texorpdfstring{GetCardWidth()}{GetCardWidth()}}
+{\footnotesize\ttfamily int C\+Card\+Reader\+::\+Get\+Card\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the width of any set image for this polygon. This may not be the width we actually draw, but is the size of the polygon itself. \begin{DoxyReturn}{Returns}
+Width in pixels 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_card_reader_acf1ce0326f7f5bc73c6ae97d79aaec83}\label{class_c_card_reader_acf1ce0326f7f5bc73c6ae97d79aaec83}} 
+\index{CCardReader@{CCardReader}!GetSource@{GetSource}}
+\index{GetSource@{GetSource}!CCardReader@{CCardReader}}
+\doxysubsubsection{\texorpdfstring{GetSource()}{GetSource()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_c_air_source}{C\+Air\+Source}}$>$ C\+Card\+Reader\+::\+Get\+Source (\begin{DoxyParamCaption}\item[{int}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get an air source. 
+\begin{DoxyParams}{Parameters}
+{\em source} & Source index 0-\/9 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to \mbox{\hyperlink{class_c_air_source}{C\+Air\+Source}} object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_card_reader_ab44a34b04eb29b6872c022b3c3efec63}\label{class_c_card_reader_ab44a34b04eb29b6872c022b3c3efec63}} 
+\index{CCardReader@{CCardReader}!IsPunched@{IsPunched}}
+\index{IsPunched@{IsPunched}!CCardReader@{CCardReader}}
+\doxysubsubsection{\texorpdfstring{IsPunched()}{IsPunched()}}
+{\footnotesize\ttfamily bool C\+Card\+Reader\+::\+Is\+Punched (\begin{DoxyParamCaption}\item[{int}]{column,  }\item[{int}]{row }\end{DoxyParamCaption})}
+
+Determine if a hole is punched in the card. 
+\begin{DoxyParams}{Parameters}
+{\em column} & Column on the card, from 0 (left of first column) to 80 (last column) \\
+\hline
+{\em row} & Row on the card, -\/2 to 9. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if hole is punched at column, row 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_card_reader_ae45171ab5ed1334cc20f56251652fd5c}\label{class_c_card_reader_ae45171ab5ed1334cc20f56251652fd5c}} 
+\index{CCardReader@{CCardReader}!RectangleCard@{RectangleCard}}
+\index{RectangleCard@{RectangleCard}!CCardReader@{CCardReader}}
+\doxysubsubsection{\texorpdfstring{RectangleCard()}{RectangleCard()}}
+{\footnotesize\ttfamily void C\+Card\+Reader\+::\+Rectangle\+Card (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{wid = {\ttfamily 0},  }\item[{int}]{hit = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a rectangle 
+\begin{DoxyParams}{Parameters}
+{\em x} & Left side X \\
+\hline
+{\em y} & Bottom left Y \\
+\hline
+{\em wid} & Width of the rectangle. If not supplied, use an image width \\
+\hline
+{\em hit} & Height of the rectangle. If not supplied, use an image height \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_card_reader_ad6871bf3767250195f63b54eed816ab0}\label{class_c_card_reader_ad6871bf3767250195f63b54eed816ab0}} 
+\index{CCardReader@{CCardReader}!RectangleCardReaderBack@{RectangleCardReaderBack}}
+\index{RectangleCardReaderBack@{RectangleCardReaderBack}!CCardReader@{CCardReader}}
+\doxysubsubsection{\texorpdfstring{RectangleCardReaderBack()}{RectangleCardReaderBack()}}
+{\footnotesize\ttfamily void C\+Card\+Reader\+::\+Rectangle\+Card\+Reader\+Back (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{wid = {\ttfamily 0},  }\item[{int}]{hit = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a rectangle 
+\begin{DoxyParams}{Parameters}
+{\em x} & Left side X \\
+\hline
+{\em y} & Bottom left Y \\
+\hline
+{\em wid} & Width of the rectangle. If not supplied, use an image width \\
+\hline
+{\em hit} & Height of the rectangle. If not supplied, use an image height \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_card_reader_ac14260cee94f6f7486f84414fc471790}\label{class_c_card_reader_ac14260cee94f6f7486f84414fc471790}} 
+\index{CCardReader@{CCardReader}!RectangleCardReaderFront@{RectangleCardReaderFront}}
+\index{RectangleCardReaderFront@{RectangleCardReaderFront}!CCardReader@{CCardReader}}
+\doxysubsubsection{\texorpdfstring{RectangleCardReaderFront()}{RectangleCardReaderFront()}}
+{\footnotesize\ttfamily void C\+Card\+Reader\+::\+Rectangle\+Card\+Reader\+Front (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{wid = {\ttfamily 0},  }\item[{int}]{hit = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a rectangle 
+\begin{DoxyParams}{Parameters}
+{\em x} & Left side X \\
+\hline
+{\em y} & Bottom left Y \\
+\hline
+{\em wid} & Width of the rectangle. If not supplied, use an image width \\
+\hline
+{\em hit} & Height of the rectangle. If not supplied, use an image height \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_card_reader_a3dc965543d0905b1565fc8d7d465b578}\label{class_c_card_reader_a3dc965543d0905b1565fc8d7d465b578}} 
+\index{CCardReader@{CCardReader}!SetCard@{SetCard}}
+\index{SetCard@{SetCard}!CCardReader@{CCardReader}}
+\doxysubsubsection{\texorpdfstring{SetCard()}{SetCard()}}
+{\footnotesize\ttfamily void C\+Card\+Reader\+::\+Set\+Card (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the image of card 
+\begin{DoxyParams}{Parameters}
+{\em filename} & Fime name of image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_card_reader_a7254d9e38df40b9f16931896b8592116}\label{class_c_card_reader_a7254d9e38df40b9f16931896b8592116}} 
+\index{CCardReader@{CCardReader}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!CCardReader@{CCardReader}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily void C\+Card\+Reader\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Set the position for the root of the machine 
+\begin{DoxyParams}{Parameters}
+{\em x} & X location (pixels) \\
+\hline
+{\em y} & Y location (pixels) \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_component_a11f15720ac2df4294e7f5f892a381942}{C\+Component}}.
+
+\mbox{\Hypertarget{class_c_card_reader_a924dabb948e0b024274ebb10d01d135c}\label{class_c_card_reader_a924dabb948e0b024274ebb10d01d135c}} 
+\index{CCardReader@{CCardReader}!SetReaderBack@{SetReaderBack}}
+\index{SetReaderBack@{SetReaderBack}!CCardReader@{CCardReader}}
+\doxysubsubsection{\texorpdfstring{SetReaderBack()}{SetReaderBack()}}
+{\footnotesize\ttfamily void C\+Card\+Reader\+::\+Set\+Reader\+Back (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the image of card reader back 
+\begin{DoxyParams}{Parameters}
+{\em filename} & Fime name of image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_card_reader_a9329e331baebb38b0dddb57c50c8d249}\label{class_c_card_reader_a9329e331baebb38b0dddb57c50c8d249}} 
+\index{CCardReader@{CCardReader}!SetReaderFront@{SetReaderFront}}
+\index{SetReaderFront@{SetReaderFront}!CCardReader@{CCardReader}}
+\doxysubsubsection{\texorpdfstring{SetReaderFront()}{SetReaderFront()}}
+{\footnotesize\ttfamily void C\+Card\+Reader\+::\+Set\+Reader\+Front (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the image of card reader front 
+\begin{DoxyParams}{Parameters}
+{\em filename} & Fime name of image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_card_reader_a8b000cebd49d99a4a7e89b1218fed55d}\label{class_c_card_reader_a8b000cebd49d99a4a7e89b1218fed55d}} 
+\index{CCardReader@{CCardReader}!SetRotation@{SetRotation}}
+\index{SetRotation@{SetRotation}!CCardReader@{CCardReader}}
+\doxysubsubsection{\texorpdfstring{SetRotation()}{SetRotation()}}
+{\footnotesize\ttfamily void C\+Card\+Reader\+::\+Set\+Rotation (\begin{DoxyParamCaption}\item[{double}]{rotate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Roates the image 
+\begin{DoxyParams}{Parameters}
+{\em rotate} & Rotation degrees \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_card_reader_a1940d649ab95107e7f4e39aa9ec2fad1}\label{class_c_card_reader_a1940d649ab95107e7f4e39aa9ec2fad1}} 
+\index{CCardReader@{CCardReader}!SetTime@{SetTime}}
+\index{SetTime@{SetTime}!CCardReader@{CCardReader}}
+\doxysubsubsection{\texorpdfstring{SetTime()}{SetTime()}}
+{\footnotesize\ttfamily void C\+Card\+Reader\+::\+Set\+Time (\begin{DoxyParamCaption}\item[{double}]{seconds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Time setter 
+\begin{DoxyParams}{Parameters}
+{\em seconds} & Time in seconds \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_component_ad55e1c90aa6f385db33865b08f19d13c}{C\+Component}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_card_reader_8h}{Card\+Reader.\+h}}\item 
+\mbox{\hyperlink{_card_reader_8cpp}{Card\+Reader.\+cpp}}\end{DoxyCompactItemize}

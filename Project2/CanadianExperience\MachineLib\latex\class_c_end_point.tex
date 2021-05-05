@@ -1,0 +1,111 @@
+\hypertarget{class_c_end_point}{}\doxysection{C\+End\+Point Class Reference}
+\label{class_c_end_point}\index{CEndPoint@{CEndPoint}}
+
+
+{\ttfamily \#include $<$End\+Point.\+h$>$}
+
+Inheritance diagram for C\+End\+Point\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_end_point}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_end_point_af9e11f325fd08f64901ce8fb83183057}\label{class_c_end_point_af9e11f325fd08f64901ce8fb83183057}} 
+\mbox{\hyperlink{class_c_end_point_af9e11f325fd08f64901ce8fb83183057}{C\+End\+Point}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_end_point_aaf37923e384c91dfc0ada8f11b2e485a}\label{class_c_end_point_aaf37923e384c91dfc0ada8f11b2e485a}} 
+virtual \mbox{\hyperlink{class_c_end_point_aaf37923e384c91dfc0ada8f11b2e485a}{$\sim$\+C\+End\+Point}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_end_point_a4d8c79ff7ee60897248c3d1bdcdaa15d}\label{class_c_end_point_a4d8c79ff7ee60897248c3d1bdcdaa15d}} 
+\mbox{\hyperlink{class_c_end_point_a4d8c79ff7ee60897248c3d1bdcdaa15d}{C\+End\+Point}} (const \mbox{\hyperlink{class_c_end_point}{C\+End\+Point}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor/disabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_end_point_a5d6d46500bb485cd69d7bb179586fd01}\label{class_c_end_point_a5d6d46500bb485cd69d7bb179586fd01}} 
+void \mbox{\hyperlink{class_c_end_point_a5d6d46500bb485cd69d7bb179586fd01}{operator=}} (const \mbox{\hyperlink{class_c_end_point}{C\+End\+Point}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator/disabled. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_end_point_ae75ad573a0168fb291c3719e2b4e74df}{Set\+Rotation}} (double rotation)
+\item 
+double \mbox{\hyperlink{class_c_end_point_ad7b8a5a994dbea4fb13d354cecf28909}{Get\+Rotation}} ()
+\item 
+virtual void \mbox{\hyperlink{class_c_end_point_a90f1c7b385365997ee7f250b218c587f}{Set\+Speed}} (double speed)
+\item 
+double \mbox{\hyperlink{class_c_end_point_a5c213a0cc5e6ce6e5b8f6125e87ad646}{Get\+Speed}} ()
+\item 
+void \mbox{\hyperlink{class_c_end_point_a6eb7ca9304c1d15dd27bb28b6da547a3}{Set\+Endpoint}} (Point point)
+\item 
+Point \mbox{\hyperlink{class_c_end_point_aee2d9d2c6b689213a0d216b37baf8bdb}{Get\+Endpoint}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The endpoint for tubing connection. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_end_point_aee2d9d2c6b689213a0d216b37baf8bdb}\label{class_c_end_point_aee2d9d2c6b689213a0d216b37baf8bdb}} 
+\index{CEndPoint@{CEndPoint}!GetEndpoint@{GetEndpoint}}
+\index{GetEndpoint@{GetEndpoint}!CEndPoint@{CEndPoint}}
+\doxysubsubsection{\texorpdfstring{GetEndpoint()}{GetEndpoint()}}
+{\footnotesize\ttfamily Point C\+End\+Point\+::\+Get\+Endpoint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Getter for end point. \begin{DoxyReturn}{Returns}
+endpoint 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_end_point_ad7b8a5a994dbea4fb13d354cecf28909}\label{class_c_end_point_ad7b8a5a994dbea4fb13d354cecf28909}} 
+\index{CEndPoint@{CEndPoint}!GetRotation@{GetRotation}}
+\index{GetRotation@{GetRotation}!CEndPoint@{CEndPoint}}
+\doxysubsubsection{\texorpdfstring{GetRotation()}{GetRotation()}}
+{\footnotesize\ttfamily double C\+End\+Point\+::\+Get\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the rotation for tubing. \begin{DoxyReturn}{Returns}
+Angle of rotation 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_end_point_a5c213a0cc5e6ce6e5b8f6125e87ad646}\label{class_c_end_point_a5c213a0cc5e6ce6e5b8f6125e87ad646}} 
+\index{CEndPoint@{CEndPoint}!GetSpeed@{GetSpeed}}
+\index{GetSpeed@{GetSpeed}!CEndPoint@{CEndPoint}}
+\doxysubsubsection{\texorpdfstring{GetSpeed()}{GetSpeed()}}
+{\footnotesize\ttfamily double C\+End\+Point\+::\+Get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Getter for speed. \begin{DoxyReturn}{Returns}
+speed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_end_point_a6eb7ca9304c1d15dd27bb28b6da547a3}\label{class_c_end_point_a6eb7ca9304c1d15dd27bb28b6da547a3}} 
+\index{CEndPoint@{CEndPoint}!SetEndpoint@{SetEndpoint}}
+\index{SetEndpoint@{SetEndpoint}!CEndPoint@{CEndPoint}}
+\doxysubsubsection{\texorpdfstring{SetEndpoint()}{SetEndpoint()}}
+{\footnotesize\ttfamily void C\+End\+Point\+::\+Set\+Endpoint (\begin{DoxyParamCaption}\item[{Point}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the endpoint for tubing. 
+\begin{DoxyParams}{Parameters}
+{\em point} & Point of endpoint \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_end_point_ae75ad573a0168fb291c3719e2b4e74df}\label{class_c_end_point_ae75ad573a0168fb291c3719e2b4e74df}} 
+\index{CEndPoint@{CEndPoint}!SetRotation@{SetRotation}}
+\index{SetRotation@{SetRotation}!CEndPoint@{CEndPoint}}
+\doxysubsubsection{\texorpdfstring{SetRotation()}{SetRotation()}}
+{\footnotesize\ttfamily void C\+End\+Point\+::\+Set\+Rotation (\begin{DoxyParamCaption}\item[{double}]{rotation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the rotation for tubing. 
+\begin{DoxyParams}{Parameters}
+{\em rotation} & Rotation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_end_point_a90f1c7b385365997ee7f250b218c587f}\label{class_c_end_point_a90f1c7b385365997ee7f250b218c587f}} 
+\index{CEndPoint@{CEndPoint}!SetSpeed@{SetSpeed}}
+\index{SetSpeed@{SetSpeed}!CEndPoint@{CEndPoint}}
+\doxysubsubsection{\texorpdfstring{SetSpeed()}{SetSpeed()}}
+{\footnotesize\ttfamily virtual void C\+End\+Point\+::\+Set\+Speed (\begin{DoxyParamCaption}\item[{double}]{speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Setter for speed. 
+\begin{DoxyParams}{Parameters}
+{\em speed} & Speed \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_end_point_8h}{End\+Point.\+h}}\item 
+\mbox{\hyperlink{_end_point_8cpp}{End\+Point.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{923ED6E2-2894-4FB5-8DD6-6BB58CD6474A}</ProjectGuid>
+    <RootNamespace>BugLib</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+    <ProjectName>MachineLib</ProjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>.\MachineLib.def</ModuleDefinitionFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <TargetMachine>Windows</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>.\MachineLib.def</ModuleDefinitionFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <TargetMachine>Windows</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AirSink.cpp" />
+    <ClCompile Include="AirSinkDestination.cpp" />
+    <ClCompile Include="AirSource.cpp" />
+    <ClCompile Include="CardReader.cpp" />
+    <ClCompile Include="Chime.cpp" />
+    <ClCompile Include="Clamp.cpp" />
+    <ClCompile Include="Component.cpp" />
+    <ClCompile Include="Cylinder.cpp" />
+    <ClCompile Include="Cymbal.cpp" />
+    <ClCompile Include="Drum.cpp" />
+    <ClCompile Include="EndPoint.cpp" />
+    <ClCompile Include="Instrument.cpp" />
+    <ClCompile Include="MachineCustom.cpp" />
+    <ClCompile Include="MachineOneFactory.cpp" />
+    <ClCompile Include="MachineTemp.cpp" />
+    <ClCompile Include="MachineTwoFactory.cpp" />
+    <ClCompile Include="MotionSink.cpp" />
+    <ClCompile Include="MotionSource.cpp" />
+    <ClCompile Include="Shape.cpp" />
+    <ClCompile Include="Tubing.cpp" />
+    <ClCompile Include="WavChannel.cpp" />
+    <ClCompile Include="WAVFileReader.cpp" />
+    <ClCompile Include="WavPlayer.cpp" />
+    <ClCompile Include="Polygon.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Machine.cpp" />
+    <ClCompile Include="MachineFactory.cpp" />
+    <ClCompile Include="MachineLib.cpp" />
+    <ClCompile Include="MachineDlg.cpp" />
+    <ClCompile Include="MachineStandin.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AirSink.h" />
+    <ClInclude Include="AirSinkDestination.h" />
+    <ClInclude Include="AirSource.h" />
+    <ClInclude Include="CardReader.h" />
+    <ClInclude Include="Chime.h" />
+    <ClInclude Include="Clamp.h" />
+    <ClInclude Include="Component.h" />
+    <ClInclude Include="Cylinder.h" />
+    <ClInclude Include="Cymbal.h" />
+    <ClInclude Include="Drum.h" />
+    <ClInclude Include="EndPoint.h" />
+    <ClInclude Include="Instrument.h" />
+    <ClInclude Include="MachineCustom.h" />
+    <ClInclude Include="MachineOneFactory.h" />
+    <ClInclude Include="MachineTemp.h" />
+    <ClInclude Include="MachineTwoFactory.h" />
+    <ClInclude Include="MotionSink.h" />
+    <ClInclude Include="MotionSource.h" />
+    <ClInclude Include="Shape.h" />
+    <ClInclude Include="Tubing.h" />
+    <ClInclude Include="WavChannel.h" />
+    <ClInclude Include="WAVFileReader.h" />
+    <ClInclude Include="WavPlayer.h" />
+    <ClInclude Include="Polygon.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Machine.h" />
+    <ClInclude Include="MachineFactory.h" />
+    <ClInclude Include="MachineLib.h" />
+    <ClInclude Include="MachineDlg.h" />
+    <ClInclude Include="MachineStandin.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\MachineLib.rc2" />
+    <None Include="MachineLib.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MachineLib.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\machine.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="BugLib.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,76 @@
+\hypertarget{class_c_drawable_1_1_child_iter}{}\doxysection{C\+Drawable\+::Child\+Iter Class Reference}
+\label{class_c_drawable_1_1_child_iter}\index{CDrawable::ChildIter@{CDrawable::ChildIter}}
+
+
+{\ttfamily \#include $<$Drawable.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_drawable_1_1_child_iter_aff2b166d86e322969bb14d031c836245}{Child\+Iter}} (\mbox{\hyperlink{class_c_drawable}{C\+Drawable}} $\ast$drawable, int pos)
+\item 
+bool \mbox{\hyperlink{class_c_drawable_1_1_child_iter_a3d33fc132103cc79b206417f7852cbc9}{operator!=}} (const \mbox{\hyperlink{class_c_drawable_1_1_child_iter}{Child\+Iter}} \&other) const
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_drawable}{C\+Drawable}} $>$ \mbox{\hyperlink{class_c_drawable_1_1_child_iter_a575f15134ac84edae8347c48d81d2c63}{operator$\ast$}} () const
+\item 
+const \mbox{\hyperlink{class_c_drawable_1_1_child_iter}{Child\+Iter}} \& \mbox{\hyperlink{class_c_drawable_1_1_child_iter_a57a843f770364ca146899f64b24c6999}{operator++}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Iterator that iterates over the children of this drawable 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_drawable_1_1_child_iter_aff2b166d86e322969bb14d031c836245}\label{class_c_drawable_1_1_child_iter_aff2b166d86e322969bb14d031c836245}} 
+\index{CDrawable::ChildIter@{CDrawable::ChildIter}!ChildIter@{ChildIter}}
+\index{ChildIter@{ChildIter}!CDrawable::ChildIter@{CDrawable::ChildIter}}
+\doxysubsubsection{\texorpdfstring{ChildIter()}{ChildIter()}}
+{\footnotesize\ttfamily C\+Drawable\+::\+Child\+Iter\+::\+Child\+Iter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_drawable}{C\+Drawable}} $\ast$}]{drawable,  }\item[{int}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em drawable} & Picture we are iterating \\
+\hline
+{\em pos} & Starting position \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_drawable_1_1_child_iter_a3d33fc132103cc79b206417f7852cbc9}\label{class_c_drawable_1_1_child_iter_a3d33fc132103cc79b206417f7852cbc9}} 
+\index{CDrawable::ChildIter@{CDrawable::ChildIter}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!CDrawable::ChildIter@{CDrawable::ChildIter}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool C\+Drawable\+::\+Child\+Iter\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_drawable_1_1_child_iter}{Child\+Iter}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Test for end of the iterator 
+\begin{DoxyParams}{Parameters}
+{\em other} & Other object to test against \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if we this position equals not equal to the other position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_drawable_1_1_child_iter_a575f15134ac84edae8347c48d81d2c63}\label{class_c_drawable_1_1_child_iter_a575f15134ac84edae8347c48d81d2c63}} 
+\index{CDrawable::ChildIter@{CDrawable::ChildIter}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!CDrawable::ChildIter@{CDrawable::ChildIter}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_c_drawable}{C\+Drawable}}$>$ C\+Drawable\+::\+Child\+Iter\+::operator$\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get value at current position \begin{DoxyReturn}{Returns}
+Value at m\+Pos in the collection 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_drawable_1_1_child_iter_a57a843f770364ca146899f64b24c6999}\label{class_c_drawable_1_1_child_iter_a57a843f770364ca146899f64b24c6999}} 
+\index{CDrawable::ChildIter@{CDrawable::ChildIter}!operator++@{operator++}}
+\index{operator++@{operator++}!CDrawable::ChildIter@{CDrawable::ChildIter}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_drawable_1_1_child_iter}{Child\+Iter}}\& C\+Drawable\+::\+Child\+Iter\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Increment the iterator \begin{DoxyReturn}{Returns}
+Reference to this iterator 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_drawable_8h}{Drawable.\+h}}\end{DoxyCompactItemize}

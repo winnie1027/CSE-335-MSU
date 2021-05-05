@@ -1,0 +1,107 @@
+\hypertarget{class_c_instrument}{}\doxysection{C\+Instrument Class Reference}
+\label{class_c_instrument}\index{CInstrument@{CInstrument}}
+
+
+{\ttfamily \#include $<$Instrument.\+h$>$}
+
+Inheritance diagram for C\+Instrument\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_instrument}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_instrument_a04ef4040395b7f332c19c754d457c984}\label{class_c_instrument_a04ef4040395b7f332c19c754d457c984}} 
+\mbox{\hyperlink{class_c_instrument_a04ef4040395b7f332c19c754d457c984}{C\+Instrument}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_instrument_ac60fa00eb90249705c18ab9e31fa452b}\label{class_c_instrument_ac60fa00eb90249705c18ab9e31fa452b}} 
+virtual \mbox{\hyperlink{class_c_instrument_ac60fa00eb90249705c18ab9e31fa452b}{$\sim$\+C\+Instrument}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_instrument_a788d71d3574b397a11bb4791fcdd0256}\label{class_c_instrument_a788d71d3574b397a11bb4791fcdd0256}} 
+\mbox{\hyperlink{class_c_instrument_a788d71d3574b397a11bb4791fcdd0256}{C\+Instrument}} (const \mbox{\hyperlink{class_c_instrument}{C\+Instrument}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor/disabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_instrument_a3a7e8de3965f56f53863949dd4459cff}\label{class_c_instrument_a3a7e8de3965f56f53863949dd4459cff}} 
+void \mbox{\hyperlink{class_c_instrument_a3a7e8de3965f56f53863949dd4459cff}{operator=}} (const \mbox{\hyperlink{class_c_instrument}{C\+Instrument}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator/disabled. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_instrument_ab60d59b2dd28566eff06568092f3f093}{Set\+Audio\+Channel}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_wav_channel}{C\+Wav\+Channel}} $>$ channel)
+\item 
+virtual void \mbox{\hyperlink{class_c_instrument_a295e73ec47dc0a3ab4de247acd0356ba}{Draw}} (Graphics $\ast$graphics, Point position) override
+\item 
+\mbox{\hyperlink{class_c_motion_sink}{C\+Motion\+Sink}} $\ast$ \mbox{\hyperlink{class_c_instrument_a6a7f54e1b38ba2492c4ad25e3729bc95}{Get\+Sink}} ()
+\item 
+virtual void \mbox{\hyperlink{class_c_instrument_a79dcb7bf13e0056dd9c2286a3382d068}{Set\+Air\+Pressure}} (double pressure)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class for all instruments. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_instrument_a295e73ec47dc0a3ab4de247acd0356ba}\label{class_c_instrument_a295e73ec47dc0a3ab4de247acd0356ba}} 
+\index{CInstrument@{CInstrument}!Draw@{Draw}}
+\index{Draw@{Draw}!CInstrument@{CInstrument}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void C\+Instrument\+::\+Draw (\begin{DoxyParamCaption}\item[{Graphics $\ast$}]{graphics,  }\item[{Point}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Draw the machine at the currently specified location 
+\begin{DoxyParams}{Parameters}
+{\em graphics} & G\+D\+I+ Graphics object \\
+\hline
+{\em position} & Position of the graphics object \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_c_cymbal_a1bfefd7e52f5aa5f5dd889cdf239528a}{C\+Cymbal}}, and \mbox{\hyperlink{class_c_drum_a20bc80538a9cb1f3df6e59a76baee323}{C\+Drum}}.
+
+\mbox{\Hypertarget{class_c_instrument_a6a7f54e1b38ba2492c4ad25e3729bc95}\label{class_c_instrument_a6a7f54e1b38ba2492c4ad25e3729bc95}} 
+\index{CInstrument@{CInstrument}!GetSink@{GetSink}}
+\index{GetSink@{GetSink}!CInstrument@{CInstrument}}
+\doxysubsubsection{\texorpdfstring{GetSink()}{GetSink()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_motion_sink}{C\+Motion\+Sink}}$\ast$ C\+Instrument\+::\+Get\+Sink (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Motion sink getter. \begin{DoxyReturn}{Returns}
+Motion sink 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_instrument_a79dcb7bf13e0056dd9c2286a3382d068}\label{class_c_instrument_a79dcb7bf13e0056dd9c2286a3382d068}} 
+\index{CInstrument@{CInstrument}!SetAirPressure@{SetAirPressure}}
+\index{SetAirPressure@{SetAirPressure}!CInstrument@{CInstrument}}
+\doxysubsubsection{\texorpdfstring{SetAirPressure()}{SetAirPressure()}}
+{\footnotesize\ttfamily void C\+Instrument\+::\+Set\+Air\+Pressure (\begin{DoxyParamCaption}\item[{double}]{pressure }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets air pressure. 
+\begin{DoxyParams}{Parameters}
+{\em pressure} & Air pressure \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_component_a523cbf7fa0b94c749eac94a2732eb3d5}{C\+Component}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_c_chime_abad575669857d3f335948cbf40aa89e0}{C\+Chime}}, \mbox{\hyperlink{class_c_cymbal_a7d8b692cc920dc2082bee074e48b00aa}{C\+Cymbal}}, and \mbox{\hyperlink{class_c_drum_adbab3e6050e9fd7f2bd9e5ab496d0afd}{C\+Drum}}.
+
+\mbox{\Hypertarget{class_c_instrument_ab60d59b2dd28566eff06568092f3f093}\label{class_c_instrument_ab60d59b2dd28566eff06568092f3f093}} 
+\index{CInstrument@{CInstrument}!SetAudioChannel@{SetAudioChannel}}
+\index{SetAudioChannel@{SetAudioChannel}!CInstrument@{CInstrument}}
+\doxysubsubsection{\texorpdfstring{SetAudioChannel()}{SetAudioChannel()}}
+{\footnotesize\ttfamily void C\+Instrument\+::\+Set\+Audio\+Channel (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_wav_channel}{C\+Wav\+Channel}} $>$}]{channel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Sets the audio for instrument. 
+\begin{DoxyParams}{Parameters}
+{\em channel} & Sound channel \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_c_chime_ac3b43c014ae48cd1c786e367937d776b}{C\+Chime}}, \mbox{\hyperlink{class_c_cymbal_ac60278933a3da7a07f2509259f3029dd}{C\+Cymbal}}, and \mbox{\hyperlink{class_c_drum_a1f7e2c180b452d51e5dffacc49d2792b}{C\+Drum}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_instrument_8h}{Instrument.\+h}}\item 
+\mbox{\hyperlink{_instrument_8cpp}{Instrument.\+cpp}}\end{DoxyCompactItemize}

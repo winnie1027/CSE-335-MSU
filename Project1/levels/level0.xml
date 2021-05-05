@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level>
+
+  <types>
+    <decor id="s001" image="sidewalk1.png"/>
+    <decor id="r001" image="river.png"/>
+    <boat id="b2" image="green-raft.png"/>
+    <boat id="b4c" image="green-canoe.png"/>
+    <boat id="b3c" image="yellow-boat.png"/>
+    <boat id="b3b" image="red-boat.png"/>
+    <boat id="b3r" image="red-raft.png"/>
+    <decor id="r002" image="road1.png"/>
+    <decor id="grass" image="grass1.png"/>
+    <car id="michigan" name="Michigan" image1="invaderUMa.png" image2="invaderUMb.png"/>
+    <car id="ohio" name="Ohio" image1="invaderOSa.png" image2="invaderOSb.png"/>
+
+  </types>
+  <background>
+    <decor id="s001" x="0" y="0" repeat-x="1" repeat-y="1"/>
+    <decor id="r001" x="0" y="12" repeat-x="7" repeat-y="1"/>
+    
+  </background>
+  <hero image="sparty.png" name="Sparty" hit-image="sparty-hit.png" mask="sparty-mask.png"/>
+  <cargo id="grain" x="10.5" name="Grain" image="grain.png" carried-image="grain-carried.png"/>
+
+  <river y="12" speed="-2" width="20">
+    <boat id="b2" x="7"/>
+    <boat id="b3r" x="12"/>
+  </river>
+  <river y="13" speed="4.1" width="20">
+    <boat id="b2" x="7"/>
+    <boat id="b3b" x="12"/>
+  </river>
+
+  
+
+
+
+
+
+</level>

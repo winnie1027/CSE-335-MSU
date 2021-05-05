@@ -1,0 +1,59 @@
+\hypertarget{class_c_motion_sink}{}\doxysection{C\+Motion\+Sink Class Reference}
+\label{class_c_motion_sink}\index{CMotionSink@{CMotionSink}}
+
+
+{\ttfamily \#include $<$Motion\+Sink.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_motion_sink_ab1591a07038a4153e52284a34ecbd5a1}\label{class_c_motion_sink_ab1591a07038a4153e52284a34ecbd5a1}} 
+\mbox{\hyperlink{class_c_motion_sink_ab1591a07038a4153e52284a34ecbd5a1}{C\+Motion\+Sink}} (\mbox{\hyperlink{class_c_instrument}{C\+Instrument}} $\ast$instrument)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_motion_sink_acb112f72821719c1b0a0de4d06fff4b1}\label{class_c_motion_sink_acb112f72821719c1b0a0de4d06fff4b1}} 
+virtual \mbox{\hyperlink{class_c_motion_sink_acb112f72821719c1b0a0de4d06fff4b1}{$\sim$\+C\+Motion\+Sink}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_motion_sink_a10207e0e836e4b09b4f1233c19afec93}\label{class_c_motion_sink_a10207e0e836e4b09b4f1233c19afec93}} 
+\mbox{\hyperlink{class_c_motion_sink_a10207e0e836e4b09b4f1233c19afec93}{C\+Motion\+Sink}} (const \mbox{\hyperlink{class_c_motion_sink}{C\+Motion\+Sink}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor/disabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_motion_sink_aa9e6635c1f84059e321135643028274c}\label{class_c_motion_sink_aa9e6635c1f84059e321135643028274c}} 
+void \mbox{\hyperlink{class_c_motion_sink_aa9e6635c1f84059e321135643028274c}{operator=}} (const \mbox{\hyperlink{class_c_motion_sink}{C\+Motion\+Sink}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator/disabled. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_motion_sink_a504fa3813803bc0c4c5a8a1fd8a3edc4}{Set\+Air\+Pressure}} (double pressure)
+\item 
+void \mbox{\hyperlink{class_c_motion_sink_a83e0d87de63819665cabae478058f90b}{Set\+Motion\+Source}} (\mbox{\hyperlink{class_c_motion_source}{C\+Motion\+Source}} $\ast$source)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Motion sink for the instrument. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_motion_sink_a504fa3813803bc0c4c5a8a1fd8a3edc4}\label{class_c_motion_sink_a504fa3813803bc0c4c5a8a1fd8a3edc4}} 
+\index{CMotionSink@{CMotionSink}!SetAirPressure@{SetAirPressure}}
+\index{SetAirPressure@{SetAirPressure}!CMotionSink@{CMotionSink}}
+\doxysubsubsection{\texorpdfstring{SetAirPressure()}{SetAirPressure()}}
+{\footnotesize\ttfamily void C\+Motion\+Sink\+::\+Set\+Air\+Pressure (\begin{DoxyParamCaption}\item[{double}]{pressure }\end{DoxyParamCaption})}
+
+Setter for air pressure. 
+\begin{DoxyParams}{Parameters}
+{\em pressure} & Air pressure \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_motion_sink_a83e0d87de63819665cabae478058f90b}\label{class_c_motion_sink_a83e0d87de63819665cabae478058f90b}} 
+\index{CMotionSink@{CMotionSink}!SetMotionSource@{SetMotionSource}}
+\index{SetMotionSource@{SetMotionSource}!CMotionSink@{CMotionSink}}
+\doxysubsubsection{\texorpdfstring{SetMotionSource()}{SetMotionSource()}}
+{\footnotesize\ttfamily void C\+Motion\+Sink\+::\+Set\+Motion\+Source (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_motion_source}{C\+Motion\+Source}} $\ast$}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the motion source for instrument. 
+\begin{DoxyParams}{Parameters}
+{\em source} & Motion source \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_motion_sink_8h}{Motion\+Sink.\+h}}\item 
+\mbox{\hyperlink{_motion_sink_8cpp}{Motion\+Sink.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,119 @@
+\hypertarget{class_c_component}{}\doxysection{C\+Component Class Reference}
+\label{class_c_component}\index{CComponent@{CComponent}}
+
+
+{\ttfamily \#include $<$Component.\+h$>$}
+
+Inheritance diagram for C\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_component}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_component_ab87a6940be69962c3f4f5a8552643245}\label{class_c_component_ab87a6940be69962c3f4f5a8552643245}} 
+\mbox{\hyperlink{class_c_component_ab87a6940be69962c3f4f5a8552643245}{C\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_component_a20600eb8b6cbf2cd1b33f60987d0564b}\label{class_c_component_a20600eb8b6cbf2cd1b33f60987d0564b}} 
+virtual \mbox{\hyperlink{class_c_component_a20600eb8b6cbf2cd1b33f60987d0564b}{$\sim$\+C\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_component_a9e2b2a6345db1a49168a6dd433193a4f}\label{class_c_component_a9e2b2a6345db1a49168a6dd433193a4f}} 
+\mbox{\hyperlink{class_c_component_a9e2b2a6345db1a49168a6dd433193a4f}{C\+Component}} (const \mbox{\hyperlink{class_c_component}{C\+Component}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor/disabled. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_component_a28b8818808248f3bd77cd36e233d2a8b}{Draw}} (Gdiplus\+::\+Graphics $\ast$graphics, Gdiplus\+::\+Point position)
+\item 
+virtual void \mbox{\hyperlink{class_c_component_ad55e1c90aa6f385db33865b08f19d13c}{Set\+Time}} (double seconds)
+\item 
+virtual void \mbox{\hyperlink{class_c_component_a11f15720ac2df4294e7f5f892a381942}{Set\+Position}} (int x, int y)
+\item 
+virtual void \mbox{\hyperlink{class_c_component_a523cbf7fa0b94c749eac94a2732eb3d5}{Set\+Air\+Pressure}} (double pressure)
+\item 
+Gdiplus\+::\+Point \mbox{\hyperlink{class_c_component_ac4a4b16b21c4d5d5001c00d6ecb2a09b}{Get\+Position}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class for all components of instrument. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_component_a28b8818808248f3bd77cd36e233d2a8b}\label{class_c_component_a28b8818808248f3bd77cd36e233d2a8b}} 
+\index{CComponent@{CComponent}!Draw@{Draw}}
+\index{Draw@{Draw}!CComponent@{CComponent}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void C\+Component\+::\+Draw (\begin{DoxyParamCaption}\item[{Gdiplus\+::\+Graphics $\ast$}]{graphics,  }\item[{Gdiplus\+::\+Point}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Draw the machine at the currently specified location 
+\begin{DoxyParams}{Parameters}
+{\em graphics} & G\+D\+I+ Graphics object \\
+\hline
+{\em position} & Position of the graphics object \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_c_card_reader_a57a1f96138eb7306c1bb167e8399b362}{C\+Card\+Reader}}, and \mbox{\hyperlink{class_c_chime_a3b50e561a47a2aab02d34a2c2a417ad0}{C\+Chime}}.
+
+\mbox{\Hypertarget{class_c_component_ac4a4b16b21c4d5d5001c00d6ecb2a09b}\label{class_c_component_ac4a4b16b21c4d5d5001c00d6ecb2a09b}} 
+\index{CComponent@{CComponent}!GetPosition@{GetPosition}}
+\index{GetPosition@{GetPosition}!CComponent@{CComponent}}
+\doxysubsubsection{\texorpdfstring{GetPosition()}{GetPosition()}}
+{\footnotesize\ttfamily Gdiplus\+::\+Point C\+Component\+::\+Get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Point getter for component \begin{DoxyReturn}{Returns}
+position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_component_a523cbf7fa0b94c749eac94a2732eb3d5}\label{class_c_component_a523cbf7fa0b94c749eac94a2732eb3d5}} 
+\index{CComponent@{CComponent}!SetAirPressure@{SetAirPressure}}
+\index{SetAirPressure@{SetAirPressure}!CComponent@{CComponent}}
+\doxysubsubsection{\texorpdfstring{SetAirPressure()}{SetAirPressure()}}
+{\footnotesize\ttfamily void C\+Component\+::\+Set\+Air\+Pressure (\begin{DoxyParamCaption}\item[{double}]{pressure }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Setter for air pressure. 
+\begin{DoxyParams}{Parameters}
+{\em pressure} & Air pressure \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_c_cylinder_ad5614813c66896bb651315861abcd7e2}{C\+Cylinder}}, \mbox{\hyperlink{class_c_chime_abad575669857d3f335948cbf40aa89e0}{C\+Chime}}, \mbox{\hyperlink{class_c_cymbal_a7d8b692cc920dc2082bee074e48b00aa}{C\+Cymbal}}, \mbox{\hyperlink{class_c_drum_adbab3e6050e9fd7f2bd9e5ab496d0afd}{C\+Drum}}, \mbox{\hyperlink{class_c_tubing_a2c32fecbe86364e515e3e8ed774a97ad}{C\+Tubing}}, and \mbox{\hyperlink{class_c_instrument_a79dcb7bf13e0056dd9c2286a3382d068}{C\+Instrument}}.
+
+\mbox{\Hypertarget{class_c_component_a11f15720ac2df4294e7f5f892a381942}\label{class_c_component_a11f15720ac2df4294e7f5f892a381942}} 
+\index{CComponent@{CComponent}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!CComponent@{CComponent}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily void C\+Component\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Set the position for the root of the machine 
+\begin{DoxyParams}{Parameters}
+{\em x} & X location (pixels) \\
+\hline
+{\em y} & Y location (pixels) \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_c_cylinder_a2f276f1170082c948712f1b28dcf2f04}{C\+Cylinder}}, \mbox{\hyperlink{class_c_shape_a6317307f34348634070dff0ecb88c3d0}{C\+Shape}}, \mbox{\hyperlink{class_c_card_reader_a7254d9e38df40b9f16931896b8592116}{C\+Card\+Reader}}, \mbox{\hyperlink{class_c_chime_a5e3989831c4bc8a02fecda5424ed6f31}{C\+Chime}}, and \mbox{\hyperlink{class_c_cymbal_a5c0b43c8df09117634e7078b79a066c4}{C\+Cymbal}}.
+
+\mbox{\Hypertarget{class_c_component_ad55e1c90aa6f385db33865b08f19d13c}\label{class_c_component_ad55e1c90aa6f385db33865b08f19d13c}} 
+\index{CComponent@{CComponent}!SetTime@{SetTime}}
+\index{SetTime@{SetTime}!CComponent@{CComponent}}
+\doxysubsubsection{\texorpdfstring{SetTime()}{SetTime()}}
+{\footnotesize\ttfamily void C\+Component\+::\+Set\+Time (\begin{DoxyParamCaption}\item[{double}]{seconds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Setter for time in seconds 
+\begin{DoxyParams}{Parameters}
+{\em seconds} & Time in seconds \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_c_card_reader_a1940d649ab95107e7f4e39aa9ec2fad1}{C\+Card\+Reader}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_component_8h}{Component.\+h}}\item 
+\mbox{\hyperlink{_component_8cpp}{Component.\+cpp}}\end{DoxyCompactItemize}

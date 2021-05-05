@@ -1,0 +1,115 @@
+\hypertarget{class_c_machine_standin}{}\doxysection{C\+Machine\+Standin Class Reference}
+\label{class_c_machine_standin}\index{CMachineStandin@{CMachineStandin}}
+
+
+{\ttfamily \#include $<$Machine\+Standin.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_machine_standin_a46bcd2a3381800dd221e454ff8e80e3f}{C\+Machine\+Standin}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_c_machine_standin_a40556dc00d8e3d2c12d27e3f2bc5766f}{$\sim$\+C\+Machine\+Standin}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_machine_standin_ab84d9d079c1fa94d2e66615187cc89bf}{Set\+Location}} (int x, int y)
+\item 
+void \mbox{\hyperlink{class_c_machine_standin_aff14ab7129f4ce9f9e2ef006966420df}{Draw\+Machine}} (Gdiplus\+::\+Graphics $\ast$graphics)
+\item 
+void \mbox{\hyperlink{class_c_machine_standin_ad2b08d98f607931153f14edb5e17fa01}{Set\+Machine\+Frame}} (int frame)
+\item 
+void \mbox{\hyperlink{class_c_machine_standin_a92687f9c40ece53c7b6f13839f39bfe2}{Set\+Machine}} (int machine)
+\item 
+virtual int \mbox{\hyperlink{class_c_machine_standin_a975e2de124c154e26764d06054b3ed31}{Get\+Machine}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is a stand-\/in class that will allow you to develop the machine adapter class first if you so choose.
+
+You are not allowed to change this class in any way! 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_machine_standin_a46bcd2a3381800dd221e454ff8e80e3f}\label{class_c_machine_standin_a46bcd2a3381800dd221e454ff8e80e3f}} 
+\index{CMachineStandin@{CMachineStandin}!CMachineStandin@{CMachineStandin}}
+\index{CMachineStandin@{CMachineStandin}!CMachineStandin@{CMachineStandin}}
+\doxysubsubsection{\texorpdfstring{CMachineStandin()}{CMachineStandin()}}
+{\footnotesize\ttfamily C\+Machine\+Standin\+::\+C\+Machine\+Standin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Constructor \mbox{\Hypertarget{class_c_machine_standin_a40556dc00d8e3d2c12d27e3f2bc5766f}\label{class_c_machine_standin_a40556dc00d8e3d2c12d27e3f2bc5766f}} 
+\index{CMachineStandin@{CMachineStandin}!````~CMachineStandin@{$\sim$CMachineStandin}}
+\index{````~CMachineStandin@{$\sim$CMachineStandin}!CMachineStandin@{CMachineStandin}}
+\doxysubsubsection{\texorpdfstring{$\sim$CMachineStandin()}{~CMachineStandin()}}
+{\footnotesize\ttfamily C\+Machine\+Standin\+::$\sim$\+C\+Machine\+Standin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+Destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_machine_standin_aff14ab7129f4ce9f9e2ef006966420df}\label{class_c_machine_standin_aff14ab7129f4ce9f9e2ef006966420df}} 
+\index{CMachineStandin@{CMachineStandin}!DrawMachine@{DrawMachine}}
+\index{DrawMachine@{DrawMachine}!CMachineStandin@{CMachineStandin}}
+\doxysubsubsection{\texorpdfstring{DrawMachine()}{DrawMachine()}}
+{\footnotesize\ttfamily void C\+Machine\+Standin\+::\+Draw\+Machine (\begin{DoxyParamCaption}\item[{Gdiplus\+::\+Graphics $\ast$}]{graphics }\end{DoxyParamCaption})}
+
+Draw the machine at the currently specified location 
+\begin{DoxyParams}{Parameters}
+{\em graphics} & G\+D\+I+ Graphics object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_machine_standin_a975e2de124c154e26764d06054b3ed31}\label{class_c_machine_standin_a975e2de124c154e26764d06054b3ed31}} 
+\index{CMachineStandin@{CMachineStandin}!GetMachine@{GetMachine}}
+\index{GetMachine@{GetMachine}!CMachineStandin@{CMachineStandin}}
+\doxysubsubsection{\texorpdfstring{GetMachine()}{GetMachine()}}
+{\footnotesize\ttfamily virtual int C\+Machine\+Standin\+::\+Get\+Machine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get the current machine number \begin{DoxyReturn}{Returns}
+Machine number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_machine_standin_ab84d9d079c1fa94d2e66615187cc89bf}\label{class_c_machine_standin_ab84d9d079c1fa94d2e66615187cc89bf}} 
+\index{CMachineStandin@{CMachineStandin}!SetLocation@{SetLocation}}
+\index{SetLocation@{SetLocation}!CMachineStandin@{CMachineStandin}}
+\doxysubsubsection{\texorpdfstring{SetLocation()}{SetLocation()}}
+{\footnotesize\ttfamily void C\+Machine\+Standin\+::\+Set\+Location (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the position for the root of the machine 
+\begin{DoxyParams}{Parameters}
+{\em x} & X location (pixels) \\
+\hline
+{\em y} & Y location (pixels) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_machine_standin_a92687f9c40ece53c7b6f13839f39bfe2}\label{class_c_machine_standin_a92687f9c40ece53c7b6f13839f39bfe2}} 
+\index{CMachineStandin@{CMachineStandin}!SetMachine@{SetMachine}}
+\index{SetMachine@{SetMachine}!CMachineStandin@{CMachineStandin}}
+\doxysubsubsection{\texorpdfstring{SetMachine()}{SetMachine()}}
+{\footnotesize\ttfamily void C\+Machine\+Standin\+::\+Set\+Machine (\begin{DoxyParamCaption}\item[{int}]{machine }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the machine number 
+\begin{DoxyParams}{Parameters}
+{\em machine} & An integer number. Each integer makes a different machine \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_machine_standin_ad2b08d98f607931153f14edb5e17fa01}\label{class_c_machine_standin_ad2b08d98f607931153f14edb5e17fa01}} 
+\index{CMachineStandin@{CMachineStandin}!SetMachineFrame@{SetMachineFrame}}
+\index{SetMachineFrame@{SetMachineFrame}!CMachineStandin@{CMachineStandin}}
+\doxysubsubsection{\texorpdfstring{SetMachineFrame()}{SetMachineFrame()}}
+{\footnotesize\ttfamily void C\+Machine\+Standin\+::\+Set\+Machine\+Frame (\begin{DoxyParamCaption}\item[{int}]{frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the current machine animation frame 
+\begin{DoxyParams}{Parameters}
+{\em frame} & Frame number \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_machine_standin_8h}{Machine\+Standin.\+h}}\item 
+\mbox{\hyperlink{_machine_standin_8cpp}{Machine\+Standin.\+cpp}}\end{DoxyCompactItemize}

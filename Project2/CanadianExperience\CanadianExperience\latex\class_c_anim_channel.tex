@@ -1,0 +1,236 @@
+\hypertarget{class_c_anim_channel}{}\doxysection{C\+Anim\+Channel Class Reference}
+\label{class_c_anim_channel}\index{CAnimChannel@{CAnimChannel}}
+
+
+{\ttfamily \#include $<$Anim\+Channel.\+h$>$}
+
+Inheritance diagram for C\+Anim\+Channel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_anim_channel}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_c_anim_channel_1_1_keyframe}{Keyframe}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_anim_channel_a1ce8a3d902476227d112459b662e2a4f}{C\+Anim\+Channel}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_anim_channel_a63a09f6e3f729b16130405f865c8f267}{$\sim$\+C\+Anim\+Channel}} ()
+\item 
+\mbox{\hyperlink{class_c_anim_channel_aeb50ddc731a16230beef39cf198b78f9}{C\+Anim\+Channel}} (const \mbox{\hyperlink{class_c_anim_channel}{C\+Anim\+Channel}} \&)=delete
+\item 
+void \mbox{\hyperlink{class_c_anim_channel_a29ee3e3b8f1edf5947c08a6aad1d5bcd}{operator=}} (const \mbox{\hyperlink{class_c_anim_channel}{C\+Anim\+Channel}} \&)=delete
+\item 
+void \mbox{\hyperlink{class_c_anim_channel_acd94fef3b6bb9279aac24fd912198d47}{Set\+Name}} (const std\+::wstring \&name)
+\item 
+std\+::wstring \mbox{\hyperlink{class_c_anim_channel_a3f439ff2619702129a3b73629c3cc1fe}{Get\+Name}} () const
+\item 
+void \mbox{\hyperlink{class_c_anim_channel_a73cb35e7bd3840e918a1762650541cab}{Set\+Timeline}} (\mbox{\hyperlink{class_c_timeline}{C\+Timeline}} $\ast$timeline)
+\item 
+\mbox{\hyperlink{class_c_timeline}{C\+Timeline}} $\ast$ \mbox{\hyperlink{class_c_anim_channel_a668a7b1770bb3f2605e937b905bcfde7}{Get\+Timeline}} ()
+\item 
+void \mbox{\hyperlink{class_c_anim_channel_a1f68764b84b12c943570cfd2e08d7015}{Set\+Frame}} (int curr\+Frame)
+\item 
+bool \mbox{\hyperlink{class_c_anim_channel_ada18e6cdd72a834417b1067be1205a3f}{Is\+Valid}} ()
+\item 
+void \mbox{\hyperlink{class_c_anim_channel_abccfa21587f36a2edb9365ce986a21e2}{Clear\+Keyframe}} ()
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classxmlnode_1_1_c_xml_node}{xmlnode\+::\+C\+Xml\+Node}} $>$ \mbox{\hyperlink{class_c_anim_channel_ad4b87256e49f954eaf1dbcfa54fba34a}{Xml\+Save}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classxmlnode_1_1_c_xml_node}{xmlnode\+::\+C\+Xml\+Node}} $>$ \&node)
+\item 
+virtual void \mbox{\hyperlink{class_c_anim_channel_ae9b7297011e630f9e621fee0dcac3a75}{Clear}} ()
+\item 
+virtual void \mbox{\hyperlink{class_c_anim_channel_a93a846ae42defd51e172ca922dfee742}{Xml\+Load}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classxmlnode_1_1_c_xml_node}{xmlnode\+::\+C\+Xml\+Node}} $>$ \&node)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c_anim_channel_a8c29b90a984072bce8cf2f8ea03d0e5b}{Insert\+Keyframe}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_anim_channel_1_1_keyframe}{Keyframe}} $>$ keyframe)
+\item 
+virtual void \mbox{\hyperlink{class_c_anim_channel_a2df7b3fed2b3faf34c585446628fc874}{Xml\+Load\+Keyframe}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classxmlnode_1_1_c_xml_node}{xmlnode\+::\+C\+Xml\+Node}} $>$ \&node)=0
+\item 
+virtual void \mbox{\hyperlink{class_c_anim_channel_adf83febfff4c3db9e9f56de72735f8ee}{Tween}} (double t)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class for an animation channel 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_anim_channel_a1ce8a3d902476227d112459b662e2a4f}\label{class_c_anim_channel_a1ce8a3d902476227d112459b662e2a4f}} 
+\index{CAnimChannel@{CAnimChannel}!CAnimChannel@{CAnimChannel}}
+\index{CAnimChannel@{CAnimChannel}!CAnimChannel@{CAnimChannel}}
+\doxysubsubsection{\texorpdfstring{CAnimChannel()}{CAnimChannel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily C\+Anim\+Channel\+::\+C\+Anim\+Channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor \mbox{\Hypertarget{class_c_anim_channel_a63a09f6e3f729b16130405f865c8f267}\label{class_c_anim_channel_a63a09f6e3f729b16130405f865c8f267}} 
+\index{CAnimChannel@{CAnimChannel}!````~CAnimChannel@{$\sim$CAnimChannel}}
+\index{````~CAnimChannel@{$\sim$CAnimChannel}!CAnimChannel@{CAnimChannel}}
+\doxysubsubsection{\texorpdfstring{$\sim$CAnimChannel()}{~CAnimChannel()}}
+{\footnotesize\ttfamily C\+Anim\+Channel\+::$\sim$\+C\+Anim\+Channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destructor \mbox{\Hypertarget{class_c_anim_channel_aeb50ddc731a16230beef39cf198b78f9}\label{class_c_anim_channel_aeb50ddc731a16230beef39cf198b78f9}} 
+\index{CAnimChannel@{CAnimChannel}!CAnimChannel@{CAnimChannel}}
+\index{CAnimChannel@{CAnimChannel}!CAnimChannel@{CAnimChannel}}
+\doxysubsubsection{\texorpdfstring{CAnimChannel()}{CAnimChannel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily C\+Anim\+Channel\+::\+C\+Anim\+Channel (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_anim_channel}{C\+Anim\+Channel}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Copy constructor disabled 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_anim_channel_ae9b7297011e630f9e621fee0dcac3a75}\label{class_c_anim_channel_ae9b7297011e630f9e621fee0dcac3a75}} 
+\index{CAnimChannel@{CAnimChannel}!Clear@{Clear}}
+\index{Clear@{Clear}!CAnimChannel@{CAnimChannel}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void C\+Anim\+Channel\+::\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Clear all keyframes for this channel. \mbox{\Hypertarget{class_c_anim_channel_abccfa21587f36a2edb9365ce986a21e2}\label{class_c_anim_channel_abccfa21587f36a2edb9365ce986a21e2}} 
+\index{CAnimChannel@{CAnimChannel}!ClearKeyframe@{ClearKeyframe}}
+\index{ClearKeyframe@{ClearKeyframe}!CAnimChannel@{CAnimChannel}}
+\doxysubsubsection{\texorpdfstring{ClearKeyframe()}{ClearKeyframe()}}
+{\footnotesize\ttfamily void C\+Anim\+Channel\+::\+Clear\+Keyframe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Clear the current keyframe. \mbox{\Hypertarget{class_c_anim_channel_a3f439ff2619702129a3b73629c3cc1fe}\label{class_c_anim_channel_a3f439ff2619702129a3b73629c3cc1fe}} 
+\index{CAnimChannel@{CAnimChannel}!GetName@{GetName}}
+\index{GetName@{GetName}!CAnimChannel@{CAnimChannel}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
+{\footnotesize\ttfamily std\+::wstring C\+Anim\+Channel\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the channel name \begin{DoxyReturn}{Returns}
+Channel name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_anim_channel_a668a7b1770bb3f2605e937b905bcfde7}\label{class_c_anim_channel_a668a7b1770bb3f2605e937b905bcfde7}} 
+\index{CAnimChannel@{CAnimChannel}!GetTimeline@{GetTimeline}}
+\index{GetTimeline@{GetTimeline}!CAnimChannel@{CAnimChannel}}
+\doxysubsubsection{\texorpdfstring{GetTimeline()}{GetTimeline()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_timeline}{C\+Timeline}}$\ast$ C\+Anim\+Channel\+::\+Get\+Timeline (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the timeline for this channel \begin{DoxyReturn}{Returns}
+The timeline pointer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_anim_channel_a8c29b90a984072bce8cf2f8ea03d0e5b}\label{class_c_anim_channel_a8c29b90a984072bce8cf2f8ea03d0e5b}} 
+\index{CAnimChannel@{CAnimChannel}!InsertKeyframe@{InsertKeyframe}}
+\index{InsertKeyframe@{InsertKeyframe}!CAnimChannel@{CAnimChannel}}
+\doxysubsubsection{\texorpdfstring{InsertKeyframe()}{InsertKeyframe()}}
+{\footnotesize\ttfamily void C\+Anim\+Channel\+::\+Insert\+Keyframe (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_anim_channel_1_1_keyframe}{Keyframe}} $>$}]{keyframe }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine how we should insert a keyframe into our keyframe list. 
+\begin{DoxyParams}{Parameters}
+{\em keyframe} & The keyframe to insert \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_anim_channel_ada18e6cdd72a834417b1067be1205a3f}\label{class_c_anim_channel_ada18e6cdd72a834417b1067be1205a3f}} 
+\index{CAnimChannel@{CAnimChannel}!IsValid@{IsValid}}
+\index{IsValid@{IsValid}!CAnimChannel@{CAnimChannel}}
+\doxysubsubsection{\texorpdfstring{IsValid()}{IsValid()}}
+{\footnotesize\ttfamily bool C\+Anim\+Channel\+::\+Is\+Valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Is the channel valid, meaning has keyframes? \begin{DoxyReturn}{Returns}
+true if the channel is valid. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_anim_channel_a29ee3e3b8f1edf5947c08a6aad1d5bcd}\label{class_c_anim_channel_a29ee3e3b8f1edf5947c08a6aad1d5bcd}} 
+\index{CAnimChannel@{CAnimChannel}!operator=@{operator=}}
+\index{operator=@{operator=}!CAnimChannel@{CAnimChannel}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily void C\+Anim\+Channel\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_anim_channel}{C\+Anim\+Channel}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Assignment operator disabled \mbox{\Hypertarget{class_c_anim_channel_a1f68764b84b12c943570cfd2e08d7015}\label{class_c_anim_channel_a1f68764b84b12c943570cfd2e08d7015}} 
+\index{CAnimChannel@{CAnimChannel}!SetFrame@{SetFrame}}
+\index{SetFrame@{SetFrame}!CAnimChannel@{CAnimChannel}}
+\doxysubsubsection{\texorpdfstring{SetFrame()}{SetFrame()}}
+{\footnotesize\ttfamily void C\+Anim\+Channel\+::\+Set\+Frame (\begin{DoxyParamCaption}\item[{int}]{curr\+Frame }\end{DoxyParamCaption})}
+
+Ensure the keyframe indices are valid for the current time.
+
+The location pointed to by keyframe1 must be a time less than or equal to the current time and the location pointed to by keyframe2 must be the next location and a location greater than the current time. Note that the time may be before or after the first or last item in the list. We indicate that with values of -\/1 for the indices. 
+\begin{DoxyParams}{Parameters}
+{\em curr\+Frame} & The frame we are on. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_anim_channel_acd94fef3b6bb9279aac24fd912198d47}\label{class_c_anim_channel_acd94fef3b6bb9279aac24fd912198d47}} 
+\index{CAnimChannel@{CAnimChannel}!SetName@{SetName}}
+\index{SetName@{SetName}!CAnimChannel@{CAnimChannel}}
+\doxysubsubsection{\texorpdfstring{SetName()}{SetName()}}
+{\footnotesize\ttfamily void C\+Anim\+Channel\+::\+Set\+Name (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the channel name 
+\begin{DoxyParams}{Parameters}
+{\em name} & The new name to set \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_anim_channel_a73cb35e7bd3840e918a1762650541cab}\label{class_c_anim_channel_a73cb35e7bd3840e918a1762650541cab}} 
+\index{CAnimChannel@{CAnimChannel}!SetTimeline@{SetTimeline}}
+\index{SetTimeline@{SetTimeline}!CAnimChannel@{CAnimChannel}}
+\doxysubsubsection{\texorpdfstring{SetTimeline()}{SetTimeline()}}
+{\footnotesize\ttfamily void C\+Anim\+Channel\+::\+Set\+Timeline (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_timeline}{C\+Timeline}} $\ast$}]{timeline }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the timeline for this channel 
+\begin{DoxyParams}{Parameters}
+{\em timeline} & The timeline to use \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_anim_channel_adf83febfff4c3db9e9f56de72735f8ee}\label{class_c_anim_channel_adf83febfff4c3db9e9f56de72735f8ee}} 
+\index{CAnimChannel@{CAnimChannel}!Tween@{Tween}}
+\index{Tween@{Tween}!CAnimChannel@{CAnimChannel}}
+\doxysubsubsection{\texorpdfstring{Tween()}{Tween()}}
+{\footnotesize\ttfamily virtual void C\+Anim\+Channel\+::\+Tween (\begin{DoxyParamCaption}\item[{double}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+Tween between two keyframes 
+\begin{DoxyParams}{Parameters}
+{\em t} & The T value (0 to 1) \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_c_anim_channel_angle_a2fe6ecc9f2cc1629efa18c33d2742e4d}{C\+Anim\+Channel\+Angle}}, and \mbox{\hyperlink{class_c_anim_channel_point_ac67b18d31453f8e25c681423c3e056c8}{C\+Anim\+Channel\+Point}}.
+
+\mbox{\Hypertarget{class_c_anim_channel_a93a846ae42defd51e172ca922dfee742}\label{class_c_anim_channel_a93a846ae42defd51e172ca922dfee742}} 
+\index{CAnimChannel@{CAnimChannel}!XmlLoad@{XmlLoad}}
+\index{XmlLoad@{XmlLoad}!CAnimChannel@{CAnimChannel}}
+\doxysubsubsection{\texorpdfstring{XmlLoad()}{XmlLoad()}}
+{\footnotesize\ttfamily void C\+Anim\+Channel\+::\+Xml\+Load (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classxmlnode_1_1_c_xml_node}{xmlnode\+::\+C\+Xml\+Node}} $>$ \&}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Handle loading this channel from a channel tag. 
+\begin{DoxyParams}{Parameters}
+{\em node} & channel tag node \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_anim_channel_a2df7b3fed2b3faf34c585446628fc874}\label{class_c_anim_channel_a2df7b3fed2b3faf34c585446628fc874}} 
+\index{CAnimChannel@{CAnimChannel}!XmlLoadKeyframe@{XmlLoadKeyframe}}
+\index{XmlLoadKeyframe@{XmlLoadKeyframe}!CAnimChannel@{CAnimChannel}}
+\doxysubsubsection{\texorpdfstring{XmlLoadKeyframe()}{XmlLoadKeyframe()}}
+{\footnotesize\ttfamily virtual void C\+Anim\+Channel\+::\+Xml\+Load\+Keyframe (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classxmlnode_1_1_c_xml_node}{xmlnode\+::\+C\+Xml\+Node}} $>$ \&}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+Channel type specific loading and keyframe creation 
+\begin{DoxyParams}{Parameters}
+{\em node} & Node to load from \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_c_anim_channel_angle_a7c56ed07ead2eab289e07dbd39c1bf90}{C\+Anim\+Channel\+Angle}}, and \mbox{\hyperlink{class_c_anim_channel_point_a7eb61594e08c2f0177f086bc3af9221f}{C\+Anim\+Channel\+Point}}.
+
+\mbox{\Hypertarget{class_c_anim_channel_ad4b87256e49f954eaf1dbcfa54fba34a}\label{class_c_anim_channel_ad4b87256e49f954eaf1dbcfa54fba34a}} 
+\index{CAnimChannel@{CAnimChannel}!XmlSave@{XmlSave}}
+\index{XmlSave@{XmlSave}!CAnimChannel@{CAnimChannel}}
+\doxysubsubsection{\texorpdfstring{XmlSave()}{XmlSave()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classxmlnode_1_1_c_xml_node}{xmlnode\+::\+C\+Xml\+Node}} $>$ C\+Anim\+Channel\+::\+Xml\+Save (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classxmlnode_1_1_c_xml_node}{xmlnode\+::\+C\+Xml\+Node}} $>$ \&}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Save this item to an X\+ML node 
+\begin{DoxyParams}{Parameters}
+{\em node} & The node we are going to be a child of \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Allocated X\+ML node. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_anim_channel_8h}{Anim\+Channel.\+h}}\item 
+\mbox{\hyperlink{_anim_channel_8cpp}{Anim\+Channel.\+cpp}}\end{DoxyCompactItemize}

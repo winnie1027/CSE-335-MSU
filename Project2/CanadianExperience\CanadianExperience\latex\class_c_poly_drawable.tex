@@ -1,0 +1,152 @@
+\hypertarget{class_c_poly_drawable}{}\doxysection{C\+Poly\+Drawable Class Reference}
+\label{class_c_poly_drawable}\index{CPolyDrawable@{CPolyDrawable}}
+
+
+{\ttfamily \#include $<$Poly\+Drawable.\+h$>$}
+
+Inheritance diagram for C\+Poly\+Drawable\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_poly_drawable}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_poly_drawable_a0afc2421a1a15fa7065423ccbe6d6ecc}{C\+Poly\+Drawable}} (const std\+::wstring \&name)
+\item 
+virtual \mbox{\hyperlink{class_c_poly_drawable_afc766fdf8f37312434063b3b615f410b}{$\sim$\+C\+Poly\+Drawable}} ()
+\item 
+\mbox{\hyperlink{class_c_poly_drawable_ae4265afa898200aa70a943cdea3f8123}{C\+Poly\+Drawable}} ()=delete
+\item 
+\mbox{\hyperlink{class_c_poly_drawable_abfdd10484ab2cb6ea99c01849cad4082}{C\+Poly\+Drawable}} (const \mbox{\hyperlink{class_c_poly_drawable}{C\+Poly\+Drawable}} \&)=delete
+\item 
+void \mbox{\hyperlink{class_c_poly_drawable_a86a6c65081b7feb556e5563b36a6ac8a}{operator=}} (const \mbox{\hyperlink{class_c_poly_drawable}{C\+Poly\+Drawable}} \&)=delete
+\item 
+virtual void \mbox{\hyperlink{class_c_poly_drawable_a701f45c8fabdec3de96b3048aa3a0190}{Draw}} (Gdiplus\+::\+Graphics $\ast$graphics) override
+\item 
+virtual bool \mbox{\hyperlink{class_c_poly_drawable_a4db3493e3bba3c4c51608a75d48f50e2}{Hit\+Test}} (Gdiplus\+::\+Point pos) override
+\item 
+void \mbox{\hyperlink{class_c_poly_drawable_a500a475002f4be3cfe6ed865aea0a827}{Add\+Point}} (Gdiplus\+::\+Point point)
+\item 
+void \mbox{\hyperlink{class_c_poly_drawable_a5d57281021db882ae059152f6f304aa0}{Set\+Color}} (Gdiplus\+::\+Color color)
+\item 
+Gdiplus\+::\+Color \mbox{\hyperlink{class_c_poly_drawable_a7fbb1acae4674e3ea1761db3891f68e8}{Get\+Color}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A drawable based on polygon images.
+
+This class has a list of points and draws a polygon drawable based on those points. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_poly_drawable_a0afc2421a1a15fa7065423ccbe6d6ecc}\label{class_c_poly_drawable_a0afc2421a1a15fa7065423ccbe6d6ecc}} 
+\index{CPolyDrawable@{CPolyDrawable}!CPolyDrawable@{CPolyDrawable}}
+\index{CPolyDrawable@{CPolyDrawable}!CPolyDrawable@{CPolyDrawable}}
+\doxysubsubsection{\texorpdfstring{CPolyDrawable()}{CPolyDrawable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily C\+Poly\+Drawable\+::\+C\+Poly\+Drawable (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{name }\end{DoxyParamCaption})}
+
+Constructor for a polygon object 
+\begin{DoxyParams}{Parameters}
+{\em name} & The drawable name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_poly_drawable_afc766fdf8f37312434063b3b615f410b}\label{class_c_poly_drawable_afc766fdf8f37312434063b3b615f410b}} 
+\index{CPolyDrawable@{CPolyDrawable}!````~CPolyDrawable@{$\sim$CPolyDrawable}}
+\index{````~CPolyDrawable@{$\sim$CPolyDrawable}!CPolyDrawable@{CPolyDrawable}}
+\doxysubsubsection{\texorpdfstring{$\sim$CPolyDrawable()}{~CPolyDrawable()}}
+{\footnotesize\ttfamily C\+Poly\+Drawable\+::$\sim$\+C\+Poly\+Drawable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destructor \mbox{\Hypertarget{class_c_poly_drawable_ae4265afa898200aa70a943cdea3f8123}\label{class_c_poly_drawable_ae4265afa898200aa70a943cdea3f8123}} 
+\index{CPolyDrawable@{CPolyDrawable}!CPolyDrawable@{CPolyDrawable}}
+\index{CPolyDrawable@{CPolyDrawable}!CPolyDrawable@{CPolyDrawable}}
+\doxysubsubsection{\texorpdfstring{CPolyDrawable()}{CPolyDrawable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily C\+Poly\+Drawable\+::\+C\+Poly\+Drawable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Default constructor disabled \mbox{\Hypertarget{class_c_poly_drawable_abfdd10484ab2cb6ea99c01849cad4082}\label{class_c_poly_drawable_abfdd10484ab2cb6ea99c01849cad4082}} 
+\index{CPolyDrawable@{CPolyDrawable}!CPolyDrawable@{CPolyDrawable}}
+\index{CPolyDrawable@{CPolyDrawable}!CPolyDrawable@{CPolyDrawable}}
+\doxysubsubsection{\texorpdfstring{CPolyDrawable()}{CPolyDrawable()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily C\+Poly\+Drawable\+::\+C\+Poly\+Drawable (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_poly_drawable}{C\+Poly\+Drawable}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Copy constructor disabled 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_poly_drawable_a500a475002f4be3cfe6ed865aea0a827}\label{class_c_poly_drawable_a500a475002f4be3cfe6ed865aea0a827}} 
+\index{CPolyDrawable@{CPolyDrawable}!AddPoint@{AddPoint}}
+\index{AddPoint@{AddPoint}!CPolyDrawable@{CPolyDrawable}}
+\doxysubsubsection{\texorpdfstring{AddPoint()}{AddPoint()}}
+{\footnotesize\ttfamily void C\+Poly\+Drawable\+::\+Add\+Point (\begin{DoxyParamCaption}\item[{Gdiplus\+::\+Point}]{point }\end{DoxyParamCaption})}
+
+Add a point to the polygon 
+\begin{DoxyParams}{Parameters}
+{\em point} & Point to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_poly_drawable_a701f45c8fabdec3de96b3048aa3a0190}\label{class_c_poly_drawable_a701f45c8fabdec3de96b3048aa3a0190}} 
+\index{CPolyDrawable@{CPolyDrawable}!Draw@{Draw}}
+\index{Draw@{Draw}!CPolyDrawable@{CPolyDrawable}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void C\+Poly\+Drawable\+::\+Draw (\begin{DoxyParamCaption}\item[{Gdiplus\+::\+Graphics $\ast$}]{graphics }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Draw our polygon. 
+\begin{DoxyParams}{Parameters}
+{\em graphics} & The graphics context to draw on \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_c_drawable_a9b6a9920a75d88d9ae321997495eaec7}{C\+Drawable}}.
+
+\mbox{\Hypertarget{class_c_poly_drawable_a7fbb1acae4674e3ea1761db3891f68e8}\label{class_c_poly_drawable_a7fbb1acae4674e3ea1761db3891f68e8}} 
+\index{CPolyDrawable@{CPolyDrawable}!GetColor@{GetColor}}
+\index{GetColor@{GetColor}!CPolyDrawable@{CPolyDrawable}}
+\doxysubsubsection{\texorpdfstring{GetColor()}{GetColor()}}
+{\footnotesize\ttfamily Gdiplus\+::\+Color C\+Poly\+Drawable\+::\+Get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the drawable color \begin{DoxyReturn}{Returns}
+Color 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_poly_drawable_a4db3493e3bba3c4c51608a75d48f50e2}\label{class_c_poly_drawable_a4db3493e3bba3c4c51608a75d48f50e2}} 
+\index{CPolyDrawable@{CPolyDrawable}!HitTest@{HitTest}}
+\index{HitTest@{HitTest}!CPolyDrawable@{CPolyDrawable}}
+\doxysubsubsection{\texorpdfstring{HitTest()}{HitTest()}}
+{\footnotesize\ttfamily bool C\+Poly\+Drawable\+::\+Hit\+Test (\begin{DoxyParamCaption}\item[{Gdiplus\+::\+Point}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Test to see if we hit this object with a mouse click 
+\begin{DoxyParams}{Parameters}
+{\em pos} & Click position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true it hit 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_drawable_a254350f7b5fad8763469585abe911d6f}{C\+Drawable}}.
+
+\mbox{\Hypertarget{class_c_poly_drawable_a86a6c65081b7feb556e5563b36a6ac8a}\label{class_c_poly_drawable_a86a6c65081b7feb556e5563b36a6ac8a}} 
+\index{CPolyDrawable@{CPolyDrawable}!operator=@{operator=}}
+\index{operator=@{operator=}!CPolyDrawable@{CPolyDrawable}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily void C\+Poly\+Drawable\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_poly_drawable}{C\+Poly\+Drawable}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Assignment operator disabled \mbox{\Hypertarget{class_c_poly_drawable_a5d57281021db882ae059152f6f304aa0}\label{class_c_poly_drawable_a5d57281021db882ae059152f6f304aa0}} 
+\index{CPolyDrawable@{CPolyDrawable}!SetColor@{SetColor}}
+\index{SetColor@{SetColor}!CPolyDrawable@{CPolyDrawable}}
+\doxysubsubsection{\texorpdfstring{SetColor()}{SetColor()}}
+{\footnotesize\ttfamily void C\+Poly\+Drawable\+::\+Set\+Color (\begin{DoxyParamCaption}\item[{Gdiplus\+::\+Color}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the color for the polygon 
+\begin{DoxyParams}{Parameters}
+{\em color} & New color to set \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_poly_drawable_8h}{Poly\+Drawable.\+h}}\item 
+\mbox{\hyperlink{_poly_drawable_8cpp}{Poly\+Drawable.\+cpp}}\end{DoxyCompactItemize}

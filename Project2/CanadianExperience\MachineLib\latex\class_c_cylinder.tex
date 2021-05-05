@@ -1,0 +1,295 @@
+\hypertarget{class_c_cylinder}{}\doxysection{C\+Cylinder Class Reference}
+\label{class_c_cylinder}\index{CCylinder@{CCylinder}}
+
+
+{\ttfamily \#include $<$Cylinder.\+h$>$}
+
+Inheritance diagram for C\+Cylinder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_cylinder}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_cylinder_a0962a276892cbeef24c32f0edf85487a}\label{class_c_cylinder_a0962a276892cbeef24c32f0edf85487a}} 
+\mbox{\hyperlink{class_c_cylinder_a0962a276892cbeef24c32f0edf85487a}{C\+Cylinder}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_cylinder_a30d736c2770edf8dde949740bb1e5852}\label{class_c_cylinder_a30d736c2770edf8dde949740bb1e5852}} 
+virtual \mbox{\hyperlink{class_c_cylinder_a30d736c2770edf8dde949740bb1e5852}{$\sim$\+C\+Cylinder}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_cylinder_a01a05d31d4bf5474071d6f6c155a3f56}\label{class_c_cylinder_a01a05d31d4bf5474071d6f6c155a3f56}} 
+\mbox{\hyperlink{class_c_cylinder_a01a05d31d4bf5474071d6f6c155a3f56}{C\+Cylinder}} (const \mbox{\hyperlink{class_c_cylinder}{C\+Cylinder}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor/disabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_cylinder_a2b703e7885c9c4a4df570553dcb217eb}\label{class_c_cylinder_a2b703e7885c9c4a4df570553dcb217eb}} 
+void \mbox{\hyperlink{class_c_cylinder_a2b703e7885c9c4a4df570553dcb217eb}{operator=}} (const \mbox{\hyperlink{class_c_cylinder}{C\+Cylinder}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator/disabled. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_cylinder_aeed6c51a396a65ad16215f3a63c798be}{Draw}} (Graphics $\ast$graphics, Point position) override
+\item 
+void \mbox{\hyperlink{class_c_cylinder_a67b4cedc4986cbf1f0d6a7fadae22c22}{Set\+Cylinder\+Rotation}} (double rotation)
+\item 
+void \mbox{\hyperlink{class_c_cylinder_a43bd3d1c4e59bf311ba672e52cc88907}{Set\+Base\+Rotation}} (double rotation)
+\item 
+void \mbox{\hyperlink{class_c_cylinder_ad47ea176b3936f1dec2374c0c24701c4}{Set\+Ram\+Rotation}} (double rotation)
+\item 
+void \mbox{\hyperlink{class_c_cylinder_aa535411680c10f9b3ffc6f0a11f5d7cf}{Set\+Max\+Extent}} (double extent)
+\item 
+void \mbox{\hyperlink{class_c_cylinder_a86ea42f2f95caeda792565382a165ca0}{Set\+Mount}} (std\+::wstring filename)
+\item 
+void \mbox{\hyperlink{class_c_cylinder_aff6b6ffcda731125b4a340158d147002}{Set\+Cylinder}} (std\+::wstring filename)
+\item 
+void \mbox{\hyperlink{class_c_cylinder_a683c0dc0ff9ba969cf92b19bce4b31b0}{Set\+Ram}} (std\+::wstring filename)
+\item 
+void \mbox{\hyperlink{class_c_cylinder_a2f276f1170082c948712f1b28dcf2f04}{Set\+Position}} (int x, int y) override
+\item 
+int \mbox{\hyperlink{class_c_cylinder_a86f73c17583e5a35c63feff40a4f7ac2}{Get\+Mount\+Width}} ()
+\item 
+int \mbox{\hyperlink{class_c_cylinder_a899de8e3f4443512ad1a4ef52bfbf763}{Get\+Cylinder\+Width}} ()
+\item 
+int \mbox{\hyperlink{class_c_cylinder_a6b954b8631011c4b58877f01f8bf7345}{Get\+Ram\+Width}} ()
+\item 
+void \mbox{\hyperlink{class_c_cylinder_aecd280a3950fca8071d59254bedc8dd0}{Rectangle\+Mount}} (int x, int y, int wid=0, int hit=0)
+\item 
+void \mbox{\hyperlink{class_c_cylinder_a2c8b177439a3ce6ab2521c5a05ee8ee4}{Rectangle\+Cylinder}} (int x, int y, int wid=0, int hit=0)
+\item 
+void \mbox{\hyperlink{class_c_cylinder_a60c1258979ac052c8188ef1a7b7e2d54}{Rectangle\+Ram}} (int x, int y, int wid=0, int hit=0)
+\item 
+\mbox{\hyperlink{class_c_air_sink}{C\+Air\+Sink}} $\ast$ \mbox{\hyperlink{class_c_cylinder_a56ef52065ad8395c7438f30c978affe5}{Get\+Sink}} ()
+\item 
+virtual void \mbox{\hyperlink{class_c_cylinder_ad5614813c66896bb651315861abcd7e2}{Set\+Air\+Pressure}} (double pressure) override
+\item 
+void \mbox{\hyperlink{class_c_cylinder_a103ed171dd2178c342aa56f8fe668574}{Set\+Motion\+Sink}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_instrument}{C\+Instrument}} $>$ instrument)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Cylinder on the instrument. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_cylinder_aeed6c51a396a65ad16215f3a63c798be}\label{class_c_cylinder_aeed6c51a396a65ad16215f3a63c798be}} 
+\index{CCylinder@{CCylinder}!Draw@{Draw}}
+\index{Draw@{Draw}!CCylinder@{CCylinder}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void C\+Cylinder\+::\+Draw (\begin{DoxyParamCaption}\item[{Graphics $\ast$}]{graphics,  }\item[{Point}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Draw the machine at the currently specified location 
+\begin{DoxyParams}{Parameters}
+{\em graphics} & G\+D\+I+ Graphics object \\
+\hline
+{\em position} & Position of the graphics object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_cylinder_a899de8e3f4443512ad1a4ef52bfbf763}\label{class_c_cylinder_a899de8e3f4443512ad1a4ef52bfbf763}} 
+\index{CCylinder@{CCylinder}!GetCylinderWidth@{GetCylinderWidth}}
+\index{GetCylinderWidth@{GetCylinderWidth}!CCylinder@{CCylinder}}
+\doxysubsubsection{\texorpdfstring{GetCylinderWidth()}{GetCylinderWidth()}}
+{\footnotesize\ttfamily int C\+Cylinder\+::\+Get\+Cylinder\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the width of any set image for this polygon. This may not be the width we actually draw, but is the size of the polygon itself. \begin{DoxyReturn}{Returns}
+Width in pixels 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_cylinder_a86f73c17583e5a35c63feff40a4f7ac2}\label{class_c_cylinder_a86f73c17583e5a35c63feff40a4f7ac2}} 
+\index{CCylinder@{CCylinder}!GetMountWidth@{GetMountWidth}}
+\index{GetMountWidth@{GetMountWidth}!CCylinder@{CCylinder}}
+\doxysubsubsection{\texorpdfstring{GetMountWidth()}{GetMountWidth()}}
+{\footnotesize\ttfamily int C\+Cylinder\+::\+Get\+Mount\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the width of any set image for this polygon. This may not be the width we actually draw, but is the size of the polygon itself. \begin{DoxyReturn}{Returns}
+Width in pixels 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_cylinder_a6b954b8631011c4b58877f01f8bf7345}\label{class_c_cylinder_a6b954b8631011c4b58877f01f8bf7345}} 
+\index{CCylinder@{CCylinder}!GetRamWidth@{GetRamWidth}}
+\index{GetRamWidth@{GetRamWidth}!CCylinder@{CCylinder}}
+\doxysubsubsection{\texorpdfstring{GetRamWidth()}{GetRamWidth()}}
+{\footnotesize\ttfamily int C\+Cylinder\+::\+Get\+Ram\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the width of any set image for this polygon. This may not be the width we actually draw, but is the size of the polygon itself. \begin{DoxyReturn}{Returns}
+Width in pixels 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_cylinder_a56ef52065ad8395c7438f30c978affe5}\label{class_c_cylinder_a56ef52065ad8395c7438f30c978affe5}} 
+\index{CCylinder@{CCylinder}!GetSink@{GetSink}}
+\index{GetSink@{GetSink}!CCylinder@{CCylinder}}
+\doxysubsubsection{\texorpdfstring{GetSink()}{GetSink()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_air_sink}{C\+Air\+Sink}}$\ast$ C\+Cylinder\+::\+Get\+Sink (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Air sink getter \begin{DoxyReturn}{Returns}
+Air sink 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_cylinder_a2c8b177439a3ce6ab2521c5a05ee8ee4}\label{class_c_cylinder_a2c8b177439a3ce6ab2521c5a05ee8ee4}} 
+\index{CCylinder@{CCylinder}!RectangleCylinder@{RectangleCylinder}}
+\index{RectangleCylinder@{RectangleCylinder}!CCylinder@{CCylinder}}
+\doxysubsubsection{\texorpdfstring{RectangleCylinder()}{RectangleCylinder()}}
+{\footnotesize\ttfamily void C\+Cylinder\+::\+Rectangle\+Cylinder (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{wid = {\ttfamily 0},  }\item[{int}]{hit = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a rectangle 
+\begin{DoxyParams}{Parameters}
+{\em x} & Left side X \\
+\hline
+{\em y} & Bottom left Y \\
+\hline
+{\em wid} & Width of the rectangle. If not supplied, use an image width \\
+\hline
+{\em hit} & Height of the rectangle. If not supplied, use an image height \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_cylinder_aecd280a3950fca8071d59254bedc8dd0}\label{class_c_cylinder_aecd280a3950fca8071d59254bedc8dd0}} 
+\index{CCylinder@{CCylinder}!RectangleMount@{RectangleMount}}
+\index{RectangleMount@{RectangleMount}!CCylinder@{CCylinder}}
+\doxysubsubsection{\texorpdfstring{RectangleMount()}{RectangleMount()}}
+{\footnotesize\ttfamily void C\+Cylinder\+::\+Rectangle\+Mount (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{wid = {\ttfamily 0},  }\item[{int}]{hit = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a rectangle 
+\begin{DoxyParams}{Parameters}
+{\em x} & Left side X \\
+\hline
+{\em y} & Bottom left Y \\
+\hline
+{\em wid} & Width of the rectangle. If not supplied, use an image width \\
+\hline
+{\em hit} & Height of the rectangle. If not supplied, use an image height \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_cylinder_a60c1258979ac052c8188ef1a7b7e2d54}\label{class_c_cylinder_a60c1258979ac052c8188ef1a7b7e2d54}} 
+\index{CCylinder@{CCylinder}!RectangleRam@{RectangleRam}}
+\index{RectangleRam@{RectangleRam}!CCylinder@{CCylinder}}
+\doxysubsubsection{\texorpdfstring{RectangleRam()}{RectangleRam()}}
+{\footnotesize\ttfamily void C\+Cylinder\+::\+Rectangle\+Ram (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{wid = {\ttfamily 0},  }\item[{int}]{hit = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a rectangle 
+\begin{DoxyParams}{Parameters}
+{\em x} & Left side X \\
+\hline
+{\em y} & Bottom left Y \\
+\hline
+{\em wid} & Width of the rectangle. If not supplied, use an image width \\
+\hline
+{\em hit} & Height of the rectangle. If not supplied, use an image height \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_cylinder_ad5614813c66896bb651315861abcd7e2}\label{class_c_cylinder_ad5614813c66896bb651315861abcd7e2}} 
+\index{CCylinder@{CCylinder}!SetAirPressure@{SetAirPressure}}
+\index{SetAirPressure@{SetAirPressure}!CCylinder@{CCylinder}}
+\doxysubsubsection{\texorpdfstring{SetAirPressure()}{SetAirPressure()}}
+{\footnotesize\ttfamily void C\+Cylinder\+::\+Set\+Air\+Pressure (\begin{DoxyParamCaption}\item[{double}]{pressure }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Setter for air pressure. 
+\begin{DoxyParams}{Parameters}
+{\em pressure} & Air pressure \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_c_air_sink_destination_af3b07200a2e1af6affe7686bbf0f7bad}{C\+Air\+Sink\+Destination}}.
+
+\mbox{\Hypertarget{class_c_cylinder_a43bd3d1c4e59bf311ba672e52cc88907}\label{class_c_cylinder_a43bd3d1c4e59bf311ba672e52cc88907}} 
+\index{CCylinder@{CCylinder}!SetBaseRotation@{SetBaseRotation}}
+\index{SetBaseRotation@{SetBaseRotation}!CCylinder@{CCylinder}}
+\doxysubsubsection{\texorpdfstring{SetBaseRotation()}{SetBaseRotation()}}
+{\footnotesize\ttfamily void C\+Cylinder\+::\+Set\+Base\+Rotation (\begin{DoxyParamCaption}\item[{double}]{rotation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Cylinder baserotator setter 
+\begin{DoxyParams}{Parameters}
+{\em rotation} & Rotation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_cylinder_aff6b6ffcda731125b4a340158d147002}\label{class_c_cylinder_aff6b6ffcda731125b4a340158d147002}} 
+\index{CCylinder@{CCylinder}!SetCylinder@{SetCylinder}}
+\index{SetCylinder@{SetCylinder}!CCylinder@{CCylinder}}
+\doxysubsubsection{\texorpdfstring{SetCylinder()}{SetCylinder()}}
+{\footnotesize\ttfamily void C\+Cylinder\+::\+Set\+Cylinder (\begin{DoxyParamCaption}\item[{std\+::wstring}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the cylinder image. 
+\begin{DoxyParams}{Parameters}
+{\em filename} & Cylinder image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_cylinder_a67b4cedc4986cbf1f0d6a7fadae22c22}\label{class_c_cylinder_a67b4cedc4986cbf1f0d6a7fadae22c22}} 
+\index{CCylinder@{CCylinder}!SetCylinderRotation@{SetCylinderRotation}}
+\index{SetCylinderRotation@{SetCylinderRotation}!CCylinder@{CCylinder}}
+\doxysubsubsection{\texorpdfstring{SetCylinderRotation()}{SetCylinderRotation()}}
+{\footnotesize\ttfamily void C\+Cylinder\+::\+Set\+Cylinder\+Rotation (\begin{DoxyParamCaption}\item[{double}]{rotation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Cylinder rotator setter 
+\begin{DoxyParams}{Parameters}
+{\em rotation} & Rotation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_cylinder_aa535411680c10f9b3ffc6f0a11f5d7cf}\label{class_c_cylinder_aa535411680c10f9b3ffc6f0a11f5d7cf}} 
+\index{CCylinder@{CCylinder}!SetMaxExtent@{SetMaxExtent}}
+\index{SetMaxExtent@{SetMaxExtent}!CCylinder@{CCylinder}}
+\doxysubsubsection{\texorpdfstring{SetMaxExtent()}{SetMaxExtent()}}
+{\footnotesize\ttfamily void C\+Cylinder\+::\+Set\+Max\+Extent (\begin{DoxyParamCaption}\item[{double}]{extent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the max extension for rams 
+\begin{DoxyParams}{Parameters}
+{\em extent} & Max extent \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_cylinder_a103ed171dd2178c342aa56f8fe668574}\label{class_c_cylinder_a103ed171dd2178c342aa56f8fe668574}} 
+\index{CCylinder@{CCylinder}!SetMotionSink@{SetMotionSink}}
+\index{SetMotionSink@{SetMotionSink}!CCylinder@{CCylinder}}
+\doxysubsubsection{\texorpdfstring{SetMotionSink()}{SetMotionSink()}}
+{\footnotesize\ttfamily void C\+Cylinder\+::\+Set\+Motion\+Sink (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_instrument}{C\+Instrument}} $>$}]{instrument }\end{DoxyParamCaption})}
+
+Motion sink setter 
+\begin{DoxyParams}{Parameters}
+{\em instrument} & The instrument this motion sink is \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_cylinder_a86ea42f2f95caeda792565382a165ca0}\label{class_c_cylinder_a86ea42f2f95caeda792565382a165ca0}} 
+\index{CCylinder@{CCylinder}!SetMount@{SetMount}}
+\index{SetMount@{SetMount}!CCylinder@{CCylinder}}
+\doxysubsubsection{\texorpdfstring{SetMount()}{SetMount()}}
+{\footnotesize\ttfamily void C\+Cylinder\+::\+Set\+Mount (\begin{DoxyParamCaption}\item[{std\+::wstring}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the mount image. 
+\begin{DoxyParams}{Parameters}
+{\em filename} & Mount image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_cylinder_a2f276f1170082c948712f1b28dcf2f04}\label{class_c_cylinder_a2f276f1170082c948712f1b28dcf2f04}} 
+\index{CCylinder@{CCylinder}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!CCylinder@{CCylinder}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily void C\+Cylinder\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Set the position for the root of the machine 
+\begin{DoxyParams}{Parameters}
+{\em x} & X location (pixels) \\
+\hline
+{\em y} & Y location (pixels) \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_component_a11f15720ac2df4294e7f5f892a381942}{C\+Component}}.
+
+\mbox{\Hypertarget{class_c_cylinder_a683c0dc0ff9ba969cf92b19bce4b31b0}\label{class_c_cylinder_a683c0dc0ff9ba969cf92b19bce4b31b0}} 
+\index{CCylinder@{CCylinder}!SetRam@{SetRam}}
+\index{SetRam@{SetRam}!CCylinder@{CCylinder}}
+\doxysubsubsection{\texorpdfstring{SetRam()}{SetRam()}}
+{\footnotesize\ttfamily void C\+Cylinder\+::\+Set\+Ram (\begin{DoxyParamCaption}\item[{std\+::wstring}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the ram image. 
+\begin{DoxyParams}{Parameters}
+{\em filename} & Ram image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_cylinder_ad47ea176b3936f1dec2374c0c24701c4}\label{class_c_cylinder_ad47ea176b3936f1dec2374c0c24701c4}} 
+\index{CCylinder@{CCylinder}!SetRamRotation@{SetRamRotation}}
+\index{SetRamRotation@{SetRamRotation}!CCylinder@{CCylinder}}
+\doxysubsubsection{\texorpdfstring{SetRamRotation()}{SetRamRotation()}}
+{\footnotesize\ttfamily void C\+Cylinder\+::\+Set\+Ram\+Rotation (\begin{DoxyParamCaption}\item[{double}]{rotation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Cylinder ram rotator setter 
+\begin{DoxyParams}{Parameters}
+{\em rotation} & Rotation \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_cylinder_8h}{Cylinder.\+h}}\item 
+\mbox{\hyperlink{_cylinder_8cpp}{Cylinder.\+cpp}}\end{DoxyCompactItemize}

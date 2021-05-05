@@ -1,0 +1,76 @@
+\hypertarget{class_c_air_source}{}\doxysection{C\+Air\+Source Class Reference}
+\label{class_c_air_source}\index{CAirSource@{CAirSource}}
+
+
+{\ttfamily \#include $<$Air\+Source.\+h$>$}
+
+Inheritance diagram for C\+Air\+Source\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_air_source}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_air_source_af23fb76f14c9a3ed718028adb594ad60}\label{class_c_air_source_af23fb76f14c9a3ed718028adb594ad60}} 
+\mbox{\hyperlink{class_c_air_source_af23fb76f14c9a3ed718028adb594ad60}{C\+Air\+Source}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_air_source_a5252c918bfdb2b12f6633875747d2fc4}\label{class_c_air_source_a5252c918bfdb2b12f6633875747d2fc4}} 
+virtual \mbox{\hyperlink{class_c_air_source_a5252c918bfdb2b12f6633875747d2fc4}{$\sim$\+C\+Air\+Source}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_air_source_a9f758ac404e43f651f333cc42d570cea}\label{class_c_air_source_a9f758ac404e43f651f333cc42d570cea}} 
+\mbox{\hyperlink{class_c_air_source_a9f758ac404e43f651f333cc42d570cea}{C\+Air\+Source}} (const \mbox{\hyperlink{class_c_air_source}{C\+Air\+Source}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor/disabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_air_source_a36fc9a0dcbec88cd06be5ed345f67355}\label{class_c_air_source_a36fc9a0dcbec88cd06be5ed345f67355}} 
+void \mbox{\hyperlink{class_c_air_source_a36fc9a0dcbec88cd06be5ed345f67355}{operator=}} (const \mbox{\hyperlink{class_c_air_source}{C\+Air\+Source}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator/disabled. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_air_source_a840b5a1b209eb4e577c035f0347d2591}{Set\+Air\+Pressure}} (double pressure)
+\item 
+void \mbox{\hyperlink{class_c_air_source_a61dd063e20fe3a25a8209957d6ea397b}{Set\+Sink}} (\mbox{\hyperlink{class_c_air_sink}{C\+Air\+Sink}} $\ast$air\+Sink)
+\item 
+\mbox{\hyperlink{class_c_air_sink}{C\+Air\+Sink}} $\ast$ \mbox{\hyperlink{class_c_air_source_a40d248a25ab74cafaf1fb7f4032ec9e3}{Get\+Sink}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Air source where the air comes from. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_air_source_a40d248a25ab74cafaf1fb7f4032ec9e3}\label{class_c_air_source_a40d248a25ab74cafaf1fb7f4032ec9e3}} 
+\index{CAirSource@{CAirSource}!GetSink@{GetSink}}
+\index{GetSink@{GetSink}!CAirSource@{CAirSource}}
+\doxysubsubsection{\texorpdfstring{GetSink()}{GetSink()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_air_sink}{C\+Air\+Sink}}$\ast$ C\+Air\+Source\+::\+Get\+Sink (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Air sink getter \begin{DoxyReturn}{Returns}
+m\+Airsink 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_air_source_a840b5a1b209eb4e577c035f0347d2591}\label{class_c_air_source_a840b5a1b209eb4e577c035f0347d2591}} 
+\index{CAirSource@{CAirSource}!SetAirPressure@{SetAirPressure}}
+\index{SetAirPressure@{SetAirPressure}!CAirSource@{CAirSource}}
+\doxysubsubsection{\texorpdfstring{SetAirPressure()}{SetAirPressure()}}
+{\footnotesize\ttfamily void C\+Air\+Source\+::\+Set\+Air\+Pressure (\begin{DoxyParamCaption}\item[{double}]{pressure }\end{DoxyParamCaption})}
+
+Air pressure setter 
+\begin{DoxyParams}{Parameters}
+{\em pressure} & Air pressure \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_air_source_a61dd063e20fe3a25a8209957d6ea397b}\label{class_c_air_source_a61dd063e20fe3a25a8209957d6ea397b}} 
+\index{CAirSource@{CAirSource}!SetSink@{SetSink}}
+\index{SetSink@{SetSink}!CAirSource@{CAirSource}}
+\doxysubsubsection{\texorpdfstring{SetSink()}{SetSink()}}
+{\footnotesize\ttfamily void C\+Air\+Source\+::\+Set\+Sink (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_air_sink}{C\+Air\+Sink}} $\ast$}]{air\+Sink }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Airsink setter 
+\begin{DoxyParams}{Parameters}
+{\em air\+Sink} & Air sink \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_air_source_8h}{Air\+Source.\+h}}\item 
+\mbox{\hyperlink{_air_source_8cpp}{Air\+Source.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,89 @@
+\hypertarget{class_c_wav_channel}{}\doxysection{C\+Wav\+Channel Class Reference}
+\label{class_c_wav_channel}\index{CWavChannel@{CWavChannel}}
+
+
+{\ttfamily \#include $<$Wav\+Channel.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_wav_channel_a47ab6d8c151472e222c34013ff953bca}{C\+Wav\+Channel}} (\mbox{\hyperlink{class_c_wav_player}{C\+Wav\+Player}} $\ast$player, std\+::wstring audiofile)
+\item 
+\mbox{\hyperlink{class_c_wav_channel_a7bfb2c27453e51b32ba23e69a3ec4ae5}{$\sim$\+C\+Wav\+Channel}} ()
+\item 
+\mbox{\hyperlink{class_c_wav_channel_ae38591a2afe2f01c10fd8aa03213289e}{C\+Wav\+Channel}} ()=delete
+\item 
+\mbox{\hyperlink{class_c_wav_channel_a7312df4bae15cf2df1332dd7c1c53ce6}{C\+Wav\+Channel}} (const \mbox{\hyperlink{class_c_wav_channel}{C\+Wav\+Channel}} \&)=delete
+\item 
+void \mbox{\hyperlink{class_c_wav_channel_ae1bfffd500b72a26345aaa61c6c45170}{operator=}} (const \mbox{\hyperlink{class_c_wav_channel}{C\+Wav\+Channel}} \&)=delete
+\item 
+void \mbox{\hyperlink{class_c_wav_channel_a7c0e92c17fde5b3d321f650fbb91330e}{Play}} ()
+\item 
+void \mbox{\hyperlink{class_c_wav_channel_a1502cc5e4a91e8e20867224cdd09b12e}{Kill}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that represents one channel that can play W\+AV files. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_wav_channel_a47ab6d8c151472e222c34013ff953bca}\label{class_c_wav_channel_a47ab6d8c151472e222c34013ff953bca}} 
+\index{CWavChannel@{CWavChannel}!CWavChannel@{CWavChannel}}
+\index{CWavChannel@{CWavChannel}!CWavChannel@{CWavChannel}}
+\doxysubsubsection{\texorpdfstring{CWavChannel()}{CWavChannel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily C\+Wav\+Channel\+::\+C\+Wav\+Channel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_wav_player}{C\+Wav\+Player}} $\ast$}]{player,  }\item[{std\+::wstring}]{audiofile }\end{DoxyParamCaption})}
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em player} & The player this channel is associated with \\
+\hline
+{\em audiofile} & The filename for the audio file to load into this channel. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_wav_channel_a7bfb2c27453e51b32ba23e69a3ec4ae5}\label{class_c_wav_channel_a7bfb2c27453e51b32ba23e69a3ec4ae5}} 
+\index{CWavChannel@{CWavChannel}!````~CWavChannel@{$\sim$CWavChannel}}
+\index{````~CWavChannel@{$\sim$CWavChannel}!CWavChannel@{CWavChannel}}
+\doxysubsubsection{\texorpdfstring{$\sim$CWavChannel()}{~CWavChannel()}}
+{\footnotesize\ttfamily C\+Wav\+Channel\+::$\sim$\+C\+Wav\+Channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor \mbox{\Hypertarget{class_c_wav_channel_ae38591a2afe2f01c10fd8aa03213289e}\label{class_c_wav_channel_ae38591a2afe2f01c10fd8aa03213289e}} 
+\index{CWavChannel@{CWavChannel}!CWavChannel@{CWavChannel}}
+\index{CWavChannel@{CWavChannel}!CWavChannel@{CWavChannel}}
+\doxysubsubsection{\texorpdfstring{CWavChannel()}{CWavChannel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily C\+Wav\+Channel\+::\+C\+Wav\+Channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Default constructor disabled \mbox{\Hypertarget{class_c_wav_channel_a7312df4bae15cf2df1332dd7c1c53ce6}\label{class_c_wav_channel_a7312df4bae15cf2df1332dd7c1c53ce6}} 
+\index{CWavChannel@{CWavChannel}!CWavChannel@{CWavChannel}}
+\index{CWavChannel@{CWavChannel}!CWavChannel@{CWavChannel}}
+\doxysubsubsection{\texorpdfstring{CWavChannel()}{CWavChannel()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily C\+Wav\+Channel\+::\+C\+Wav\+Channel (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_wav_channel}{C\+Wav\+Channel}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Copy constructor disabled 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_wav_channel_a1502cc5e4a91e8e20867224cdd09b12e}\label{class_c_wav_channel_a1502cc5e4a91e8e20867224cdd09b12e}} 
+\index{CWavChannel@{CWavChannel}!Kill@{Kill}}
+\index{Kill@{Kill}!CWavChannel@{CWavChannel}}
+\doxysubsubsection{\texorpdfstring{Kill()}{Kill()}}
+{\footnotesize\ttfamily void C\+Wav\+Channel\+::\+Kill (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Kill all playback on this channel.
+
+This is done prior to destruction if the player is destroyed first. \mbox{\Hypertarget{class_c_wav_channel_ae1bfffd500b72a26345aaa61c6c45170}\label{class_c_wav_channel_ae1bfffd500b72a26345aaa61c6c45170}} 
+\index{CWavChannel@{CWavChannel}!operator=@{operator=}}
+\index{operator=@{operator=}!CWavChannel@{CWavChannel}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily void C\+Wav\+Channel\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_wav_channel}{C\+Wav\+Channel}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Assignment operator disabled \mbox{\Hypertarget{class_c_wav_channel_a7c0e92c17fde5b3d321f650fbb91330e}\label{class_c_wav_channel_a7c0e92c17fde5b3d321f650fbb91330e}} 
+\index{CWavChannel@{CWavChannel}!Play@{Play}}
+\index{Play@{Play}!CWavChannel@{CWavChannel}}
+\doxysubsubsection{\texorpdfstring{Play()}{Play()}}
+{\footnotesize\ttfamily void C\+Wav\+Channel\+::\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Play the audio file on this channel. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_wav_channel_8h}{Wav\+Channel.\+h}}\item 
+\mbox{\hyperlink{_wav_channel_8cpp}{Wav\+Channel.\+cpp}}\end{DoxyCompactItemize}

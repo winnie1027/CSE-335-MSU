@@ -1,0 +1,41 @@
+\hypertarget{_view_timeline_8cpp}{}\doxysection{View\+Timeline.\+cpp File Reference}
+\label{_view_timeline_8cpp}\index{ViewTimeline.cpp@{ViewTimeline.cpp}}
+{\ttfamily \#include \char`\"{}pch.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Canadian\+Experience.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}View\+Timeline.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Double\+Buffer\+D\+C.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Main\+Frm.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Timeline.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Picture.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Actor.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_view_timeline_8cpp_a00c2e195d5351bdc92a84a7fc4c5a7c7}\label{_view_timeline_8cpp_a00c2e195d5351bdc92a84a7fc4c5a7c7}} 
+const int \mbox{\hyperlink{_view_timeline_8cpp_a00c2e195d5351bdc92a84a7fc4c5a7c7}{Window\+Height}} = 65
+\begin{DoxyCompactList}\small\item\em The window height. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_view_timeline_8cpp_a74f095c6b0b9640491938519705f01d3}\label{_view_timeline_8cpp_a74f095c6b0b9640491938519705f01d3}} 
+const int \mbox{\hyperlink{_view_timeline_8cpp_a74f095c6b0b9640491938519705f01d3}{Tick\+Spacing}} = 3
+\begin{DoxyCompactList}\small\item\em The spacing between ticks in the timeline. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_view_timeline_8cpp_a07b719855173cf38db9f73c533533324}\label{_view_timeline_8cpp_a07b719855173cf38db9f73c533533324}} 
+const int \mbox{\hyperlink{_view_timeline_8cpp_a07b719855173cf38db9f73c533533324}{Tick\+Short}} = 10
+\begin{DoxyCompactList}\small\item\em The length of a short tick mark. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_view_timeline_8cpp_a897dba2e625242609ec8ab570c0a35e7}\label{_view_timeline_8cpp_a897dba2e625242609ec8ab570c0a35e7}} 
+const int \mbox{\hyperlink{_view_timeline_8cpp_a897dba2e625242609ec8ab570c0a35e7}{Tick\+Long}} = 20
+\begin{DoxyCompactList}\small\item\em The length of a long tick mark. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_view_timeline_8cpp_ad34b37c256a63d8acb434f87af3cf735}\label{_view_timeline_8cpp_ad34b37c256a63d8acb434f87af3cf735}} 
+const int \mbox{\hyperlink{_view_timeline_8cpp_ad34b37c256a63d8acb434f87af3cf735}{Tick\+Under}} = 10
+\begin{DoxyCompactList}\small\item\em The amount of space to leave under the tick marks. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_view_timeline_8cpp_a129135cfe09a40c577376d5733e11bdf}\label{_view_timeline_8cpp_a129135cfe09a40c577376d5733e11bdf}} 
+const int \mbox{\hyperlink{_view_timeline_8cpp_a129135cfe09a40c577376d5733e11bdf}{Border\+Left}} = 10
+\begin{DoxyCompactList}\small\item\em Space to the left of the scale. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_view_timeline_8cpp_ac9d771a78710d0536ffdcda84a07c37b}\label{_view_timeline_8cpp_ac9d771a78710d0536ffdcda84a07c37b}} 
+const int \mbox{\hyperlink{_view_timeline_8cpp_ac9d771a78710d0536ffdcda84a07c37b}{Border\+Right}} = 10
+\begin{DoxyCompactList}\small\item\em Space to the right of the scale. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Charles B. Owen 
+\end{DoxyAuthor}

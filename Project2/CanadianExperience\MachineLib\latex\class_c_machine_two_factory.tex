@@ -1,0 +1,86 @@
+\hypertarget{class_c_machine_two_factory}{}\doxysection{C\+Machine\+Two\+Factory Class Reference}
+\label{class_c_machine_two_factory}\index{CMachineTwoFactory@{CMachineTwoFactory}}
+
+
+{\ttfamily \#include $<$Machine\+Two\+Factory.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_machine_two_factory_a8a33817e1eb24a715665a504719a507d}\label{class_c_machine_two_factory_a8a33817e1eb24a715665a504719a507d}} 
+\mbox{\hyperlink{class_c_machine_two_factory_a8a33817e1eb24a715665a504719a507d}{C\+Machine\+Two\+Factory}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_machine_two_factory_a33bd776528177ccf2689a43f945bc5a9}\label{class_c_machine_two_factory_a33bd776528177ccf2689a43f945bc5a9}} 
+virtual \mbox{\hyperlink{class_c_machine_two_factory_a33bd776528177ccf2689a43f945bc5a9}{$\sim$\+C\+Machine\+Two\+Factory}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_machine_custom}{C\+Machine\+Custom}} $>$ \mbox{\hyperlink{class_c_machine_two_factory_af351ad89d2b3222fd1aa50d978218040}{Create}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The machine factory that creates machine two. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_machine_two_factory_af351ad89d2b3222fd1aa50d978218040}\label{class_c_machine_two_factory_af351ad89d2b3222fd1aa50d978218040}} 
+\index{CMachineTwoFactory@{CMachineTwoFactory}!Create@{Create}}
+\index{Create@{Create}!CMachineTwoFactory@{CMachineTwoFactory}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_machine_custom}{C\+Machine\+Custom}} $>$ C\+Machine\+Two\+Factory\+::\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Create Machine \#2 \begin{DoxyReturn}{Returns}
+Working machine 
+\end{DoxyReturn}
+Width to draw the card on the screen in pixels
+
+Height to draw the card on the screen in pixels
+
+Amount of offset the center of the card so it will appear at the right place relative to the card reader.
+
+Y dimension of the offset
+
+Width of a card column in pixels
+
+Height of a card row in pixels
+
+X offset for the first column (left side)
+
+Y offset to the first row (0\textquotesingle{}s) There are actually two rows above this that can be used
+
+Width of a punched hole
+
+Height of a punched hole
+
+Any average luminance below this level is considered a punched hole
+
+Y offset to the first card reader output in pixels
+
+X offset to the first card reader output in pixels
+
+X spacing for the outputs
+
+The chime hammer mount image
+
+The chime hammer image
+
+The chime itself
+
+Width to draw the actual chime
+
+Offset of the Chime relative to the origin of this component X value
+
+Offset of the Chime Y value
+
+The location in the hammer image for the pivot point X
+
+The location in the hammer image for the pivot point X
+
+Amount to rotate hammer away from chime in unit rotations
+
+Image for the back of the card reader
+
+Image for the front of the card reader
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_machine_two_factory_8h}{Machine\+Two\+Factory.\+h}}\item 
+\mbox{\hyperlink{_machine_two_factory_8cpp}{Machine\+Two\+Factory.\+cpp}}\end{DoxyCompactItemize}

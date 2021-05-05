@@ -1,0 +1,175 @@
+\hypertarget{class_c_shape}{}\doxysection{C\+Shape Class Reference}
+\label{class_c_shape}\index{CShape@{CShape}}
+
+
+{\ttfamily \#include $<$Shape.\+h$>$}
+
+Inheritance diagram for C\+Shape\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_shape}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_shape_a27fbb13957599c91d13a69e3f1493585}\label{class_c_shape_a27fbb13957599c91d13a69e3f1493585}} 
+\mbox{\hyperlink{class_c_shape_a27fbb13957599c91d13a69e3f1493585}{C\+Shape}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_shape_aa77f9a9c44fef703da5c337075ed0b9d}\label{class_c_shape_aa77f9a9c44fef703da5c337075ed0b9d}} 
+virtual \mbox{\hyperlink{class_c_shape_aa77f9a9c44fef703da5c337075ed0b9d}{$\sim$\+C\+Shape}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_shape_a4b61396c497b392bda4e31462181b263}\label{class_c_shape_a4b61396c497b392bda4e31462181b263}} 
+\mbox{\hyperlink{class_c_shape_a4b61396c497b392bda4e31462181b263}{C\+Shape}} (const \mbox{\hyperlink{class_c_shape}{C\+Shape}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor/disabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_shape_a602d09cc6ddb79ede0036a996f116e0a}\label{class_c_shape_a602d09cc6ddb79ede0036a996f116e0a}} 
+void \mbox{\hyperlink{class_c_shape_a602d09cc6ddb79ede0036a996f116e0a}{operator=}} (const \mbox{\hyperlink{class_c_shape}{C\+Shape}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator/disabled. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_shape_ab00c7f999799241e1edf169c4d2eaf2e}{Draw}} (Graphics $\ast$graphics, Point position) override
+\item 
+void \mbox{\hyperlink{class_c_shape_abf5241aba8e355d1c9dce6dd34882c46}{Rectangle}} (int x, int y, int wid=0, int hit=0)
+\item 
+void \mbox{\hyperlink{class_c_shape_a37c196ecc171ce88eda0d654e34ac442}{Set\+Image}} (std\+::wstring filename)
+\item 
+int \mbox{\hyperlink{class_c_shape_ac5fe3586f354ef20ee545fb0de6efad9}{Get\+Image\+Width}} ()
+\item 
+int \mbox{\hyperlink{class_c_shape_ae548feb735038c85ab4c1529f6fab49a}{Get\+Image\+Height}} ()
+\item 
+void \mbox{\hyperlink{class_c_shape_a06b364c057672c5598b0462c81ffebbe}{Set\+Color}} (Gdiplus\+::\+Color color)
+\item 
+void \mbox{\hyperlink{class_c_shape_a6317307f34348634070dff0ecb88c3d0}{Set\+Position}} (int x, int y) override
+\item 
+void \mbox{\hyperlink{class_c_shape_a508dd191bcdaa478eb43128915901434}{Set\+Audio\+Channel}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_wav_channel}{C\+Wav\+Channel}} $>$ channel)
+\item 
+double \mbox{\hyperlink{class_c_shape_a3a17362679e82fbbf28e0bf6ab67de4a}{GetX}} ()
+\item 
+double \mbox{\hyperlink{class_c_shape_af2ba630e9dcee57af90f5d70e163fdba}{GetY}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Creates shaped components for instrument. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_shape_ab00c7f999799241e1edf169c4d2eaf2e}\label{class_c_shape_ab00c7f999799241e1edf169c4d2eaf2e}} 
+\index{CShape@{CShape}!Draw@{Draw}}
+\index{Draw@{Draw}!CShape@{CShape}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void C\+Shape\+::\+Draw (\begin{DoxyParamCaption}\item[{Graphics $\ast$}]{graphics,  }\item[{Point}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Draw the machine at the currently specified location 
+\begin{DoxyParams}{Parameters}
+{\em graphics} & G\+D\+I+ Graphics object \\
+\hline
+{\em position} & Position of the graphics object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_shape_ae548feb735038c85ab4c1529f6fab49a}\label{class_c_shape_ae548feb735038c85ab4c1529f6fab49a}} 
+\index{CShape@{CShape}!GetImageHeight@{GetImageHeight}}
+\index{GetImageHeight@{GetImageHeight}!CShape@{CShape}}
+\doxysubsubsection{\texorpdfstring{GetImageHeight()}{GetImageHeight()}}
+{\footnotesize\ttfamily int C\+Shape\+::\+Get\+Image\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the height of any set image for this polygon. This may not be the height we actually draw, but is the size of the polygon itself. \begin{DoxyReturn}{Returns}
+Height in pixels 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_shape_ac5fe3586f354ef20ee545fb0de6efad9}\label{class_c_shape_ac5fe3586f354ef20ee545fb0de6efad9}} 
+\index{CShape@{CShape}!GetImageWidth@{GetImageWidth}}
+\index{GetImageWidth@{GetImageWidth}!CShape@{CShape}}
+\doxysubsubsection{\texorpdfstring{GetImageWidth()}{GetImageWidth()}}
+{\footnotesize\ttfamily int C\+Shape\+::\+Get\+Image\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the width of any set image for this polygon. This may not be the width we actually draw, but is the size of the polygon itself. \begin{DoxyReturn}{Returns}
+Width in pixels 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_shape_a3a17362679e82fbbf28e0bf6ab67de4a}\label{class_c_shape_a3a17362679e82fbbf28e0bf6ab67de4a}} 
+\index{CShape@{CShape}!GetX@{GetX}}
+\index{GetX@{GetX}!CShape@{CShape}}
+\doxysubsubsection{\texorpdfstring{GetX()}{GetX()}}
+{\footnotesize\ttfamily double C\+Shape\+::\+GetX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the X point of shape. \begin{DoxyReturn}{Returns}
+X 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_shape_af2ba630e9dcee57af90f5d70e163fdba}\label{class_c_shape_af2ba630e9dcee57af90f5d70e163fdba}} 
+\index{CShape@{CShape}!GetY@{GetY}}
+\index{GetY@{GetY}!CShape@{CShape}}
+\doxysubsubsection{\texorpdfstring{GetY()}{GetY()}}
+{\footnotesize\ttfamily double C\+Shape\+::\+GetY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the Y point of shape. \begin{DoxyReturn}{Returns}
+Y 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_shape_abf5241aba8e355d1c9dce6dd34882c46}\label{class_c_shape_abf5241aba8e355d1c9dce6dd34882c46}} 
+\index{CShape@{CShape}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!CShape@{CShape}}
+\doxysubsubsection{\texorpdfstring{Rectangle()}{Rectangle()}}
+{\footnotesize\ttfamily void C\+Shape\+::\+Rectangle (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{wid = {\ttfamily 0},  }\item[{int}]{hit = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a rectangle 
+\begin{DoxyParams}{Parameters}
+{\em x} & Left side X \\
+\hline
+{\em y} & Bottom left Y \\
+\hline
+{\em wid} & Width of the rectangle. If not supplied, use an image width \\
+\hline
+{\em hit} & Height of the rectangle. If not supplied, use an image height \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_shape_a508dd191bcdaa478eb43128915901434}\label{class_c_shape_a508dd191bcdaa478eb43128915901434}} 
+\index{CShape@{CShape}!SetAudioChannel@{SetAudioChannel}}
+\index{SetAudioChannel@{SetAudioChannel}!CShape@{CShape}}
+\doxysubsubsection{\texorpdfstring{SetAudioChannel()}{SetAudioChannel()}}
+{\footnotesize\ttfamily void C\+Shape\+::\+Set\+Audio\+Channel (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_wav_channel}{C\+Wav\+Channel}} $>$}]{channel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the audio for shape. 
+\begin{DoxyParams}{Parameters}
+{\em channel} & Audio channel \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_shape_a06b364c057672c5598b0462c81ffebbe}\label{class_c_shape_a06b364c057672c5598b0462c81ffebbe}} 
+\index{CShape@{CShape}!SetColor@{SetColor}}
+\index{SetColor@{SetColor}!CShape@{CShape}}
+\doxysubsubsection{\texorpdfstring{SetColor()}{SetColor()}}
+{\footnotesize\ttfamily void C\+Shape\+::\+Set\+Color (\begin{DoxyParamCaption}\item[{Gdiplus\+::\+Color}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the color for the polygon 
+\begin{DoxyParams}{Parameters}
+{\em color} & New color to set \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_shape_a37c196ecc171ce88eda0d654e34ac442}\label{class_c_shape_a37c196ecc171ce88eda0d654e34ac442}} 
+\index{CShape@{CShape}!SetImage@{SetImage}}
+\index{SetImage@{SetImage}!CShape@{CShape}}
+\doxysubsubsection{\texorpdfstring{SetImage()}{SetImage()}}
+{\footnotesize\ttfamily void C\+Shape\+::\+Set\+Image (\begin{DoxyParamCaption}\item[{std\+::wstring}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set an image we will use as a texture for the polygon 
+\begin{DoxyParams}{Parameters}
+{\em filename} & Image filename \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_shape_a6317307f34348634070dff0ecb88c3d0}\label{class_c_shape_a6317307f34348634070dff0ecb88c3d0}} 
+\index{CShape@{CShape}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!CShape@{CShape}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily void C\+Shape\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Set the position for the root of the machine 
+\begin{DoxyParams}{Parameters}
+{\em x} & X location (pixels) \\
+\hline
+{\em y} & Y location (pixels) \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_component_a11f15720ac2df4294e7f5f892a381942}{C\+Component}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_shape_8h}{Shape.\+h}}\item 
+\mbox{\hyperlink{_shape_8cpp}{Shape.\+cpp}}\end{DoxyCompactItemize}

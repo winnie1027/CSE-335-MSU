@@ -1,0 +1,76 @@
+\hypertarget{class_c_picture_1_1_actor_iter}{}\doxysection{C\+Picture\+::Actor\+Iter Class Reference}
+\label{class_c_picture_1_1_actor_iter}\index{CPicture::ActorIter@{CPicture::ActorIter}}
+
+
+{\ttfamily \#include $<$Picture.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_picture_1_1_actor_iter_a2f2f57be59c8599af1e2c304272d2deb}{Actor\+Iter}} (\mbox{\hyperlink{class_c_picture}{C\+Picture}} $\ast$picture, int pos)
+\item 
+bool \mbox{\hyperlink{class_c_picture_1_1_actor_iter_ae2b89197e5d5271dd131e8dbc2e186af}{operator!=}} (const \mbox{\hyperlink{class_c_picture_1_1_actor_iter}{Actor\+Iter}} \&other) const
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_actor}{C\+Actor}} $>$ \mbox{\hyperlink{class_c_picture_1_1_actor_iter_a12d890678b15d8944577b948b11d3ac6}{operator$\ast$}} () const
+\item 
+const \mbox{\hyperlink{class_c_picture_1_1_actor_iter}{Actor\+Iter}} \& \mbox{\hyperlink{class_c_picture_1_1_actor_iter_a8e52080b2ce8a1f12e2dfcef310b2164}{operator++}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Iterator that iterates over the actors in a picture 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_picture_1_1_actor_iter_a2f2f57be59c8599af1e2c304272d2deb}\label{class_c_picture_1_1_actor_iter_a2f2f57be59c8599af1e2c304272d2deb}} 
+\index{CPicture::ActorIter@{CPicture::ActorIter}!ActorIter@{ActorIter}}
+\index{ActorIter@{ActorIter}!CPicture::ActorIter@{CPicture::ActorIter}}
+\doxysubsubsection{\texorpdfstring{ActorIter()}{ActorIter()}}
+{\footnotesize\ttfamily C\+Picture\+::\+Actor\+Iter\+::\+Actor\+Iter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_picture}{C\+Picture}} $\ast$}]{picture,  }\item[{int}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em picture} & Picture we are iterating \\
+\hline
+{\em pos} & Starting position \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_picture_1_1_actor_iter_ae2b89197e5d5271dd131e8dbc2e186af}\label{class_c_picture_1_1_actor_iter_ae2b89197e5d5271dd131e8dbc2e186af}} 
+\index{CPicture::ActorIter@{CPicture::ActorIter}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!CPicture::ActorIter@{CPicture::ActorIter}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool C\+Picture\+::\+Actor\+Iter\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_picture_1_1_actor_iter}{Actor\+Iter}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Test for end of the iterator 
+\begin{DoxyParams}{Parameters}
+{\em other} & Other object to test against \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if we this position equals not equal to the other position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_picture_1_1_actor_iter_a12d890678b15d8944577b948b11d3ac6}\label{class_c_picture_1_1_actor_iter_a12d890678b15d8944577b948b11d3ac6}} 
+\index{CPicture::ActorIter@{CPicture::ActorIter}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!CPicture::ActorIter@{CPicture::ActorIter}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_c_actor}{C\+Actor}}$>$ C\+Picture\+::\+Actor\+Iter\+::operator$\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get value at current position \begin{DoxyReturn}{Returns}
+Value at m\+Pos in the collection 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_picture_1_1_actor_iter_a8e52080b2ce8a1f12e2dfcef310b2164}\label{class_c_picture_1_1_actor_iter_a8e52080b2ce8a1f12e2dfcef310b2164}} 
+\index{CPicture::ActorIter@{CPicture::ActorIter}!operator++@{operator++}}
+\index{operator++@{operator++}!CPicture::ActorIter@{CPicture::ActorIter}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_picture_1_1_actor_iter}{Actor\+Iter}}\& C\+Picture\+::\+Actor\+Iter\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Increment the iterator \begin{DoxyReturn}{Returns}
+Reference to this iterator 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_picture_8h}{Picture.\+h}}\end{DoxyCompactItemize}

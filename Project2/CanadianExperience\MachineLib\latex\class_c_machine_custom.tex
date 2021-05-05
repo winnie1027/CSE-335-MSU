@@ -1,0 +1,109 @@
+\hypertarget{class_c_machine_custom}{}\doxysection{C\+Machine\+Custom Class Reference}
+\label{class_c_machine_custom}\index{CMachineCustom@{CMachineCustom}}
+
+
+{\ttfamily \#include $<$Machine\+Custom.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_machine_custom_a8f6e516fe5ad27f6b0ceba7ad0106611}\label{class_c_machine_custom_a8f6e516fe5ad27f6b0ceba7ad0106611}} 
+\mbox{\hyperlink{class_c_machine_custom_a8f6e516fe5ad27f6b0ceba7ad0106611}{C\+Machine\+Custom}} (int machine)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_machine_custom_a5918235af3a2655752a1c8ae2c4ab26f}\label{class_c_machine_custom_a5918235af3a2655752a1c8ae2c4ab26f}} 
+virtual \mbox{\hyperlink{class_c_machine_custom_a5918235af3a2655752a1c8ae2c4ab26f}{$\sim$\+C\+Machine\+Custom}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_machine_custom_a1e1cee39c896a3c98367e996dda7828f}\label{class_c_machine_custom_a1e1cee39c896a3c98367e996dda7828f}} 
+\mbox{\hyperlink{class_c_machine_custom_a1e1cee39c896a3c98367e996dda7828f}{C\+Machine\+Custom}} (const \mbox{\hyperlink{class_c_machine_custom}{C\+Machine\+Custom}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor/disabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_machine_custom_a723cb2f5ef30d3535707b8d8d0b37bb0}\label{class_c_machine_custom_a723cb2f5ef30d3535707b8d8d0b37bb0}} 
+void \mbox{\hyperlink{class_c_machine_custom_a723cb2f5ef30d3535707b8d8d0b37bb0}{operator=}} (const \mbox{\hyperlink{class_c_machine_custom}{C\+Machine\+Custom}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator/disabled. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_machine_custom_ab0228d390aa24267da4417c4ceaaa745}{Set\+Location}} (int x, int y)
+\item 
+virtual void \mbox{\hyperlink{class_c_machine_custom_a7b1ec57b2b550c16cbaa8b802796ec77}{Draw}} (Gdiplus\+::\+Graphics $\ast$graphics)
+\item 
+virtual void \mbox{\hyperlink{class_c_machine_custom_ace4495e8356237e0f5b80a47dc6d8ab7}{Set\+Machine\+Frame}} (int frame)
+\item 
+virtual int \mbox{\hyperlink{class_c_machine_custom_abaae7c100c7cc586a5b9a6cf562eb848}{Get\+Machine\+Number}} ()
+\item 
+void \mbox{\hyperlink{class_c_machine_custom_aa0f267527d6b1139829fe896c628ef86}{Add\+Component}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_component}{C\+Component}} $>$ component)
+\item 
+\mbox{\hyperlink{class_c_wav_player}{C\+Wav\+Player}} $\ast$ \mbox{\hyperlink{class_c_machine_custom_ac942a8c5b90e79dc19965ad0225e8110}{Get\+Wav\+Player}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Machine class that makes custom machines. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_machine_custom_aa0f267527d6b1139829fe896c628ef86}\label{class_c_machine_custom_aa0f267527d6b1139829fe896c628ef86}} 
+\index{CMachineCustom@{CMachineCustom}!AddComponent@{AddComponent}}
+\index{AddComponent@{AddComponent}!CMachineCustom@{CMachineCustom}}
+\doxysubsubsection{\texorpdfstring{AddComponent()}{AddComponent()}}
+{\footnotesize\ttfamily void C\+Machine\+Custom\+::\+Add\+Component (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_component}{C\+Component}} $>$}]{component }\end{DoxyParamCaption})}
+
+Adds component to machine. 
+\begin{DoxyParams}{Parameters}
+{\em component} & Component \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_machine_custom_a7b1ec57b2b550c16cbaa8b802796ec77}\label{class_c_machine_custom_a7b1ec57b2b550c16cbaa8b802796ec77}} 
+\index{CMachineCustom@{CMachineCustom}!Draw@{Draw}}
+\index{Draw@{Draw}!CMachineCustom@{CMachineCustom}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void C\+Machine\+Custom\+::\+Draw (\begin{DoxyParamCaption}\item[{Gdiplus\+::\+Graphics $\ast$}]{graphics }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Draw the machine 
+\begin{DoxyParams}{Parameters}
+{\em graphics} & G\+D\+I+ Graphics object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_machine_custom_abaae7c100c7cc586a5b9a6cf562eb848}\label{class_c_machine_custom_abaae7c100c7cc586a5b9a6cf562eb848}} 
+\index{CMachineCustom@{CMachineCustom}!GetMachineNumber@{GetMachineNumber}}
+\index{GetMachineNumber@{GetMachineNumber}!CMachineCustom@{CMachineCustom}}
+\doxysubsubsection{\texorpdfstring{GetMachineNumber()}{GetMachineNumber()}}
+{\footnotesize\ttfamily virtual int C\+Machine\+Custom\+::\+Get\+Machine\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get the current machine number \begin{DoxyReturn}{Returns}
+Machine number integer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_machine_custom_ac942a8c5b90e79dc19965ad0225e8110}\label{class_c_machine_custom_ac942a8c5b90e79dc19965ad0225e8110}} 
+\index{CMachineCustom@{CMachineCustom}!GetWavPlayer@{GetWavPlayer}}
+\index{GetWavPlayer@{GetWavPlayer}!CMachineCustom@{CMachineCustom}}
+\doxysubsubsection{\texorpdfstring{GetWavPlayer()}{GetWavPlayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_wav_player}{C\+Wav\+Player}}$\ast$ C\+Machine\+Custom\+::\+Get\+Wav\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the audio player for machine/ \begin{DoxyReturn}{Returns}
+Wavplayer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_machine_custom_ab0228d390aa24267da4417c4ceaaa745}\label{class_c_machine_custom_ab0228d390aa24267da4417c4ceaaa745}} 
+\index{CMachineCustom@{CMachineCustom}!SetLocation@{SetLocation}}
+\index{SetLocation@{SetLocation}!CMachineCustom@{CMachineCustom}}
+\doxysubsubsection{\texorpdfstring{SetLocation()}{SetLocation()}}
+{\footnotesize\ttfamily virtual void C\+Machine\+Custom\+::\+Set\+Location (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Set the position for the root of the machine 
+\begin{DoxyParams}{Parameters}
+{\em x} & X location (pixels) \\
+\hline
+{\em y} & Y location (pixels) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_machine_custom_ace4495e8356237e0f5b80a47dc6d8ab7}\label{class_c_machine_custom_ace4495e8356237e0f5b80a47dc6d8ab7}} 
+\index{CMachineCustom@{CMachineCustom}!SetMachineFrame@{SetMachineFrame}}
+\index{SetMachineFrame@{SetMachineFrame}!CMachineCustom@{CMachineCustom}}
+\doxysubsubsection{\texorpdfstring{SetMachineFrame()}{SetMachineFrame()}}
+{\footnotesize\ttfamily void C\+Machine\+Custom\+::\+Set\+Machine\+Frame (\begin{DoxyParamCaption}\item[{int}]{frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Set the current machine animation frame 
+\begin{DoxyParams}{Parameters}
+{\em frame} & Frame number \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_machine_custom_8h}{Machine\+Custom.\+h}}\item 
+\mbox{\hyperlink{_machine_custom_8cpp}{Machine\+Custom.\+cpp}}\end{DoxyCompactItemize}

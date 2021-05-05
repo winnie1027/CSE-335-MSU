@@ -1,0 +1,114 @@
+\hypertarget{class_c_anim_channel_point}{}\doxysection{C\+Anim\+Channel\+Point Class Reference}
+\label{class_c_anim_channel_point}\index{CAnimChannelPoint@{CAnimChannelPoint}}
+
+
+{\ttfamily \#include $<$Anim\+Channel\+Point.\+h$>$}
+
+Inheritance diagram for C\+Anim\+Channel\+Point\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_anim_channel_point}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_c_anim_channel_point_1_1_keyframe_point}{Keyframe\+Point}}
+\begin{DoxyCompactList}\small\item\em A keyframe for a point channel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_anim_channel_point_ac887ebf37797918e29197cd855eb3d60}{C\+Anim\+Channel\+Point}} ()
+\item 
+\mbox{\hyperlink{class_c_anim_channel_point_ac0ffdb24903c2ae673686d53b2e1dadb}{$\sim$\+C\+Anim\+Channel\+Point}} ()
+\item 
+Gdiplus\+::\+Point \mbox{\hyperlink{class_c_anim_channel_point_a8885cd8eb06b4af6d9997e7d79c1d856}{Get\+Point}} ()
+\item 
+void \mbox{\hyperlink{class_c_anim_channel_point_abcfdddd770020c17e5736ccf6bb15912}{Set\+Keyframe}} (Gdiplus\+::\+Point point)
+\item 
+void \mbox{\hyperlink{class_c_anim_channel_point_ac67b18d31453f8e25c681423c3e056c8}{Tween}} (double t)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_c_anim_channel_point_a7eb61594e08c2f0177f086bc3af9221f}{Xml\+Load\+Keyframe}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classxmlnode_1_1_c_xml_node}{xmlnode\+::\+C\+Xml\+Node}} $>$ \&node) override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An animation channel specific to points (movement) 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_anim_channel_point_ac887ebf37797918e29197cd855eb3d60}\label{class_c_anim_channel_point_ac887ebf37797918e29197cd855eb3d60}} 
+\index{CAnimChannelPoint@{CAnimChannelPoint}!CAnimChannelPoint@{CAnimChannelPoint}}
+\index{CAnimChannelPoint@{CAnimChannelPoint}!CAnimChannelPoint@{CAnimChannelPoint}}
+\doxysubsubsection{\texorpdfstring{CAnimChannelPoint()}{CAnimChannelPoint()}}
+{\footnotesize\ttfamily C\+Anim\+Channel\+Point\+::\+C\+Anim\+Channel\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor \mbox{\Hypertarget{class_c_anim_channel_point_ac0ffdb24903c2ae673686d53b2e1dadb}\label{class_c_anim_channel_point_ac0ffdb24903c2ae673686d53b2e1dadb}} 
+\index{CAnimChannelPoint@{CAnimChannelPoint}!````~CAnimChannelPoint@{$\sim$CAnimChannelPoint}}
+\index{````~CAnimChannelPoint@{$\sim$CAnimChannelPoint}!CAnimChannelPoint@{CAnimChannelPoint}}
+\doxysubsubsection{\texorpdfstring{$\sim$CAnimChannelPoint()}{~CAnimChannelPoint()}}
+{\footnotesize\ttfamily C\+Anim\+Channel\+Point\+::$\sim$\+C\+Anim\+Channel\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_anim_channel_point_a8885cd8eb06b4af6d9997e7d79c1d856}\label{class_c_anim_channel_point_a8885cd8eb06b4af6d9997e7d79c1d856}} 
+\index{CAnimChannelPoint@{CAnimChannelPoint}!GetPoint@{GetPoint}}
+\index{GetPoint@{GetPoint}!CAnimChannelPoint@{CAnimChannelPoint}}
+\doxysubsubsection{\texorpdfstring{GetPoint()}{GetPoint()}}
+{\footnotesize\ttfamily Gdiplus\+::\+Point C\+Anim\+Channel\+Point\+::\+Get\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The point we compute \begin{DoxyReturn}{Returns}
+The computed point 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_anim_channel_point_abcfdddd770020c17e5736ccf6bb15912}\label{class_c_anim_channel_point_abcfdddd770020c17e5736ccf6bb15912}} 
+\index{CAnimChannelPoint@{CAnimChannelPoint}!SetKeyframe@{SetKeyframe}}
+\index{SetKeyframe@{SetKeyframe}!CAnimChannelPoint@{CAnimChannelPoint}}
+\doxysubsubsection{\texorpdfstring{SetKeyframe()}{SetKeyframe()}}
+{\footnotesize\ttfamily void C\+Anim\+Channel\+Point\+::\+Set\+Keyframe (\begin{DoxyParamCaption}\item[{Gdiplus\+::\+Point}]{point }\end{DoxyParamCaption})}
+
+Set a keyframe
+
+This function allocates a new keyframe and sends it to \mbox{\hyperlink{class_c_anim_channel}{C\+Anim\+Channel}}, which will insert it into the collection of keyframes. 
+\begin{DoxyParams}{Parameters}
+{\em point} & The point for the keyframe \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_anim_channel_point_ac67b18d31453f8e25c681423c3e056c8}\label{class_c_anim_channel_point_ac67b18d31453f8e25c681423c3e056c8}} 
+\index{CAnimChannelPoint@{CAnimChannelPoint}!Tween@{Tween}}
+\index{Tween@{Tween}!CAnimChannelPoint@{CAnimChannelPoint}}
+\doxysubsubsection{\texorpdfstring{Tween()}{Tween()}}
+{\footnotesize\ttfamily void C\+Anim\+Channel\+Point\+::\+Tween (\begin{DoxyParamCaption}\item[{double}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Compute a tweened point between to points 
+\begin{DoxyParams}{Parameters}
+{\em t} & The tweening t value \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_c_anim_channel_adf83febfff4c3db9e9f56de72735f8ee}{C\+Anim\+Channel}}.
+
+\mbox{\Hypertarget{class_c_anim_channel_point_a7eb61594e08c2f0177f086bc3af9221f}\label{class_c_anim_channel_point_a7eb61594e08c2f0177f086bc3af9221f}} 
+\index{CAnimChannelPoint@{CAnimChannelPoint}!XmlLoadKeyframe@{XmlLoadKeyframe}}
+\index{XmlLoadKeyframe@{XmlLoadKeyframe}!CAnimChannelPoint@{CAnimChannelPoint}}
+\doxysubsubsection{\texorpdfstring{XmlLoadKeyframe()}{XmlLoadKeyframe()}}
+{\footnotesize\ttfamily void C\+Anim\+Channel\+Point\+::\+Xml\+Load\+Keyframe (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classxmlnode_1_1_c_xml_node}{xmlnode\+::\+C\+Xml\+Node}} $>$ \&}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Handle loading this channel\textquotesingle{}s keyframe type 
+\begin{DoxyParams}{Parameters}
+{\em node} & keyframe tag node \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_c_anim_channel_a2df7b3fed2b3faf34c585446628fc874}{C\+Anim\+Channel}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_anim_channel_point_8h}{Anim\+Channel\+Point.\+h}}\item 
+\mbox{\hyperlink{_anim_channel_point_8cpp}{Anim\+Channel\+Point.\+cpp}}\end{DoxyCompactItemize}

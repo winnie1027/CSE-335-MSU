@@ -1,0 +1,69 @@
+\hypertarget{classxmlnode_1_1_c_xml_node_1_1_iterator}{}\doxysection{xmlnode\+::C\+Xml\+Node\+::Iterator Class Reference}
+\label{classxmlnode_1_1_c_xml_node_1_1_iterator}\index{xmlnode::CXmlNode::Iterator@{xmlnode::CXmlNode::Iterator}}
+
+
+{\ttfamily \#include $<$Xml\+Node.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classxmlnode_1_1_c_xml_node_1_1_iterator_a55c86e64262a6ef16e253f2aef70578c}{operator!=}} (const \mbox{\hyperlink{classxmlnode_1_1_c_xml_node_1_1_iterator}{Iterator}} \&other) const
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classxmlnode_1_1_c_xml_node}{C\+Xml\+Node}} $>$ \mbox{\hyperlink{classxmlnode_1_1_c_xml_node_1_1_iterator_a6d255a513c60c7de55a01c5eb626bf6d}{operator$\ast$}} ()
+\item 
+const \mbox{\hyperlink{classxmlnode_1_1_c_xml_node_1_1_iterator}{Iterator}} \& \mbox{\hyperlink{classxmlnode_1_1_c_xml_node_1_1_iterator_aefa7392f7c198dcf907d8458fbf0db1a}{operator++}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classxmlnode_1_1_c_xml_node_1_1_iterator_a770307dc9d4e2e7005bcf200bae3066a}\label{classxmlnode_1_1_c_xml_node_1_1_iterator_a770307dc9d4e2e7005bcf200bae3066a}} 
+class {\bfseries C\+Xml\+Node}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Support for iterating over the children of a node 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classxmlnode_1_1_c_xml_node_1_1_iterator_a55c86e64262a6ef16e253f2aef70578c}\label{classxmlnode_1_1_c_xml_node_1_1_iterator_a55c86e64262a6ef16e253f2aef70578c}} 
+\index{xmlnode::CXmlNode::Iterator@{xmlnode::CXmlNode::Iterator}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!xmlnode::CXmlNode::Iterator@{xmlnode::CXmlNode::Iterator}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool xmlnode\+::\+C\+Xml\+Node\+::\+Iterator\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classxmlnode_1_1_c_xml_node_1_1_iterator}{Iterator}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Test to see if two iterator are at the same location 
+\begin{DoxyParams}{Parameters}
+{\em other} & The other object we are testing against \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if they are equal. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classxmlnode_1_1_c_xml_node_1_1_iterator_a6d255a513c60c7de55a01c5eb626bf6d}\label{classxmlnode_1_1_c_xml_node_1_1_iterator_a6d255a513c60c7de55a01c5eb626bf6d}} 
+\index{xmlnode::CXmlNode::Iterator@{xmlnode::CXmlNode::Iterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!xmlnode::CXmlNode::Iterator@{xmlnode::CXmlNode::Iterator}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classxmlnode_1_1_c_xml_node}{C\+Xml\+Node}} $>$ C\+Xml\+Node\+::\+Iterator\+::operator$\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Operation $\ast$ for the iterator.
+
+Indiates the child that is the current iterator reference.
+
+\begin{DoxyReturn}{Returns}
+Pointer to child node. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classxmlnode_1_1_c_xml_node_1_1_iterator_aefa7392f7c198dcf907d8458fbf0db1a}\label{classxmlnode_1_1_c_xml_node_1_1_iterator_aefa7392f7c198dcf907d8458fbf0db1a}} 
+\index{xmlnode::CXmlNode::Iterator@{xmlnode::CXmlNode::Iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!xmlnode::CXmlNode::Iterator@{xmlnode::CXmlNode::Iterator}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classxmlnode_1_1_c_xml_node_1_1_iterator}{Iterator}}\& xmlnode\+::\+C\+Xml\+Node\+::\+Iterator\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Advance to the next item in the collection \begin{DoxyReturn}{Returns}
+Reference to this iterator. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_xml_node_8h}{Xml\+Node.\+h}}\item 
+\mbox{\hyperlink{_xml_node_8cpp}{Xml\+Node.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,279 @@
+\hypertarget{class_c_chime}{}\doxysection{C\+Chime Class Reference}
+\label{class_c_chime}\index{CChime@{CChime}}
+
+
+{\ttfamily \#include $<$Chime.\+h$>$}
+
+Inheritance diagram for C\+Chime\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_chime}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_chime_a65c53cdee5e022c4cbce68cc6b0933cc}\label{class_c_chime_a65c53cdee5e022c4cbce68cc6b0933cc}} 
+\mbox{\hyperlink{class_c_chime_a65c53cdee5e022c4cbce68cc6b0933cc}{C\+Chime}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_chime_a3e283e11fcc65296343d59c8fe21adf3}\label{class_c_chime_a3e283e11fcc65296343d59c8fe21adf3}} 
+virtual \mbox{\hyperlink{class_c_chime_a3e283e11fcc65296343d59c8fe21adf3}{$\sim$\+C\+Chime}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_chime_a06cb457f02ac415578080c9ee1933fe4}\label{class_c_chime_a06cb457f02ac415578080c9ee1933fe4}} 
+\mbox{\hyperlink{class_c_chime_a06cb457f02ac415578080c9ee1933fe4}{C\+Chime}} (const \mbox{\hyperlink{class_c_chime}{C\+Chime}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor/disabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_chime_a6c6b06eaff1a4b5652783452571cd6bf}\label{class_c_chime_a6c6b06eaff1a4b5652783452571cd6bf}} 
+void \mbox{\hyperlink{class_c_chime_a6c6b06eaff1a4b5652783452571cd6bf}{operator=}} (const \mbox{\hyperlink{class_c_chime}{C\+Chime}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator/disabled. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_chime_a3b50e561a47a2aab02d34a2c2a417ad0}{Draw}} (Gdiplus\+::\+Graphics $\ast$graphics, Gdiplus\+::\+Point position) override
+\item 
+virtual void \mbox{\hyperlink{class_c_chime_ac3b43c014ae48cd1c786e367937d776b}{Set\+Audio\+Channel}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_wav_channel}{C\+Wav\+Channel}} $>$ channel) override
+\item 
+void \mbox{\hyperlink{class_c_chime_a5e3989831c4bc8a02fecda5424ed6f31}{Set\+Position}} (int x, int y) override
+\item 
+void \mbox{\hyperlink{class_c_chime_aac12869defcfeb4a204463d0c894177a}{Set\+Chime}} (std\+::wstring filename)
+\item 
+void \mbox{\hyperlink{class_c_chime_a3107a99c1dc4caa468f7cde2ee39a85c}{Set\+Mount}} (std\+::wstring filename)
+\item 
+void \mbox{\hyperlink{class_c_chime_afab758f353c708939555dc5135a1c788}{Set\+Hammer}} (std\+::wstring filename)
+\item 
+int \mbox{\hyperlink{class_c_chime_a4d10aa86da67c08f2489aca5b788521c}{Get\+Chime\+Width}} ()
+\item 
+int \mbox{\hyperlink{class_c_chime_a150e4bc1cbcf45f570121ba7479f2f1e}{Get\+Mount\+Width}} ()
+\item 
+int \mbox{\hyperlink{class_c_chime_a9b93ac2b220153f2188947b7f8566bd4}{Get\+Hammer\+Width}} ()
+\item 
+void \mbox{\hyperlink{class_c_chime_ad7d9f8b407cc39d6c0c2094bd34b7ac2}{Rectangle\+Chime}} (int x, int y, int wid=0, int hit=0)
+\item 
+void \mbox{\hyperlink{class_c_chime_a16ab34da057a4cada2881966a2d3f4c0}{Rectangle\+Mount}} (int x, int y, int wid=0, int hit=0)
+\item 
+void \mbox{\hyperlink{class_c_chime_ab286e654b879a538b81981a8a303e3ab}{Rectangle\+Hammer}} (int x, int y, int wid=0, int hit=0)
+\item 
+void \mbox{\hyperlink{class_c_chime_a8161346085268df7ffaa8a8fc58ac774}{Set\+Hammer\+Rotation}} (double rotate)
+\item 
+void \mbox{\hyperlink{class_c_chime_ab0cdf8b5fc6b2a74131e975c4a023474}{Set\+Chime\+Rotation}} (double rotate)
+\item 
+virtual void \mbox{\hyperlink{class_c_chime_abad575669857d3f335948cbf40aa89e0}{Set\+Air\+Pressure}} (double pressure) override
+\item 
+void \mbox{\hyperlink{class_c_chime_ad0e96c216f376dc97ae198fd9a7c9815}{Set\+Machine\+Number}} (int machine)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Chime instrument. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_chime_a3b50e561a47a2aab02d34a2c2a417ad0}\label{class_c_chime_a3b50e561a47a2aab02d34a2c2a417ad0}} 
+\index{CChime@{CChime}!Draw@{Draw}}
+\index{Draw@{Draw}!CChime@{CChime}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void C\+Chime\+::\+Draw (\begin{DoxyParamCaption}\item[{Gdiplus\+::\+Graphics $\ast$}]{graphics,  }\item[{Gdiplus\+::\+Point}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Draw the machine at the currently specified location 
+\begin{DoxyParams}{Parameters}
+{\em graphics} & G\+D\+I+ Graphics object \\
+\hline
+{\em position} & Position of the graphics object \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_component_a28b8818808248f3bd77cd36e233d2a8b}{C\+Component}}.
+
+\mbox{\Hypertarget{class_c_chime_a4d10aa86da67c08f2489aca5b788521c}\label{class_c_chime_a4d10aa86da67c08f2489aca5b788521c}} 
+\index{CChime@{CChime}!GetChimeWidth@{GetChimeWidth}}
+\index{GetChimeWidth@{GetChimeWidth}!CChime@{CChime}}
+\doxysubsubsection{\texorpdfstring{GetChimeWidth()}{GetChimeWidth()}}
+{\footnotesize\ttfamily int C\+Chime\+::\+Get\+Chime\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the width of any set image for this polygon. This may not be the width we actually draw, but is the size of the polygon itself. \begin{DoxyReturn}{Returns}
+Width in pixels 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_chime_a9b93ac2b220153f2188947b7f8566bd4}\label{class_c_chime_a9b93ac2b220153f2188947b7f8566bd4}} 
+\index{CChime@{CChime}!GetHammerWidth@{GetHammerWidth}}
+\index{GetHammerWidth@{GetHammerWidth}!CChime@{CChime}}
+\doxysubsubsection{\texorpdfstring{GetHammerWidth()}{GetHammerWidth()}}
+{\footnotesize\ttfamily int C\+Chime\+::\+Get\+Hammer\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the width of any set image for this polygon. This may not be the width we actually draw, but is the size of the polygon itself. \begin{DoxyReturn}{Returns}
+Width in pixels 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_chime_a150e4bc1cbcf45f570121ba7479f2f1e}\label{class_c_chime_a150e4bc1cbcf45f570121ba7479f2f1e}} 
+\index{CChime@{CChime}!GetMountWidth@{GetMountWidth}}
+\index{GetMountWidth@{GetMountWidth}!CChime@{CChime}}
+\doxysubsubsection{\texorpdfstring{GetMountWidth()}{GetMountWidth()}}
+{\footnotesize\ttfamily int C\+Chime\+::\+Get\+Mount\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the width of any set image for this polygon. This may not be the width we actually draw, but is the size of the polygon itself. \begin{DoxyReturn}{Returns}
+Width in pixels 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_chime_ad7d9f8b407cc39d6c0c2094bd34b7ac2}\label{class_c_chime_ad7d9f8b407cc39d6c0c2094bd34b7ac2}} 
+\index{CChime@{CChime}!RectangleChime@{RectangleChime}}
+\index{RectangleChime@{RectangleChime}!CChime@{CChime}}
+\doxysubsubsection{\texorpdfstring{RectangleChime()}{RectangleChime()}}
+{\footnotesize\ttfamily void C\+Chime\+::\+Rectangle\+Chime (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{wid = {\ttfamily 0},  }\item[{int}]{hit = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a chime 
+\begin{DoxyParams}{Parameters}
+{\em x} & Left side X \\
+\hline
+{\em y} & Bottom left Y \\
+\hline
+{\em wid} & Width of the rectangle. If not supplied, use an image width \\
+\hline
+{\em hit} & Height of the rectangle. If not supplied, use an image height \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_chime_ab286e654b879a538b81981a8a303e3ab}\label{class_c_chime_ab286e654b879a538b81981a8a303e3ab}} 
+\index{CChime@{CChime}!RectangleHammer@{RectangleHammer}}
+\index{RectangleHammer@{RectangleHammer}!CChime@{CChime}}
+\doxysubsubsection{\texorpdfstring{RectangleHammer()}{RectangleHammer()}}
+{\footnotesize\ttfamily void C\+Chime\+::\+Rectangle\+Hammer (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{wid = {\ttfamily 0},  }\item[{int}]{hit = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a hammer 
+\begin{DoxyParams}{Parameters}
+{\em x} & Left side X \\
+\hline
+{\em y} & Bottom left Y \\
+\hline
+{\em wid} & Width of the rectangle. If not supplied, use an image width \\
+\hline
+{\em hit} & Height of the rectangle. If not supplied, use an image height \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_chime_a16ab34da057a4cada2881966a2d3f4c0}\label{class_c_chime_a16ab34da057a4cada2881966a2d3f4c0}} 
+\index{CChime@{CChime}!RectangleMount@{RectangleMount}}
+\index{RectangleMount@{RectangleMount}!CChime@{CChime}}
+\doxysubsubsection{\texorpdfstring{RectangleMount()}{RectangleMount()}}
+{\footnotesize\ttfamily void C\+Chime\+::\+Rectangle\+Mount (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{wid = {\ttfamily 0},  }\item[{int}]{hit = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a mount 
+\begin{DoxyParams}{Parameters}
+{\em x} & Left side X \\
+\hline
+{\em y} & Bottom left Y \\
+\hline
+{\em wid} & Width of the rectangle. If not supplied, use an image width \\
+\hline
+{\em hit} & Height of the rectangle. If not supplied, use an image height \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_chime_abad575669857d3f335948cbf40aa89e0}\label{class_c_chime_abad575669857d3f335948cbf40aa89e0}} 
+\index{CChime@{CChime}!SetAirPressure@{SetAirPressure}}
+\index{SetAirPressure@{SetAirPressure}!CChime@{CChime}}
+\doxysubsubsection{\texorpdfstring{SetAirPressure()}{SetAirPressure()}}
+{\footnotesize\ttfamily void C\+Chime\+::\+Set\+Air\+Pressure (\begin{DoxyParamCaption}\item[{double}]{pressure }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Setter for air pressure. 
+\begin{DoxyParams}{Parameters}
+{\em pressure} & Air pressure \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_instrument_a79dcb7bf13e0056dd9c2286a3382d068}{C\+Instrument}}.
+
+\mbox{\Hypertarget{class_c_chime_ac3b43c014ae48cd1c786e367937d776b}\label{class_c_chime_ac3b43c014ae48cd1c786e367937d776b}} 
+\index{CChime@{CChime}!SetAudioChannel@{SetAudioChannel}}
+\index{SetAudioChannel@{SetAudioChannel}!CChime@{CChime}}
+\doxysubsubsection{\texorpdfstring{SetAudioChannel()}{SetAudioChannel()}}
+{\footnotesize\ttfamily virtual void C\+Chime\+::\+Set\+Audio\+Channel (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_wav_channel}{C\+Wav\+Channel}} $>$}]{channel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Sets the audio for chime. 
+\begin{DoxyParams}{Parameters}
+{\em channel} & Audio channel for chime \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_instrument_ab60d59b2dd28566eff06568092f3f093}{C\+Instrument}}.
+
+\mbox{\Hypertarget{class_c_chime_aac12869defcfeb4a204463d0c894177a}\label{class_c_chime_aac12869defcfeb4a204463d0c894177a}} 
+\index{CChime@{CChime}!SetChime@{SetChime}}
+\index{SetChime@{SetChime}!CChime@{CChime}}
+\doxysubsubsection{\texorpdfstring{SetChime()}{SetChime()}}
+{\footnotesize\ttfamily void C\+Chime\+::\+Set\+Chime (\begin{DoxyParamCaption}\item[{std\+::wstring}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Chime image setter 
+\begin{DoxyParams}{Parameters}
+{\em filename} & Chime image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_chime_ab0cdf8b5fc6b2a74131e975c4a023474}\label{class_c_chime_ab0cdf8b5fc6b2a74131e975c4a023474}} 
+\index{CChime@{CChime}!SetChimeRotation@{SetChimeRotation}}
+\index{SetChimeRotation@{SetChimeRotation}!CChime@{CChime}}
+\doxysubsubsection{\texorpdfstring{SetChimeRotation()}{SetChimeRotation()}}
+{\footnotesize\ttfamily void C\+Chime\+::\+Set\+Chime\+Rotation (\begin{DoxyParamCaption}\item[{double}]{rotate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Roates the chime image 
+\begin{DoxyParams}{Parameters}
+{\em rotate} & Rotation degrees \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_chime_afab758f353c708939555dc5135a1c788}\label{class_c_chime_afab758f353c708939555dc5135a1c788}} 
+\index{CChime@{CChime}!SetHammer@{SetHammer}}
+\index{SetHammer@{SetHammer}!CChime@{CChime}}
+\doxysubsubsection{\texorpdfstring{SetHammer()}{SetHammer()}}
+{\footnotesize\ttfamily void C\+Chime\+::\+Set\+Hammer (\begin{DoxyParamCaption}\item[{std\+::wstring}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Chime hammer image setter 
+\begin{DoxyParams}{Parameters}
+{\em filename} & Hammer image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_chime_a8161346085268df7ffaa8a8fc58ac774}\label{class_c_chime_a8161346085268df7ffaa8a8fc58ac774}} 
+\index{CChime@{CChime}!SetHammerRotation@{SetHammerRotation}}
+\index{SetHammerRotation@{SetHammerRotation}!CChime@{CChime}}
+\doxysubsubsection{\texorpdfstring{SetHammerRotation()}{SetHammerRotation()}}
+{\footnotesize\ttfamily void C\+Chime\+::\+Set\+Hammer\+Rotation (\begin{DoxyParamCaption}\item[{double}]{rotate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Rotates the hammer image 
+\begin{DoxyParams}{Parameters}
+{\em rotate} & Rotation degrees \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_chime_ad0e96c216f376dc97ae198fd9a7c9815}\label{class_c_chime_ad0e96c216f376dc97ae198fd9a7c9815}} 
+\index{CChime@{CChime}!SetMachineNumber@{SetMachineNumber}}
+\index{SetMachineNumber@{SetMachineNumber}!CChime@{CChime}}
+\doxysubsubsection{\texorpdfstring{SetMachineNumber()}{SetMachineNumber()}}
+{\footnotesize\ttfamily void C\+Chime\+::\+Set\+Machine\+Number (\begin{DoxyParamCaption}\item[{int}]{machine }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Setter for machine number. 
+\begin{DoxyParams}{Parameters}
+{\em machine} & Machine number specifically used for factory 2 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_chime_a3107a99c1dc4caa468f7cde2ee39a85c}\label{class_c_chime_a3107a99c1dc4caa468f7cde2ee39a85c}} 
+\index{CChime@{CChime}!SetMount@{SetMount}}
+\index{SetMount@{SetMount}!CChime@{CChime}}
+\doxysubsubsection{\texorpdfstring{SetMount()}{SetMount()}}
+{\footnotesize\ttfamily void C\+Chime\+::\+Set\+Mount (\begin{DoxyParamCaption}\item[{std\+::wstring}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Chime mount image setter 
+\begin{DoxyParams}{Parameters}
+{\em filename} & Mount image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_chime_a5e3989831c4bc8a02fecda5424ed6f31}\label{class_c_chime_a5e3989831c4bc8a02fecda5424ed6f31}} 
+\index{CChime@{CChime}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!CChime@{CChime}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily void C\+Chime\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Set the position for the root of the machine 
+\begin{DoxyParams}{Parameters}
+{\em x} & X location (pixels) \\
+\hline
+{\em y} & Y location (pixels) \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_component_a11f15720ac2df4294e7f5f892a381942}{C\+Component}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_chime_8h}{Chime.\+h}}\item 
+\mbox{\hyperlink{_chime_8cpp}{Chime.\+cpp}}\end{DoxyCompactItemize}

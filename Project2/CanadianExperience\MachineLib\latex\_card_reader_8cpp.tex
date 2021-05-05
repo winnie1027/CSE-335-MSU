@@ -1,0 +1,58 @@
+\hypertarget{_card_reader_8cpp}{}\doxysection{Card\+Reader.\+cpp File Reference}
+\label{_card_reader_8cpp}\index{CardReader.cpp@{CardReader.cpp}}
+{\ttfamily \#include \char`\"{}pch.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Card\+Reader.\+h\char`\"{}}\newline
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_card_reader_8cpp_a6ce141dc348c0ca1a73242da6a71cbee}\label{_card_reader_8cpp_a6ce141dc348c0ca1a73242da6a71cbee}} 
+const int \mbox{\hyperlink{_card_reader_8cpp_a6ce141dc348c0ca1a73242da6a71cbee}{Card\+Width}} = 132
+\begin{DoxyCompactList}\small\item\em Width to draw the card on the screen in pixels. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_card_reader_8cpp_a9ba2cf1ded1b2a5f0e733aab2ee3888a}\label{_card_reader_8cpp_a9ba2cf1ded1b2a5f0e733aab2ee3888a}} 
+const int \mbox{\hyperlink{_card_reader_8cpp_a9ba2cf1ded1b2a5f0e733aab2ee3888a}{Card\+Length}} = 297
+\begin{DoxyCompactList}\small\item\em Height to draw the card on the screen in pixels. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_card_reader_8cpp_a645b7c64f1a1ce6c09b238684370cd6d}\label{_card_reader_8cpp_a645b7c64f1a1ce6c09b238684370cd6d}} 
+const int \mbox{\hyperlink{_card_reader_8cpp_a645b7c64f1a1ce6c09b238684370cd6d}{Card\+Column\+Width}} = 10
+\begin{DoxyCompactList}\small\item\em Width of a card column in pixels. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_card_reader_8cpp_a3e6afe2b829dd3b7afc76b9fc57067d7}\label{_card_reader_8cpp_a3e6afe2b829dd3b7afc76b9fc57067d7}} 
+const int \mbox{\hyperlink{_card_reader_8cpp_a3e6afe2b829dd3b7afc76b9fc57067d7}{Card\+Row\+Height}} = 29
+\begin{DoxyCompactList}\small\item\em Height of a card row in pixels. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_card_reader_8cpp_a49ae426c52366267552affc2e569eddc}\label{_card_reader_8cpp_a49ae426c52366267552affc2e569eddc}} 
+const int \mbox{\hyperlink{_card_reader_8cpp_a49ae426c52366267552affc2e569eddc}{Card\+Column0X}} = 24
+\begin{DoxyCompactList}\small\item\em X offset for the first column (left side) \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{_card_reader_8cpp_a57903bb44e7df1327b34c46f31ca5235}{Card\+Row0Y}} = 78
+\item 
+\mbox{\Hypertarget{_card_reader_8cpp_af0640ba65b5467ea074d4224c291f2d2}\label{_card_reader_8cpp_af0640ba65b5467ea074d4224c291f2d2}} 
+const int \mbox{\hyperlink{_card_reader_8cpp_af0640ba65b5467ea074d4224c291f2d2}{Card\+Punch\+Width}} = 8
+\begin{DoxyCompactList}\small\item\em Width of a punched hole. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_card_reader_8cpp_a1f44b36a7e320e9a3521d9e3022dd9fb}\label{_card_reader_8cpp_a1f44b36a7e320e9a3521d9e3022dd9fb}} 
+const int \mbox{\hyperlink{_card_reader_8cpp_a1f44b36a7e320e9a3521d9e3022dd9fb}{Card\+Punch\+Hit}} = 20
+\begin{DoxyCompactList}\small\item\em Height of a punched hole. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_card_reader_8cpp_a7efa73a833e9ddf15ac41e5e94550dd5}\label{_card_reader_8cpp_a7efa73a833e9ddf15ac41e5e94550dd5}} 
+const double \mbox{\hyperlink{_card_reader_8cpp_a7efa73a833e9ddf15ac41e5e94550dd5}{Card\+Punch\+Luminance}} = 0.\+1
+\begin{DoxyCompactList}\small\item\em Any average luminance below this level is considered a punched hole. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_card_reader_8cpp_ab35ee054696f418619b084ce242db1aa}\label{_card_reader_8cpp_ab35ee054696f418619b084ce242db1aa}} 
+const int \mbox{\hyperlink{_card_reader_8cpp_ab35ee054696f418619b084ce242db1aa}{Output\+OffsetY}} = -\/92
+\begin{DoxyCompactList}\small\item\em Y offset to the first card reader output in pixels. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_card_reader_8cpp_a8523b55083848bb4cc18fe33fa31e3e3}\label{_card_reader_8cpp_a8523b55083848bb4cc18fe33fa31e3e3}} 
+const int \mbox{\hyperlink{_card_reader_8cpp_a8523b55083848bb4cc18fe33fa31e3e3}{Output\+OffsetX}} = -\/35
+\begin{DoxyCompactList}\small\item\em X offset to the first card reader output in pixels. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_card_reader_8cpp_a823c38e2c416981a198ba285b0cb3330}\label{_card_reader_8cpp_a823c38e2c416981a198ba285b0cb3330}} 
+const double \mbox{\hyperlink{_card_reader_8cpp_a823c38e2c416981a198ba285b0cb3330}{Output\+SpacingX}} = 10.\+7
+\begin{DoxyCompactList}\small\item\em X spacing for the outputs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Winnie Yang 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_card_reader_8cpp_a57903bb44e7df1327b34c46f31ca5235}\label{_card_reader_8cpp_a57903bb44e7df1327b34c46f31ca5235}} 
+\index{CardReader.cpp@{CardReader.cpp}!CardRow0Y@{CardRow0Y}}
+\index{CardRow0Y@{CardRow0Y}!CardReader.cpp@{CardReader.cpp}}
+\doxysubsubsection{\texorpdfstring{CardRow0Y}{CardRow0Y}}
+{\footnotesize\ttfamily const int Card\+Row0Y = 78}
+
+Y offset to the first row (0\textquotesingle{}s) There are actually two rows above this that can be used 

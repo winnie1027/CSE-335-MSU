@@ -1,0 +1,232 @@
+\hypertarget{class_c_polygon}{}\doxysection{C\+Polygon Class Reference}
+\label{class_c_polygon}\index{CPolygon@{CPolygon}}
+
+
+{\ttfamily \#include $<$Polygon.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_polygon_a23a008a0e67f83af21f2de0de73e12e4}{C\+Polygon}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_polygon_a2e8a08cf38a25f83073b8243bc700ae1}{$\sim$\+C\+Polygon}} ()
+\item 
+void \mbox{\hyperlink{class_c_polygon_a0eefb11929dcced5ad3012c4ebe287ba}{Add\+Point}} (int x, int y)
+\item 
+void \mbox{\hyperlink{class_c_polygon_a6b5a66581821a4eccaeddbe9b91523a5}{Add\+Point}} (double x, double y)
+\item 
+void \mbox{\hyperlink{class_c_polygon_af6538de6e9c10f6268dfce9a05745117}{Rectangle}} (int x, int y, int wid=0, int hit=0)
+\item 
+void \mbox{\hyperlink{class_c_polygon_a983466102ec2e47dfeb5148428d00566}{Rectangle}} (double x, double y, double wid=0, double hit=0)
+\item 
+void \mbox{\hyperlink{class_c_polygon_aed4c89e2c0b15f8d25b0749d647be8e8}{Centered\+Square}} (int size)
+\item 
+void \mbox{\hyperlink{class_c_polygon_a6ea29870410df59c618e928434394331}{Set\+Color}} (Gdiplus\+::\+Color color)
+\item 
+void \mbox{\hyperlink{class_c_polygon_aa70028bef318fcf8d0698693b24dca51}{Set\+Image}} (std\+::wstring filename)
+\item 
+int \mbox{\hyperlink{class_c_polygon_a5687f4da72203239ac76159872a16a55}{Get\+Image\+Width}} ()
+\item 
+int \mbox{\hyperlink{class_c_polygon_a7da5a20a06fbca178d074a643d9c8d22}{Get\+Image\+Height}} ()
+\item 
+double \mbox{\hyperlink{class_c_polygon_a2cc4c0c2f40433ccfce4eb315c5d4dc2}{Average\+Luminance}} (int x, int y, int wid, int hit)
+\item 
+void \mbox{\hyperlink{class_c_polygon_a4ccdf797c0557f46e9622c5a0ea1936b}{Draw\+Polygon}} (Gdiplus\+::\+Graphics $\ast$graphics, double x, double y)
+\item 
+virtual void \mbox{\hyperlink{class_c_polygon_a34d961ef1bc6a2c7add78ff857edccd4}{Set\+Rotation}} (double rotation)
+\item 
+double \mbox{\hyperlink{class_c_polygon_a4ecb49ecd0dbaa116bd265845d38c4c3}{Get\+Rotation}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Generic polygon class that is used to make shapes we will use in our project. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_polygon_a23a008a0e67f83af21f2de0de73e12e4}\label{class_c_polygon_a23a008a0e67f83af21f2de0de73e12e4}} 
+\index{CPolygon@{CPolygon}!CPolygon@{CPolygon}}
+\index{CPolygon@{CPolygon}!CPolygon@{CPolygon}}
+\doxysubsubsection{\texorpdfstring{CPolygon()}{CPolygon()}}
+{\footnotesize\ttfamily C\+Polygon\+::\+C\+Polygon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor \mbox{\Hypertarget{class_c_polygon_a2e8a08cf38a25f83073b8243bc700ae1}\label{class_c_polygon_a2e8a08cf38a25f83073b8243bc700ae1}} 
+\index{CPolygon@{CPolygon}!````~CPolygon@{$\sim$CPolygon}}
+\index{````~CPolygon@{$\sim$CPolygon}!CPolygon@{CPolygon}}
+\doxysubsubsection{\texorpdfstring{$\sim$CPolygon()}{~CPolygon()}}
+{\footnotesize\ttfamily C\+Polygon\+::$\sim$\+C\+Polygon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_polygon_a6b5a66581821a4eccaeddbe9b91523a5}\label{class_c_polygon_a6b5a66581821a4eccaeddbe9b91523a5}} 
+\index{CPolygon@{CPolygon}!AddPoint@{AddPoint}}
+\index{AddPoint@{AddPoint}!CPolygon@{CPolygon}}
+\doxysubsubsection{\texorpdfstring{AddPoint()}{AddPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void C\+Polygon\+::\+Add\+Point (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add a point to the polygon. Convenience version that accepts doubles. 
+\begin{DoxyParams}{Parameters}
+{\em x} & X value for point \\
+\hline
+{\em y} & Y value for point \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_polygon_a0eefb11929dcced5ad3012c4ebe287ba}\label{class_c_polygon_a0eefb11929dcced5ad3012c4ebe287ba}} 
+\index{CPolygon@{CPolygon}!AddPoint@{AddPoint}}
+\index{AddPoint@{AddPoint}!CPolygon@{CPolygon}}
+\doxysubsubsection{\texorpdfstring{AddPoint()}{AddPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void C\+Polygon\+::\+Add\+Point (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Add a point to the polygon 
+\begin{DoxyParams}{Parameters}
+{\em x} & X value for point \\
+\hline
+{\em y} & Y value for point \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_polygon_a2cc4c0c2f40433ccfce4eb315c5d4dc2}\label{class_c_polygon_a2cc4c0c2f40433ccfce4eb315c5d4dc2}} 
+\index{CPolygon@{CPolygon}!AverageLuminance@{AverageLuminance}}
+\index{AverageLuminance@{AverageLuminance}!CPolygon@{CPolygon}}
+\doxysubsubsection{\texorpdfstring{AverageLuminance()}{AverageLuminance()}}
+{\footnotesize\ttfamily double C\+Polygon\+::\+Average\+Luminance (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{wid,  }\item[{int}]{hit }\end{DoxyParamCaption})}
+
+Get the average luminance of a block of pixels in any supplied image. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Top left X in pixels \\
+\hline
+{\em y} & Top left Y in pixels \\
+\hline
+{\em wid} & Width of the block to average \\
+\hline
+{\em hit} & Height of the block to average \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Luminance in the range 0-\/1, where 0 is black. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_polygon_aed4c89e2c0b15f8d25b0749d647be8e8}\label{class_c_polygon_aed4c89e2c0b15f8d25b0749d647be8e8}} 
+\index{CPolygon@{CPolygon}!CenteredSquare@{CenteredSquare}}
+\index{CenteredSquare@{CenteredSquare}!CPolygon@{CPolygon}}
+\doxysubsubsection{\texorpdfstring{CenteredSquare()}{CenteredSquare()}}
+{\footnotesize\ttfamily void C\+Polygon\+::\+Centered\+Square (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})}
+
+Create a centered square at location 0,0 
+\begin{DoxyParams}{Parameters}
+{\em size} & Width and height of the square \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_polygon_a4ccdf797c0557f46e9622c5a0ea1936b}\label{class_c_polygon_a4ccdf797c0557f46e9622c5a0ea1936b}} 
+\index{CPolygon@{CPolygon}!DrawPolygon@{DrawPolygon}}
+\index{DrawPolygon@{DrawPolygon}!CPolygon@{CPolygon}}
+\doxysubsubsection{\texorpdfstring{DrawPolygon()}{DrawPolygon()}}
+{\footnotesize\ttfamily void C\+Polygon\+::\+Draw\+Polygon (\begin{DoxyParamCaption}\item[{Gdiplus\+::\+Graphics $\ast$}]{graphics,  }\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})}
+
+Draw the polygon 
+\begin{DoxyParams}{Parameters}
+{\em graphics} & Gdiplus graphics object \\
+\hline
+{\em x} & X location to draw in pixels \\
+\hline
+{\em y} & Y location to draw in pixels \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_polygon_a7da5a20a06fbca178d074a643d9c8d22}\label{class_c_polygon_a7da5a20a06fbca178d074a643d9c8d22}} 
+\index{CPolygon@{CPolygon}!GetImageHeight@{GetImageHeight}}
+\index{GetImageHeight@{GetImageHeight}!CPolygon@{CPolygon}}
+\doxysubsubsection{\texorpdfstring{GetImageHeight()}{GetImageHeight()}}
+{\footnotesize\ttfamily int C\+Polygon\+::\+Get\+Image\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the height of any set image for this polygon. This may not be the height we actually draw, but is the size of the polygon itself. \begin{DoxyReturn}{Returns}
+Height in pixels 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_polygon_a5687f4da72203239ac76159872a16a55}\label{class_c_polygon_a5687f4da72203239ac76159872a16a55}} 
+\index{CPolygon@{CPolygon}!GetImageWidth@{GetImageWidth}}
+\index{GetImageWidth@{GetImageWidth}!CPolygon@{CPolygon}}
+\doxysubsubsection{\texorpdfstring{GetImageWidth()}{GetImageWidth()}}
+{\footnotesize\ttfamily int C\+Polygon\+::\+Get\+Image\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the width of any set image for this polygon. This may not be the width we actually draw, but is the size of the polygon itself. \begin{DoxyReturn}{Returns}
+Width in pixels 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_polygon_a4ecb49ecd0dbaa116bd265845d38c4c3}\label{class_c_polygon_a4ecb49ecd0dbaa116bd265845d38c4c3}} 
+\index{CPolygon@{CPolygon}!GetRotation@{GetRotation}}
+\index{GetRotation@{GetRotation}!CPolygon@{CPolygon}}
+\doxysubsubsection{\texorpdfstring{GetRotation()}{GetRotation()}}
+{\footnotesize\ttfamily double C\+Polygon\+::\+Get\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the rotation of the polygon \begin{DoxyReturn}{Returns}
+rotation Rotation in turns, where 0-\/1 is one revolution. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_polygon_a983466102ec2e47dfeb5148428d00566}\label{class_c_polygon_a983466102ec2e47dfeb5148428d00566}} 
+\index{CPolygon@{CPolygon}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!CPolygon@{CPolygon}}
+\doxysubsubsection{\texorpdfstring{Rectangle()}{Rectangle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void C\+Polygon\+::\+Rectangle (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{wid = {\ttfamily 0},  }\item[{double}]{hit = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Create a rectangle 
+\begin{DoxyParams}{Parameters}
+{\em x} & Lower-\/left side X \\
+\hline
+{\em y} & Lower-\/left side Y \\
+\hline
+{\em wid} & Width of the rectangle. If not supplied, use an image width \\
+\hline
+{\em hit} & Height of the rectangle. If not supplied, use an image height \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_polygon_af6538de6e9c10f6268dfce9a05745117}\label{class_c_polygon_af6538de6e9c10f6268dfce9a05745117}} 
+\index{CPolygon@{CPolygon}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!CPolygon@{CPolygon}}
+\doxysubsubsection{\texorpdfstring{Rectangle()}{Rectangle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void C\+Polygon\+::\+Rectangle (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{wid = {\ttfamily 0},  }\item[{int}]{hit = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Create a rectangle 
+\begin{DoxyParams}{Parameters}
+{\em x} & Lower-\/left side X \\
+\hline
+{\em y} & Lower-\/left side Y \\
+\hline
+{\em wid} & Width of the rectangle. If not supplied, use an image width \\
+\hline
+{\em hit} & Height of the rectangle. If not supplied, use an image height \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_polygon_a6ea29870410df59c618e928434394331}\label{class_c_polygon_a6ea29870410df59c618e928434394331}} 
+\index{CPolygon@{CPolygon}!SetColor@{SetColor}}
+\index{SetColor@{SetColor}!CPolygon@{CPolygon}}
+\doxysubsubsection{\texorpdfstring{SetColor()}{SetColor()}}
+{\footnotesize\ttfamily void C\+Polygon\+::\+Set\+Color (\begin{DoxyParamCaption}\item[{Gdiplus\+::\+Color}]{color }\end{DoxyParamCaption})}
+
+Set the color of the polygon. If we set a color, images are not used. 
+\begin{DoxyParams}{Parameters}
+{\em color} & A Gdiplus Color object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_polygon_aa70028bef318fcf8d0698693b24dca51}\label{class_c_polygon_aa70028bef318fcf8d0698693b24dca51}} 
+\index{CPolygon@{CPolygon}!SetImage@{SetImage}}
+\index{SetImage@{SetImage}!CPolygon@{CPolygon}}
+\doxysubsubsection{\texorpdfstring{SetImage()}{SetImage()}}
+{\footnotesize\ttfamily void C\+Polygon\+::\+Set\+Image (\begin{DoxyParamCaption}\item[{std\+::wstring}]{filename }\end{DoxyParamCaption})}
+
+Set an image we will use as a texture for the polygon 
+\begin{DoxyParams}{Parameters}
+{\em filename} & Image filename \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_polygon_a34d961ef1bc6a2c7add78ff857edccd4}\label{class_c_polygon_a34d961ef1bc6a2c7add78ff857edccd4}} 
+\index{CPolygon@{CPolygon}!SetRotation@{SetRotation}}
+\index{SetRotation@{SetRotation}!CPolygon@{CPolygon}}
+\doxysubsubsection{\texorpdfstring{SetRotation()}{SetRotation()}}
+{\footnotesize\ttfamily virtual void C\+Polygon\+::\+Set\+Rotation (\begin{DoxyParamCaption}\item[{double}]{rotation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Set the rotation of the polygon 
+\begin{DoxyParams}{Parameters}
+{\em rotation} & Rotation in turns, where 0-\/1 is one revolution. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_polygon_8h}{Polygon.\+h}}\item 
+\mbox{\hyperlink{_polygon_8cpp}{Polygon.\+cpp}}\end{DoxyCompactItemize}

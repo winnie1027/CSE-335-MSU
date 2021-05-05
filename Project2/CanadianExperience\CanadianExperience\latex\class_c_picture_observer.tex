@@ -1,0 +1,81 @@
+\hypertarget{class_c_picture_observer}{}\doxysection{C\+Picture\+Observer Class Reference}
+\label{class_c_picture_observer}\index{CPictureObserver@{CPictureObserver}}
+
+
+{\ttfamily \#include $<$Picture\+Observer.\+h$>$}
+
+Inheritance diagram for C\+Picture\+Observer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_picture_observer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_c_picture_observer_a86036f6ad66ae4bad3f204f61d234f46}{$\sim$\+C\+Picture\+Observer}} ()
+\item 
+\mbox{\Hypertarget{class_c_picture_observer_a7c0cae97a7c165b98a00aeb2892cd6e7}\label{class_c_picture_observer_a7c0cae97a7c165b98a00aeb2892cd6e7}} 
+\mbox{\hyperlink{class_c_picture_observer_a7c0cae97a7c165b98a00aeb2892cd6e7}{C\+Picture\+Observer}} (const \mbox{\hyperlink{class_c_picture_observer}{C\+Picture\+Observer}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy Constructor (Disabled) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_picture_observer}{C\+Picture\+Observer}} \& \mbox{\hyperlink{class_c_picture_observer_a200c66fe9ab13e18e9559033165b1895}{operator=}} (const \mbox{\hyperlink{class_c_picture_observer}{C\+Picture\+Observer}} \&)=delete
+\item 
+\mbox{\Hypertarget{class_c_picture_observer_a0dce27216a8cb8a2490f0efc83a5994a}\label{class_c_picture_observer_a0dce27216a8cb8a2490f0efc83a5994a}} 
+virtual void \mbox{\hyperlink{class_c_picture_observer_a0dce27216a8cb8a2490f0efc83a5994a}{Update\+Observer}} ()=0
+\begin{DoxyCompactList}\small\item\em This function is called to update any observers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_picture_observer_a8f4bd1a0d4e3b14b511d572a6dadeb7e}{Set\+Picture}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_picture}{C\+Picture}} $>$ picture)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_picture}{C\+Picture}} $>$ \mbox{\hyperlink{class_c_picture_observer_ab7613c4badd101ace6a992b2eaaea153}{Get\+Picture}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Observer base class for a picture.
+
+This class implements the base class functionality for an observer in the observer pattern. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_picture_observer_a86036f6ad66ae4bad3f204f61d234f46}\label{class_c_picture_observer_a86036f6ad66ae4bad3f204f61d234f46}} 
+\index{CPictureObserver@{CPictureObserver}!````~CPictureObserver@{$\sim$CPictureObserver}}
+\index{````~CPictureObserver@{$\sim$CPictureObserver}!CPictureObserver@{CPictureObserver}}
+\doxysubsubsection{\texorpdfstring{$\sim$CPictureObserver()}{~CPictureObserver()}}
+{\footnotesize\ttfamily C\+Picture\+Observer\+::$\sim$\+C\+Picture\+Observer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_picture_observer_ab7613c4badd101ace6a992b2eaaea153}\label{class_c_picture_observer_ab7613c4badd101ace6a992b2eaaea153}} 
+\index{CPictureObserver@{CPictureObserver}!GetPicture@{GetPicture}}
+\index{GetPicture@{GetPicture}!CPictureObserver@{CPictureObserver}}
+\doxysubsubsection{\texorpdfstring{GetPicture()}{GetPicture()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_c_picture}{C\+Picture}}$>$ C\+Picture\+Observer\+::\+Get\+Picture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the picture this observer is associated with \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_c_picture}{C\+Picture}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_picture_observer_a200c66fe9ab13e18e9559033165b1895}\label{class_c_picture_observer_a200c66fe9ab13e18e9559033165b1895}} 
+\index{CPictureObserver@{CPictureObserver}!operator=@{operator=}}
+\index{operator=@{operator=}!CPictureObserver@{CPictureObserver}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_picture_observer}{C\+Picture\+Observer}}\& C\+Picture\+Observer\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_picture_observer}{C\+Picture\+Observer}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Assignment Operator (Disabled) \begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_picture_observer_a8f4bd1a0d4e3b14b511d572a6dadeb7e}\label{class_c_picture_observer_a8f4bd1a0d4e3b14b511d572a6dadeb7e}} 
+\index{CPictureObserver@{CPictureObserver}!SetPicture@{SetPicture}}
+\index{SetPicture@{SetPicture}!CPictureObserver@{CPictureObserver}}
+\doxysubsubsection{\texorpdfstring{SetPicture()}{SetPicture()}}
+{\footnotesize\ttfamily void C\+Picture\+Observer\+::\+Set\+Picture (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_picture}{C\+Picture}} $>$}]{picture }\end{DoxyParamCaption})}
+
+Set the picture for this observer 
+\begin{DoxyParams}{Parameters}
+{\em picture} & The picture to set \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_picture_observer_8h}{Picture\+Observer.\+h}}\item 
+\mbox{\hyperlink{_picture_observer_8cpp}{Picture\+Observer.\+cpp}}\end{DoxyCompactItemize}

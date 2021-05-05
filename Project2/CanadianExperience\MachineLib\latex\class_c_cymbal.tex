@@ -1,0 +1,210 @@
+\hypertarget{class_c_cymbal}{}\doxysection{C\+Cymbal Class Reference}
+\label{class_c_cymbal}\index{CCymbal@{CCymbal}}
+
+
+{\ttfamily \#include $<$Cymbal.\+h$>$}
+
+Inheritance diagram for C\+Cymbal\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_cymbal}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_cymbal_afc5c800957432ec56af764c0554f5000}\label{class_c_cymbal_afc5c800957432ec56af764c0554f5000}} 
+\mbox{\hyperlink{class_c_cymbal_afc5c800957432ec56af764c0554f5000}{C\+Cymbal}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_cymbal_a07717147abceb21bc533266e4fcdf214}\label{class_c_cymbal_a07717147abceb21bc533266e4fcdf214}} 
+virtual \mbox{\hyperlink{class_c_cymbal_a07717147abceb21bc533266e4fcdf214}{$\sim$\+C\+Cymbal}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_cymbal_ac20db12c08fbc052bbd9bed131893885}\label{class_c_cymbal_ac20db12c08fbc052bbd9bed131893885}} 
+\mbox{\hyperlink{class_c_cymbal_ac20db12c08fbc052bbd9bed131893885}{C\+Cymbal}} (const \mbox{\hyperlink{class_c_cymbal}{C\+Cymbal}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor/disabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_cymbal_a258f018c5c9eb5fffc727734a048785b}\label{class_c_cymbal_a258f018c5c9eb5fffc727734a048785b}} 
+void \mbox{\hyperlink{class_c_cymbal_a258f018c5c9eb5fffc727734a048785b}{operator=}} (const \mbox{\hyperlink{class_c_cymbal}{C\+Cymbal}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator/disabled. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_cymbal_a1bfefd7e52f5aa5f5dd889cdf239528a}{Draw}} (Graphics $\ast$graphics, Point position) override
+\item 
+virtual void \mbox{\hyperlink{class_c_cymbal_ac60278933a3da7a07f2509259f3029dd}{Set\+Audio\+Channel}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_wav_channel}{C\+Wav\+Channel}} $>$ channel) override
+\item 
+void \mbox{\hyperlink{class_c_cymbal_a5c0b43c8df09117634e7078b79a066c4}{Set\+Position}} (int x, int y) override
+\item 
+void \mbox{\hyperlink{class_c_cymbal_aef281c97398f10cbaa633ec2a78b2187}{Set\+Cymbal}} (std\+::wstring filename)
+\item 
+void \mbox{\hyperlink{class_c_cymbal_a7de21cee5abcc38ea16b0ccc265879f6}{Set\+Stand}} (std\+::wstring filename)
+\item 
+int \mbox{\hyperlink{class_c_cymbal_aac5f8794927bfefc23b92c849a4c41db}{Get\+Cymbal\+Width}} ()
+\item 
+int \mbox{\hyperlink{class_c_cymbal_aa0c825468aa07b00362cea00916e5f3b}{Get\+Stand\+Width}} ()
+\item 
+void \mbox{\hyperlink{class_c_cymbal_a8aff4356ce9749c5f18159001756befe}{Rectangle\+Cymbal}} (int x, int y, int wid=0, int hit=0)
+\item 
+void \mbox{\hyperlink{class_c_cymbal_af5c44ad9666586d46f410efd6fae1b4a}{Rectangle\+Cymbal\+Stand}} (int x, int y, int wid=0, int hit=0)
+\item 
+virtual void \mbox{\hyperlink{class_c_cymbal_a7d8b692cc920dc2082bee074e48b00aa}{Set\+Air\+Pressure}} (double pressure) override
+\item 
+void \mbox{\hyperlink{class_c_cymbal_afb3ec58c4ce42cc35a01ae8d66eb8b26}{Set\+Machine\+Number}} (int machine)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Cymbal instrument. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_cymbal_a1bfefd7e52f5aa5f5dd889cdf239528a}\label{class_c_cymbal_a1bfefd7e52f5aa5f5dd889cdf239528a}} 
+\index{CCymbal@{CCymbal}!Draw@{Draw}}
+\index{Draw@{Draw}!CCymbal@{CCymbal}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void C\+Cymbal\+::\+Draw (\begin{DoxyParamCaption}\item[{Graphics $\ast$}]{graphics,  }\item[{Point}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Draw the machine at the currently specified location 
+\begin{DoxyParams}{Parameters}
+{\em graphics} & G\+D\+I+ Graphics object \\
+\hline
+{\em position} & Position of the graphics object \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_instrument_a295e73ec47dc0a3ab4de247acd0356ba}{C\+Instrument}}.
+
+\mbox{\Hypertarget{class_c_cymbal_aac5f8794927bfefc23b92c849a4c41db}\label{class_c_cymbal_aac5f8794927bfefc23b92c849a4c41db}} 
+\index{CCymbal@{CCymbal}!GetCymbalWidth@{GetCymbalWidth}}
+\index{GetCymbalWidth@{GetCymbalWidth}!CCymbal@{CCymbal}}
+\doxysubsubsection{\texorpdfstring{GetCymbalWidth()}{GetCymbalWidth()}}
+{\footnotesize\ttfamily int C\+Cymbal\+::\+Get\+Cymbal\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the width of any set image for this polygon. This may not be the width we actually draw, but is the size of the polygon itself. \begin{DoxyReturn}{Returns}
+Width in pixels 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_cymbal_aa0c825468aa07b00362cea00916e5f3b}\label{class_c_cymbal_aa0c825468aa07b00362cea00916e5f3b}} 
+\index{CCymbal@{CCymbal}!GetStandWidth@{GetStandWidth}}
+\index{GetStandWidth@{GetStandWidth}!CCymbal@{CCymbal}}
+\doxysubsubsection{\texorpdfstring{GetStandWidth()}{GetStandWidth()}}
+{\footnotesize\ttfamily int C\+Cymbal\+::\+Get\+Stand\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the cymbal stand\textquotesingle{}s width. \begin{DoxyReturn}{Returns}
+Width of cymbal stand 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_cymbal_a8aff4356ce9749c5f18159001756befe}\label{class_c_cymbal_a8aff4356ce9749c5f18159001756befe}} 
+\index{CCymbal@{CCymbal}!RectangleCymbal@{RectangleCymbal}}
+\index{RectangleCymbal@{RectangleCymbal}!CCymbal@{CCymbal}}
+\doxysubsubsection{\texorpdfstring{RectangleCymbal()}{RectangleCymbal()}}
+{\footnotesize\ttfamily void C\+Cymbal\+::\+Rectangle\+Cymbal (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{wid = {\ttfamily 0},  }\item[{int}]{hit = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a cymbal 
+\begin{DoxyParams}{Parameters}
+{\em x} & Left side X \\
+\hline
+{\em y} & Bottom left Y \\
+\hline
+{\em wid} & Width of the rectangle. If not supplied, use an image width \\
+\hline
+{\em hit} & Height of the rectangle. If not supplied, use an image height \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_cymbal_af5c44ad9666586d46f410efd6fae1b4a}\label{class_c_cymbal_af5c44ad9666586d46f410efd6fae1b4a}} 
+\index{CCymbal@{CCymbal}!RectangleCymbalStand@{RectangleCymbalStand}}
+\index{RectangleCymbalStand@{RectangleCymbalStand}!CCymbal@{CCymbal}}
+\doxysubsubsection{\texorpdfstring{RectangleCymbalStand()}{RectangleCymbalStand()}}
+{\footnotesize\ttfamily void C\+Cymbal\+::\+Rectangle\+Cymbal\+Stand (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{wid = {\ttfamily 0},  }\item[{int}]{hit = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a cymbal stand. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Left side X \\
+\hline
+{\em y} & Bottom left Y \\
+\hline
+{\em wid} & Width of the rectangle. If not supplied, use an image width \\
+\hline
+{\em hit} & Height of the rectangle. If not supplied, use an image height \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_cymbal_a7d8b692cc920dc2082bee074e48b00aa}\label{class_c_cymbal_a7d8b692cc920dc2082bee074e48b00aa}} 
+\index{CCymbal@{CCymbal}!SetAirPressure@{SetAirPressure}}
+\index{SetAirPressure@{SetAirPressure}!CCymbal@{CCymbal}}
+\doxysubsubsection{\texorpdfstring{SetAirPressure()}{SetAirPressure()}}
+{\footnotesize\ttfamily void C\+Cymbal\+::\+Set\+Air\+Pressure (\begin{DoxyParamCaption}\item[{double}]{pressure }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Setter for air pressure. 
+\begin{DoxyParams}{Parameters}
+{\em pressure} & Air pressure \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_instrument_a79dcb7bf13e0056dd9c2286a3382d068}{C\+Instrument}}.
+
+\mbox{\Hypertarget{class_c_cymbal_ac60278933a3da7a07f2509259f3029dd}\label{class_c_cymbal_ac60278933a3da7a07f2509259f3029dd}} 
+\index{CCymbal@{CCymbal}!SetAudioChannel@{SetAudioChannel}}
+\index{SetAudioChannel@{SetAudioChannel}!CCymbal@{CCymbal}}
+\doxysubsubsection{\texorpdfstring{SetAudioChannel()}{SetAudioChannel()}}
+{\footnotesize\ttfamily virtual void C\+Cymbal\+::\+Set\+Audio\+Channel (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_wav_channel}{C\+Wav\+Channel}} $>$}]{channel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Sets the audio for cymbal. 
+\begin{DoxyParams}{Parameters}
+{\em channel} & Audio channel for chime \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_instrument_ab60d59b2dd28566eff06568092f3f093}{C\+Instrument}}.
+
+\mbox{\Hypertarget{class_c_cymbal_aef281c97398f10cbaa633ec2a78b2187}\label{class_c_cymbal_aef281c97398f10cbaa633ec2a78b2187}} 
+\index{CCymbal@{CCymbal}!SetCymbal@{SetCymbal}}
+\index{SetCymbal@{SetCymbal}!CCymbal@{CCymbal}}
+\doxysubsubsection{\texorpdfstring{SetCymbal()}{SetCymbal()}}
+{\footnotesize\ttfamily void C\+Cymbal\+::\+Set\+Cymbal (\begin{DoxyParamCaption}\item[{std\+::wstring}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the image for cymbal. 
+\begin{DoxyParams}{Parameters}
+{\em filename} & Cymbal image \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_cymbal_afb3ec58c4ce42cc35a01ae8d66eb8b26}\label{class_c_cymbal_afb3ec58c4ce42cc35a01ae8d66eb8b26}} 
+\index{CCymbal@{CCymbal}!SetMachineNumber@{SetMachineNumber}}
+\index{SetMachineNumber@{SetMachineNumber}!CCymbal@{CCymbal}}
+\doxysubsubsection{\texorpdfstring{SetMachineNumber()}{SetMachineNumber()}}
+{\footnotesize\ttfamily void C\+Cymbal\+::\+Set\+Machine\+Number (\begin{DoxyParamCaption}\item[{int}]{machine }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the machine number for the purpose of doing challenge tasks 
+\begin{DoxyParams}{Parameters}
+{\em machine} & Machine number \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_cymbal_a5c0b43c8df09117634e7078b79a066c4}\label{class_c_cymbal_a5c0b43c8df09117634e7078b79a066c4}} 
+\index{CCymbal@{CCymbal}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!CCymbal@{CCymbal}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily void C\+Cymbal\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Set the position for the root of the machine 
+\begin{DoxyParams}{Parameters}
+{\em x} & X location (pixels) \\
+\hline
+{\em y} & Y location (pixels) \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_component_a11f15720ac2df4294e7f5f892a381942}{C\+Component}}.
+
+\mbox{\Hypertarget{class_c_cymbal_a7de21cee5abcc38ea16b0ccc265879f6}\label{class_c_cymbal_a7de21cee5abcc38ea16b0ccc265879f6}} 
+\index{CCymbal@{CCymbal}!SetStand@{SetStand}}
+\index{SetStand@{SetStand}!CCymbal@{CCymbal}}
+\doxysubsubsection{\texorpdfstring{SetStand()}{SetStand()}}
+{\footnotesize\ttfamily void C\+Cymbal\+::\+Set\+Stand (\begin{DoxyParamCaption}\item[{std\+::wstring}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the image for the cymbal stand. 
+\begin{DoxyParams}{Parameters}
+{\em filename} & filename Cymbal stand image \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_cymbal_8h}{Cymbal.\+h}}\item 
+\mbox{\hyperlink{_cymbal_8cpp}{Cymbal.\+cpp}}\end{DoxyCompactItemize}

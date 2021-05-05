@@ -1,0 +1,135 @@
+\hypertarget{class_c_drum}{}\doxysection{C\+Drum Class Reference}
+\label{class_c_drum}\index{CDrum@{CDrum}}
+
+
+{\ttfamily \#include $<$Drum.\+h$>$}
+
+Inheritance diagram for C\+Drum\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_drum}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_drum_a208c77ec3f8ce0c97639051dd7403a1c}\label{class_c_drum_a208c77ec3f8ce0c97639051dd7403a1c}} 
+\mbox{\hyperlink{class_c_drum_a208c77ec3f8ce0c97639051dd7403a1c}{C\+Drum}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_drum_ad5fac7b75f2c35f3dc394d0133376c32}\label{class_c_drum_ad5fac7b75f2c35f3dc394d0133376c32}} 
+virtual \mbox{\hyperlink{class_c_drum_ad5fac7b75f2c35f3dc394d0133376c32}{$\sim$\+C\+Drum}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_drum_a422b11a9c384ff1de239e6a7775393e3}\label{class_c_drum_a422b11a9c384ff1de239e6a7775393e3}} 
+\mbox{\hyperlink{class_c_drum_a422b11a9c384ff1de239e6a7775393e3}{C\+Drum}} (const \mbox{\hyperlink{class_c_drum}{C\+Drum}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor/disabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_drum_a991fa52212de8bf4f04fa5c9aea01389}\label{class_c_drum_a991fa52212de8bf4f04fa5c9aea01389}} 
+void \mbox{\hyperlink{class_c_drum_a991fa52212de8bf4f04fa5c9aea01389}{operator=}} (const \mbox{\hyperlink{class_c_drum}{C\+Drum}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator/disabled. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_drum_a20bc80538a9cb1f3df6e59a76baee323}{Draw}} (Graphics $\ast$graphics, Point position) override
+\item 
+virtual void \mbox{\hyperlink{class_c_drum_a1f7e2c180b452d51e5dffacc49d2792b}{Set\+Audio\+Channel}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_wav_channel}{C\+Wav\+Channel}} $>$ channel) override
+\item 
+void \mbox{\hyperlink{class_c_drum_ae8587c0410fcc1aa4ff1053420fcbf54}{Set\+Drum}} (std\+::wstring filename)
+\item 
+void \mbox{\hyperlink{class_c_drum_aeaa3897be7846a1e687cd8c640aa2b26}{Rectangle\+Drum}} (int x, int y, int wid=0, int hit=0)
+\item 
+int \mbox{\hyperlink{class_c_drum_a86a8d0abd7fdd44411293675fbb21bf0}{Get\+Drum\+Width}} ()
+\item 
+virtual void \mbox{\hyperlink{class_c_drum_adbab3e6050e9fd7f2bd9e5ab496d0afd}{Set\+Air\+Pressure}} (double pressure) override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Drum instrument. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_drum_a20bc80538a9cb1f3df6e59a76baee323}\label{class_c_drum_a20bc80538a9cb1f3df6e59a76baee323}} 
+\index{CDrum@{CDrum}!Draw@{Draw}}
+\index{Draw@{Draw}!CDrum@{CDrum}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void C\+Drum\+::\+Draw (\begin{DoxyParamCaption}\item[{Graphics $\ast$}]{graphics,  }\item[{Point}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Draw the machine at the currently specified location 
+\begin{DoxyParams}{Parameters}
+{\em graphics} & G\+D\+I+ Graphics object \\
+\hline
+{\em position} & Position of the graphics object \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_instrument_a295e73ec47dc0a3ab4de247acd0356ba}{C\+Instrument}}.
+
+\mbox{\Hypertarget{class_c_drum_a86a8d0abd7fdd44411293675fbb21bf0}\label{class_c_drum_a86a8d0abd7fdd44411293675fbb21bf0}} 
+\index{CDrum@{CDrum}!GetDrumWidth@{GetDrumWidth}}
+\index{GetDrumWidth@{GetDrumWidth}!CDrum@{CDrum}}
+\doxysubsubsection{\texorpdfstring{GetDrumWidth()}{GetDrumWidth()}}
+{\footnotesize\ttfamily int C\+Drum\+::\+Get\+Drum\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the width of any set image for this polygon. This may not be the width we actually draw, but is the size of the polygon itself. \begin{DoxyReturn}{Returns}
+Width in pixels 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_drum_aeaa3897be7846a1e687cd8c640aa2b26}\label{class_c_drum_aeaa3897be7846a1e687cd8c640aa2b26}} 
+\index{CDrum@{CDrum}!RectangleDrum@{RectangleDrum}}
+\index{RectangleDrum@{RectangleDrum}!CDrum@{CDrum}}
+\doxysubsubsection{\texorpdfstring{RectangleDrum()}{RectangleDrum()}}
+{\footnotesize\ttfamily void C\+Drum\+::\+Rectangle\+Drum (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{wid = {\ttfamily 0},  }\item[{int}]{hit = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a rectangle for drum 
+\begin{DoxyParams}{Parameters}
+{\em x} & Left side X \\
+\hline
+{\em y} & Bottom left Y \\
+\hline
+{\em wid} & Width of the rectangle. If not supplied, use an image width \\
+\hline
+{\em hit} & Height of the rectangle. If not supplied, use an image height \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_drum_adbab3e6050e9fd7f2bd9e5ab496d0afd}\label{class_c_drum_adbab3e6050e9fd7f2bd9e5ab496d0afd}} 
+\index{CDrum@{CDrum}!SetAirPressure@{SetAirPressure}}
+\index{SetAirPressure@{SetAirPressure}!CDrum@{CDrum}}
+\doxysubsubsection{\texorpdfstring{SetAirPressure()}{SetAirPressure()}}
+{\footnotesize\ttfamily void C\+Drum\+::\+Set\+Air\+Pressure (\begin{DoxyParamCaption}\item[{double}]{pressure }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Setter for air pressure. 
+\begin{DoxyParams}{Parameters}
+{\em pressure} & Air pressure \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_instrument_a79dcb7bf13e0056dd9c2286a3382d068}{C\+Instrument}}.
+
+\mbox{\Hypertarget{class_c_drum_a1f7e2c180b452d51e5dffacc49d2792b}\label{class_c_drum_a1f7e2c180b452d51e5dffacc49d2792b}} 
+\index{CDrum@{CDrum}!SetAudioChannel@{SetAudioChannel}}
+\index{SetAudioChannel@{SetAudioChannel}!CDrum@{CDrum}}
+\doxysubsubsection{\texorpdfstring{SetAudioChannel()}{SetAudioChannel()}}
+{\footnotesize\ttfamily virtual void C\+Drum\+::\+Set\+Audio\+Channel (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_wav_channel}{C\+Wav\+Channel}} $>$}]{channel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Sets the audio for cymbal. 
+\begin{DoxyParams}{Parameters}
+{\em channel} & Audio channel for chime \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_instrument_ab60d59b2dd28566eff06568092f3f093}{C\+Instrument}}.
+
+\mbox{\Hypertarget{class_c_drum_ae8587c0410fcc1aa4ff1053420fcbf54}\label{class_c_drum_ae8587c0410fcc1aa4ff1053420fcbf54}} 
+\index{CDrum@{CDrum}!SetDrum@{SetDrum}}
+\index{SetDrum@{SetDrum}!CDrum@{CDrum}}
+\doxysubsubsection{\texorpdfstring{SetDrum()}{SetDrum()}}
+{\footnotesize\ttfamily void C\+Drum\+::\+Set\+Drum (\begin{DoxyParamCaption}\item[{std\+::wstring}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the drum image. 
+\begin{DoxyParams}{Parameters}
+{\em filename} & Drum image \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_drum_8h}{Drum.\+h}}\item 
+\mbox{\hyperlink{_drum_8cpp}{Drum.\+cpp}}\end{DoxyCompactItemize}

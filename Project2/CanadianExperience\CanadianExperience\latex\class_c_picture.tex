@@ -1,0 +1,242 @@
+\hypertarget{class_c_picture}{}\doxysection{C\+Picture Class Reference}
+\label{class_c_picture}\index{CPicture@{CPicture}}
+
+
+{\ttfamily \#include $<$Picture.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_c_picture_1_1_actor_iter}{Actor\+Iter}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_picture_a4e3783bef1f9d565b8a9f5e9680685ab}{C\+Picture}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_picture_a763d6f41025f8e3f39c3ed264aac623c}{$\sim$\+C\+Picture}} ()
+\item 
+\mbox{\Hypertarget{class_c_picture_aa74c697e3bcca50430acbfa582f7a928}\label{class_c_picture_aa74c697e3bcca50430acbfa582f7a928}} 
+\mbox{\hyperlink{class_c_picture_aa74c697e3bcca50430acbfa582f7a928}{C\+Picture}} (const \mbox{\hyperlink{class_c_picture}{C\+Picture}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy Constructor (Disabled) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_picture_a16a54431e04f61eb6458d56f2799a7ce}\label{class_c_picture_a16a54431e04f61eb6458d56f2799a7ce}} 
+void \mbox{\hyperlink{class_c_picture_a16a54431e04f61eb6458d56f2799a7ce}{operator=}} (const \mbox{\hyperlink{class_c_picture}{C\+Picture}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment Operator (Disabled) \end{DoxyCompactList}\item 
+Gdiplus\+::\+Size \mbox{\hyperlink{class_c_picture_af2677c395a3cb8d6e7d0860839801e5b}{Get\+Size}} ()
+\item 
+void \mbox{\hyperlink{class_c_picture_a66b8de27d3435e19024307254e918e3a}{Set\+Size}} (Gdiplus\+::\+Size size)
+\item 
+void \mbox{\hyperlink{class_c_picture_a6be8632e9b1c468dcf27e8452baf5605}{Add\+Observer}} (\mbox{\hyperlink{class_c_picture_observer}{C\+Picture\+Observer}} $\ast$observer)
+\item 
+void \mbox{\hyperlink{class_c_picture_a548ad72979b2a11c2669d9896f32bf92}{Remove\+Observer}} (\mbox{\hyperlink{class_c_picture_observer}{C\+Picture\+Observer}} $\ast$observer)
+\item 
+void \mbox{\hyperlink{class_c_picture_a971ca9c9100725b7d1a900adcfe889d6}{Update\+Observers}} ()
+\item 
+void \mbox{\hyperlink{class_c_picture_aca6a4829388fdfe3ecdc42f0e788b712}{Draw}} (Gdiplus\+::\+Graphics $\ast$graphics)
+\item 
+void \mbox{\hyperlink{class_c_picture_a90799f3ea10ffea8fbb0ea2b9d24a525}{Add\+Actor}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_actor}{C\+Actor}} $>$ actor)
+\item 
+void \mbox{\hyperlink{class_c_picture_a708394a032895dbb9590dc721782b591}{Save}} (const std\+::wstring \&filename)
+\item 
+void \mbox{\hyperlink{class_c_picture_abedc5c2ac3549c0cb4e26c4b9b0b4300}{Load}} (const std\+::wstring \&filename)
+\item 
+\mbox{\hyperlink{class_c_picture_1_1_actor_iter}{Actor\+Iter}} \mbox{\hyperlink{class_c_picture_a8461cc11cc1ce334b4cf92e2ee4a4ebe}{begin}} ()
+\item 
+\mbox{\hyperlink{class_c_picture_1_1_actor_iter}{Actor\+Iter}} \mbox{\hyperlink{class_c_picture_a63840c7eff74388a204c750908a23933}{end}} ()
+\item 
+\mbox{\hyperlink{class_c_timeline}{C\+Timeline}} $\ast$ \mbox{\hyperlink{class_c_picture_a8ba1c7692b6a0ad3cf4984faf84a117a}{Get\+Timeline}} ()
+\item 
+void \mbox{\hyperlink{class_c_picture_ad00510c4a90a9b84a80a3850cc6dcf3d}{Set\+Animation\+Time}} (double time)
+\item 
+double \mbox{\hyperlink{class_c_picture_a0b70778e0cc185cb0b58bf18cbc49988}{Get\+Animation\+Time}} ()
+\item 
+\mbox{\Hypertarget{class_c_picture_a293747ccb27323b9c2aaa3bf2a64379e}\label{class_c_picture_a293747ccb27323b9c2aaa3bf2a64379e}} 
+void {\bfseries Set\+Machine\+One} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_machine_drawable}{C\+Machine\+Drawable}} $>$ machine\+One)
+\item 
+\mbox{\Hypertarget{class_c_picture_afecf41dc49fdc51e5445be24f829a2b2}\label{class_c_picture_afecf41dc49fdc51e5445be24f829a2b2}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_machine_drawable}{C\+Machine\+Drawable}} $>$ {\bfseries Get\+Machine\+One} ()
+\item 
+\mbox{\Hypertarget{class_c_picture_ab57d7b6edc2aec1ea01afcc35140d51e}\label{class_c_picture_ab57d7b6edc2aec1ea01afcc35140d51e}} 
+void {\bfseries Set\+Machine\+Two} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_machine_drawable}{C\+Machine\+Drawable}} $>$ machine\+Two)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_machine_drawable}{C\+Machine\+Drawable}} $>$ \mbox{\hyperlink{class_c_picture_ae2e75e22a35d941ba43cfdc4bd716c0b}{Get\+Machine\+Two}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The picture we are drawing.
+
+There will be one picture object that contains all of our actors, which then contains the drawables. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_picture_a4e3783bef1f9d565b8a9f5e9680685ab}\label{class_c_picture_a4e3783bef1f9d565b8a9f5e9680685ab}} 
+\index{CPicture@{CPicture}!CPicture@{CPicture}}
+\index{CPicture@{CPicture}!CPicture@{CPicture}}
+\doxysubsubsection{\texorpdfstring{CPicture()}{CPicture()}}
+{\footnotesize\ttfamily C\+Picture\+::\+C\+Picture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor \mbox{\Hypertarget{class_c_picture_a763d6f41025f8e3f39c3ed264aac623c}\label{class_c_picture_a763d6f41025f8e3f39c3ed264aac623c}} 
+\index{CPicture@{CPicture}!````~CPicture@{$\sim$CPicture}}
+\index{````~CPicture@{$\sim$CPicture}!CPicture@{CPicture}}
+\doxysubsubsection{\texorpdfstring{$\sim$CPicture()}{~CPicture()}}
+{\footnotesize\ttfamily C\+Picture\+::$\sim$\+C\+Picture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_picture_a90799f3ea10ffea8fbb0ea2b9d24a525}\label{class_c_picture_a90799f3ea10ffea8fbb0ea2b9d24a525}} 
+\index{CPicture@{CPicture}!AddActor@{AddActor}}
+\index{AddActor@{AddActor}!CPicture@{CPicture}}
+\doxysubsubsection{\texorpdfstring{AddActor()}{AddActor()}}
+{\footnotesize\ttfamily void C\+Picture\+::\+Add\+Actor (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_actor}{C\+Actor}} $>$}]{actor }\end{DoxyParamCaption})}
+
+Add an actor to this picture. 
+\begin{DoxyParams}{Parameters}
+{\em actor} & The actor to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_picture_a6be8632e9b1c468dcf27e8452baf5605}\label{class_c_picture_a6be8632e9b1c468dcf27e8452baf5605}} 
+\index{CPicture@{CPicture}!AddObserver@{AddObserver}}
+\index{AddObserver@{AddObserver}!CPicture@{CPicture}}
+\doxysubsubsection{\texorpdfstring{AddObserver()}{AddObserver()}}
+{\footnotesize\ttfamily void C\+Picture\+::\+Add\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_picture_observer}{C\+Picture\+Observer}} $\ast$}]{observer }\end{DoxyParamCaption})}
+
+Add an observer to this picture. 
+\begin{DoxyParams}{Parameters}
+{\em observer} & The observer to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_picture_a8461cc11cc1ce334b4cf92e2ee4a4ebe}\label{class_c_picture_a8461cc11cc1ce334b4cf92e2ee4a4ebe}} 
+\index{CPicture@{CPicture}!begin@{begin}}
+\index{begin@{begin}!CPicture@{CPicture}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_picture_1_1_actor_iter}{Actor\+Iter}} C\+Picture\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get an iterator for the beginning of the collection \begin{DoxyReturn}{Returns}
+Iter object at position 0 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_picture_aca6a4829388fdfe3ecdc42f0e788b712}\label{class_c_picture_aca6a4829388fdfe3ecdc42f0e788b712}} 
+\index{CPicture@{CPicture}!Draw@{Draw}}
+\index{Draw@{Draw}!CPicture@{CPicture}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void C\+Picture\+::\+Draw (\begin{DoxyParamCaption}\item[{Gdiplus\+::\+Graphics $\ast$}]{graphics }\end{DoxyParamCaption})}
+
+Draw this picture on a device context 
+\begin{DoxyParams}{Parameters}
+{\em graphics} & The device context to draw on \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_picture_a63840c7eff74388a204c750908a23933}\label{class_c_picture_a63840c7eff74388a204c750908a23933}} 
+\index{CPicture@{CPicture}!end@{end}}
+\index{end@{end}!CPicture@{CPicture}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_picture_1_1_actor_iter}{Actor\+Iter}} C\+Picture\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get an iterator for the end of the collection \begin{DoxyReturn}{Returns}
+Iter object at position past the end 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_picture_a0b70778e0cc185cb0b58bf18cbc49988}\label{class_c_picture_a0b70778e0cc185cb0b58bf18cbc49988}} 
+\index{CPicture@{CPicture}!GetAnimationTime@{GetAnimationTime}}
+\index{GetAnimationTime@{GetAnimationTime}!CPicture@{CPicture}}
+\doxysubsubsection{\texorpdfstring{GetAnimationTime()}{GetAnimationTime()}}
+{\footnotesize\ttfamily double C\+Picture\+::\+Get\+Animation\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the current animation time. \begin{DoxyReturn}{Returns}
+The current animation time 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_picture_ae2e75e22a35d941ba43cfdc4bd716c0b}\label{class_c_picture_ae2e75e22a35d941ba43cfdc4bd716c0b}} 
+\index{CPicture@{CPicture}!GetMachineTwo@{GetMachineTwo}}
+\index{GetMachineTwo@{GetMachineTwo}!CPicture@{CPicture}}
+\doxysubsubsection{\texorpdfstring{GetMachineTwo()}{GetMachineTwo()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_c_machine_drawable}{C\+Machine\+Drawable}}$>$ C\+Picture\+::\+Get\+Machine\+Two (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get machine two. \begin{DoxyReturn}{Returns}
+Machine two 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_picture_af2677c395a3cb8d6e7d0860839801e5b}\label{class_c_picture_af2677c395a3cb8d6e7d0860839801e5b}} 
+\index{CPicture@{CPicture}!GetSize@{GetSize}}
+\index{GetSize@{GetSize}!CPicture@{CPicture}}
+\doxysubsubsection{\texorpdfstring{GetSize()}{GetSize()}}
+{\footnotesize\ttfamily Gdiplus\+::\+Size C\+Picture\+::\+Get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The picture size \begin{DoxyReturn}{Returns}
+Size 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_picture_a8ba1c7692b6a0ad3cf4984faf84a117a}\label{class_c_picture_a8ba1c7692b6a0ad3cf4984faf84a117a}} 
+\index{CPicture@{CPicture}!GetTimeline@{GetTimeline}}
+\index{GetTimeline@{GetTimeline}!CPicture@{CPicture}}
+\doxysubsubsection{\texorpdfstring{GetTimeline()}{GetTimeline()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_timeline}{C\+Timeline}}$\ast$ C\+Picture\+::\+Get\+Timeline (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a pointer to the Timeline object \begin{DoxyReturn}{Returns}
+Pointer to the Timeline object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_picture_abedc5c2ac3549c0cb4e26c4b9b0b4300}\label{class_c_picture_abedc5c2ac3549c0cb4e26c4b9b0b4300}} 
+\index{CPicture@{CPicture}!Load@{Load}}
+\index{Load@{Load}!CPicture@{CPicture}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily void C\+Picture\+::\+Load (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{filename }\end{DoxyParamCaption})}
+
+Load a picture animation from a file 
+\begin{DoxyParams}{Parameters}
+{\em filename} & file to load from \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_picture_a548ad72979b2a11c2669d9896f32bf92}\label{class_c_picture_a548ad72979b2a11c2669d9896f32bf92}} 
+\index{CPicture@{CPicture}!RemoveObserver@{RemoveObserver}}
+\index{RemoveObserver@{RemoveObserver}!CPicture@{CPicture}}
+\doxysubsubsection{\texorpdfstring{RemoveObserver()}{RemoveObserver()}}
+{\footnotesize\ttfamily void C\+Picture\+::\+Remove\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_picture_observer}{C\+Picture\+Observer}} $\ast$}]{observer }\end{DoxyParamCaption})}
+
+Remove an observer from this picture 
+\begin{DoxyParams}{Parameters}
+{\em observer} & The observer to remove \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_picture_a708394a032895dbb9590dc721782b591}\label{class_c_picture_a708394a032895dbb9590dc721782b591}} 
+\index{CPicture@{CPicture}!Save@{Save}}
+\index{Save@{Save}!CPicture@{CPicture}}
+\doxysubsubsection{\texorpdfstring{Save()}{Save()}}
+{\footnotesize\ttfamily void C\+Picture\+::\+Save (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{filename }\end{DoxyParamCaption})}
+
+Save the picture animation to a file 
+\begin{DoxyParams}{Parameters}
+{\em filename} & File to save to. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_picture_ad00510c4a90a9b84a80a3850cc6dcf3d}\label{class_c_picture_ad00510c4a90a9b84a80a3850cc6dcf3d}} 
+\index{CPicture@{CPicture}!SetAnimationTime@{SetAnimationTime}}
+\index{SetAnimationTime@{SetAnimationTime}!CPicture@{CPicture}}
+\doxysubsubsection{\texorpdfstring{SetAnimationTime()}{SetAnimationTime()}}
+{\footnotesize\ttfamily void C\+Picture\+::\+Set\+Animation\+Time (\begin{DoxyParamCaption}\item[{double}]{time }\end{DoxyParamCaption})}
+
+Set the current animation time
+
+This forces the animation of all objects to the current animation location. 
+\begin{DoxyParams}{Parameters}
+{\em time} & The new time. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_picture_a66b8de27d3435e19024307254e918e3a}\label{class_c_picture_a66b8de27d3435e19024307254e918e3a}} 
+\index{CPicture@{CPicture}!SetSize@{SetSize}}
+\index{SetSize@{SetSize}!CPicture@{CPicture}}
+\doxysubsubsection{\texorpdfstring{SetSize()}{SetSize()}}
+{\footnotesize\ttfamily void C\+Picture\+::\+Set\+Size (\begin{DoxyParamCaption}\item[{Gdiplus\+::\+Size}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The picture size 
+\begin{DoxyParams}{Parameters}
+{\em size} & The new picture size \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_picture_a971ca9c9100725b7d1a900adcfe889d6}\label{class_c_picture_a971ca9c9100725b7d1a900adcfe889d6}} 
+\index{CPicture@{CPicture}!UpdateObservers@{UpdateObservers}}
+\index{UpdateObservers@{UpdateObservers}!CPicture@{CPicture}}
+\doxysubsubsection{\texorpdfstring{UpdateObservers()}{UpdateObservers()}}
+{\footnotesize\ttfamily void C\+Picture\+::\+Update\+Observers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Update all observers to indicate the picture has changed. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_picture_8h}{Picture.\+h}}\item 
+\mbox{\hyperlink{_picture_8cpp}{Picture.\+cpp}}\end{DoxyCompactItemize}

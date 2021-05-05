@@ -1,0 +1,275 @@
+\hypertarget{class_c_actor}{}\doxysection{C\+Actor Class Reference}
+\label{class_c_actor}\index{CActor@{CActor}}
+
+
+{\ttfamily \#include $<$Actor.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_actor_a2849f9370b66ddeaa727c8b7045d62c2}{C\+Actor}} (const std\+::wstring \&name)
+\item 
+\mbox{\hyperlink{class_c_actor_ae7683d5f0b3edc85dc47850fa71de40f}{C\+Actor}} ()=delete
+\item 
+\mbox{\hyperlink{class_c_actor_a8af986ad4ec530967f942aaebd853632}{C\+Actor}} (const \mbox{\hyperlink{class_c_actor}{C\+Actor}} \&)=delete
+\item 
+void \mbox{\hyperlink{class_c_actor_aa947810cfb2f45129b501296bcad837c}{operator=}} (const \mbox{\hyperlink{class_c_actor}{C\+Actor}} \&)=delete
+\item 
+virtual \mbox{\hyperlink{class_c_actor_adca86a138fd9af275352336848ebad27}{$\sim$\+C\+Actor}} ()
+\item 
+void \mbox{\hyperlink{class_c_actor_af0417205281ecd3bc52a367724cc6635}{Set\+Root}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_drawable}{C\+Drawable}} $>$ root)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_drawable}{C\+Drawable}} $>$ \mbox{\hyperlink{class_c_actor_aa37de0f063ac679e7f2183cfbba2148d}{Get\+Root}} ()
+\item 
+void \mbox{\hyperlink{class_c_actor_a78048c684b231e498184d963b57fffe2}{Draw}} (Gdiplus\+::\+Graphics $\ast$graphics)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_drawable}{C\+Drawable}} $>$ \mbox{\hyperlink{class_c_actor_a63676c04fa760cd9fc56d85cb0542cd1}{Hit\+Test}} (Gdiplus\+::\+Point pos)
+\item 
+void \mbox{\hyperlink{class_c_actor_a943e05a65bde59998079ab647ec0e7ec}{Add\+Drawable}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_drawable}{C\+Drawable}} $>$ drawable)
+\item 
+std\+::wstring \mbox{\hyperlink{class_c_actor_aa2a50154e56b4065f6c2920dcaeb467f}{Get\+Name}} () const
+\item 
+Gdiplus\+::\+Point \mbox{\hyperlink{class_c_actor_a554c005cead41c01a413ecb3db9f13a0}{Get\+Position}} () const
+\item 
+void \mbox{\hyperlink{class_c_actor_af0bda8fd0ba0320f9fd6e67b7b16a07d}{Set\+Position}} (Gdiplus\+::\+Point pos)
+\item 
+bool \mbox{\hyperlink{class_c_actor_a96ad33aeaf44327f982f60de93ef6e0c}{Is\+Enabled}} () const
+\item 
+void \mbox{\hyperlink{class_c_actor_a6f9009e9753b07a00266cac01af2fdad}{Set\+Enabled}} (bool enabled)
+\item 
+bool \mbox{\hyperlink{class_c_actor_a05ce9886560aca61fde86adb6e9069c6}{Is\+Clickable}} () const
+\item 
+void \mbox{\hyperlink{class_c_actor_a6c717ba1037b3055a5ec94e18e1707de}{Set\+Clickable}} (bool clickable)
+\item 
+void \mbox{\hyperlink{class_c_actor_ac4b2315b3476d4fdc97ba961fdcaa444}{Set\+Picture}} (\mbox{\hyperlink{class_c_picture}{C\+Picture}} $\ast$picture)
+\item 
+\mbox{\hyperlink{class_c_picture}{C\+Picture}} $\ast$ \mbox{\hyperlink{class_c_actor_af94c21dd8535aaa4992904cdbec27b84}{Get\+Picture}} ()
+\item 
+void \mbox{\hyperlink{class_c_actor_afb1fa3fe64e5ef64b54e84043fc2fa84}{Set\+Keyframe}} ()
+\item 
+void \mbox{\hyperlink{class_c_actor_a55692c97f39798493d291a80164c81f7}{Get\+Keyframe}} ()
+\item 
+\mbox{\hyperlink{class_c_anim_channel_point}{C\+Anim\+Channel\+Point}} $\ast$ \mbox{\hyperlink{class_c_actor_a09d72dc2a926055d3ba1baa46ae689f9}{Get\+Position\+Channel}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for actors in our drawings.
+
+An actor is some graphical object that consists of one or more parts. Actors can be animated. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_actor_a2849f9370b66ddeaa727c8b7045d62c2}\label{class_c_actor_a2849f9370b66ddeaa727c8b7045d62c2}} 
+\index{CActor@{CActor}!CActor@{CActor}}
+\index{CActor@{CActor}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{CActor()}{CActor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily C\+Actor\+::\+C\+Actor (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{name }\end{DoxyParamCaption})}
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em name} & The actor name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_actor_ae7683d5f0b3edc85dc47850fa71de40f}\label{class_c_actor_ae7683d5f0b3edc85dc47850fa71de40f}} 
+\index{CActor@{CActor}!CActor@{CActor}}
+\index{CActor@{CActor}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{CActor()}{CActor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily C\+Actor\+::\+C\+Actor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Default constructor disabled \mbox{\Hypertarget{class_c_actor_a8af986ad4ec530967f942aaebd853632}\label{class_c_actor_a8af986ad4ec530967f942aaebd853632}} 
+\index{CActor@{CActor}!CActor@{CActor}}
+\index{CActor@{CActor}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{CActor()}{CActor()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily C\+Actor\+::\+C\+Actor (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_actor}{C\+Actor}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Copy constructor disabled \mbox{\Hypertarget{class_c_actor_adca86a138fd9af275352336848ebad27}\label{class_c_actor_adca86a138fd9af275352336848ebad27}} 
+\index{CActor@{CActor}!````~CActor@{$\sim$CActor}}
+\index{````~CActor@{$\sim$CActor}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{$\sim$CActor()}{~CActor()}}
+{\footnotesize\ttfamily C\+Actor\+::$\sim$\+C\+Actor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_actor_a943e05a65bde59998079ab647ec0e7ec}\label{class_c_actor_a943e05a65bde59998079ab647ec0e7ec}} 
+\index{CActor@{CActor}!AddDrawable@{AddDrawable}}
+\index{AddDrawable@{AddDrawable}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{AddDrawable()}{AddDrawable()}}
+{\footnotesize\ttfamily void C\+Actor\+::\+Add\+Drawable (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_drawable}{C\+Drawable}} $>$}]{drawable }\end{DoxyParamCaption})}
+
+Add a drawable to this actor 
+\begin{DoxyParams}{Parameters}
+{\em drawable} & The drawable to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_actor_a78048c684b231e498184d963b57fffe2}\label{class_c_actor_a78048c684b231e498184d963b57fffe2}} 
+\index{CActor@{CActor}!Draw@{Draw}}
+\index{Draw@{Draw}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void C\+Actor\+::\+Draw (\begin{DoxyParamCaption}\item[{Gdiplus\+::\+Graphics $\ast$}]{graphics }\end{DoxyParamCaption})}
+
+Draw this actor 
+\begin{DoxyParams}{Parameters}
+{\em graphics} & The Graphics object we are drawing on \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_actor_a55692c97f39798493d291a80164c81f7}\label{class_c_actor_a55692c97f39798493d291a80164c81f7}} 
+\index{CActor@{CActor}!GetKeyframe@{GetKeyframe}}
+\index{GetKeyframe@{GetKeyframe}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{GetKeyframe()}{GetKeyframe()}}
+{\footnotesize\ttfamily void C\+Actor\+::\+Get\+Keyframe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+brief Get a keyframe for an actor. \mbox{\Hypertarget{class_c_actor_aa2a50154e56b4065f6c2920dcaeb467f}\label{class_c_actor_aa2a50154e56b4065f6c2920dcaeb467f}} 
+\index{CActor@{CActor}!GetName@{GetName}}
+\index{GetName@{GetName}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
+{\footnotesize\ttfamily std\+::wstring C\+Actor\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the actor name \begin{DoxyReturn}{Returns}
+Actor name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_actor_af94c21dd8535aaa4992904cdbec27b84}\label{class_c_actor_af94c21dd8535aaa4992904cdbec27b84}} 
+\index{CActor@{CActor}!GetPicture@{GetPicture}}
+\index{GetPicture@{GetPicture}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{GetPicture()}{GetPicture()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_picture}{C\+Picture}}$\ast$ C\+Actor\+::\+Get\+Picture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the picture this actor is for \begin{DoxyReturn}{Returns}
+The picture object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_actor_a554c005cead41c01a413ecb3db9f13a0}\label{class_c_actor_a554c005cead41c01a413ecb3db9f13a0}} 
+\index{CActor@{CActor}!GetPosition@{GetPosition}}
+\index{GetPosition@{GetPosition}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{GetPosition()}{GetPosition()}}
+{\footnotesize\ttfamily Gdiplus\+::\+Point C\+Actor\+::\+Get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+The actor position \begin{DoxyReturn}{Returns}
+The actor position as a point 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_actor_a09d72dc2a926055d3ba1baa46ae689f9}\label{class_c_actor_a09d72dc2a926055d3ba1baa46ae689f9}} 
+\index{CActor@{CActor}!GetPositionChannel@{GetPositionChannel}}
+\index{GetPositionChannel@{GetPositionChannel}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{GetPositionChannel()}{GetPositionChannel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_anim_channel_point}{C\+Anim\+Channel\+Point}}$\ast$ C\+Actor\+::\+Get\+Position\+Channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The position animation channel \begin{DoxyReturn}{Returns}
+Pointer to animation channel 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_actor_aa37de0f063ac679e7f2183cfbba2148d}\label{class_c_actor_aa37de0f063ac679e7f2183cfbba2148d}} 
+\index{CActor@{CActor}!GetRoot@{GetRoot}}
+\index{GetRoot@{GetRoot}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{GetRoot()}{GetRoot()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_c_drawable}{C\+Drawable}}$>$ C\+Actor\+::\+Get\+Root (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the root drawable for this actor \begin{DoxyReturn}{Returns}
+Pointer to root drawable 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_actor_a63676c04fa760cd9fc56d85cb0542cd1}\label{class_c_actor_a63676c04fa760cd9fc56d85cb0542cd1}} 
+\index{CActor@{CActor}!HitTest@{HitTest}}
+\index{HitTest@{HitTest}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{HitTest()}{HitTest()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_drawable}{C\+Drawable}} $>$ C\+Actor\+::\+Hit\+Test (\begin{DoxyParamCaption}\item[{Gdiplus\+::\+Point}]{pos }\end{DoxyParamCaption})}
+
+Test to see if a mouse click is on this actor. 
+\begin{DoxyParams}{Parameters}
+{\em pos} & Mouse position on drawing \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A drawable object we clicked on or nullptr if we missed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_actor_a05ce9886560aca61fde86adb6e9069c6}\label{class_c_actor_a05ce9886560aca61fde86adb6e9069c6}} 
+\index{CActor@{CActor}!IsClickable@{IsClickable}}
+\index{IsClickable@{IsClickable}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{IsClickable()}{IsClickable()}}
+{\footnotesize\ttfamily bool C\+Actor\+::\+Is\+Clickable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Actor is clickable \begin{DoxyReturn}{Returns}
+true if actor is clickable 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_actor_a96ad33aeaf44327f982f60de93ef6e0c}\label{class_c_actor_a96ad33aeaf44327f982f60de93ef6e0c}} 
+\index{CActor@{CActor}!IsEnabled@{IsEnabled}}
+\index{IsEnabled@{IsEnabled}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{IsEnabled()}{IsEnabled()}}
+{\footnotesize\ttfamily bool C\+Actor\+::\+Is\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Actor is enabled \begin{DoxyReturn}{Returns}
+enabled status 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_actor_aa947810cfb2f45129b501296bcad837c}\label{class_c_actor_aa947810cfb2f45129b501296bcad837c}} 
+\index{CActor@{CActor}!operator=@{operator=}}
+\index{operator=@{operator=}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily void C\+Actor\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_actor}{C\+Actor}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Assignment operator disabled \mbox{\Hypertarget{class_c_actor_a6c717ba1037b3055a5ec94e18e1707de}\label{class_c_actor_a6c717ba1037b3055a5ec94e18e1707de}} 
+\index{CActor@{CActor}!SetClickable@{SetClickable}}
+\index{SetClickable@{SetClickable}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{SetClickable()}{SetClickable()}}
+{\footnotesize\ttfamily void C\+Actor\+::\+Set\+Clickable (\begin{DoxyParamCaption}\item[{bool}]{clickable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Actor clickable 
+\begin{DoxyParams}{Parameters}
+{\em clickable} & New clickable status \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_actor_a6f9009e9753b07a00266cac01af2fdad}\label{class_c_actor_a6f9009e9753b07a00266cac01af2fdad}} 
+\index{CActor@{CActor}!SetEnabled@{SetEnabled}}
+\index{SetEnabled@{SetEnabled}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{SetEnabled()}{SetEnabled()}}
+{\footnotesize\ttfamily void C\+Actor\+::\+Set\+Enabled (\begin{DoxyParamCaption}\item[{bool}]{enabled }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set Actor Enabled 
+\begin{DoxyParams}{Parameters}
+{\em enabled} & New enabled status \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_actor_afb1fa3fe64e5ef64b54e84043fc2fa84}\label{class_c_actor_afb1fa3fe64e5ef64b54e84043fc2fa84}} 
+\index{CActor@{CActor}!SetKeyframe@{SetKeyframe}}
+\index{SetKeyframe@{SetKeyframe}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{SetKeyframe()}{SetKeyframe()}}
+{\footnotesize\ttfamily void C\+Actor\+::\+Set\+Keyframe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Set a keyframe on an actor. \mbox{\Hypertarget{class_c_actor_ac4b2315b3476d4fdc97ba961fdcaa444}\label{class_c_actor_ac4b2315b3476d4fdc97ba961fdcaa444}} 
+\index{CActor@{CActor}!SetPicture@{SetPicture}}
+\index{SetPicture@{SetPicture}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{SetPicture()}{SetPicture()}}
+{\footnotesize\ttfamily void C\+Actor\+::\+Set\+Picture (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_picture}{C\+Picture}} $\ast$}]{picture }\end{DoxyParamCaption})}
+
+Set the picture link for this actor.
+
+This is telling the actor what picture to use.
+
+Also tells all child drawables what the timeline is. 
+\begin{DoxyParams}{Parameters}
+{\em picture} & The picture we are using. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_actor_af0bda8fd0ba0320f9fd6e67b7b16a07d}\label{class_c_actor_af0bda8fd0ba0320f9fd6e67b7b16a07d}} 
+\index{CActor@{CActor}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily void C\+Actor\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{Gdiplus\+::\+Point}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The actor position 
+\begin{DoxyParams}{Parameters}
+{\em pos} & The new actor position \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_actor_af0417205281ecd3bc52a367724cc6635}\label{class_c_actor_af0417205281ecd3bc52a367724cc6635}} 
+\index{CActor@{CActor}!SetRoot@{SetRoot}}
+\index{SetRoot@{SetRoot}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{SetRoot()}{SetRoot()}}
+{\footnotesize\ttfamily void C\+Actor\+::\+Set\+Root (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_drawable}{C\+Drawable}} $>$}]{root }\end{DoxyParamCaption})}
+
+Set the root drawable for the actor 
+\begin{DoxyParams}{Parameters}
+{\em root} & Pointer to root drawable \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_actor_8h}{Actor.\+h}}\item 
+\mbox{\hyperlink{_actor_8cpp}{Actor.\+cpp}}\end{DoxyCompactItemize}

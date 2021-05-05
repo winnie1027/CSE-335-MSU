@@ -1,0 +1,87 @@
+\hypertarget{class_c_wav_player}{}\doxysection{C\+Wav\+Player Class Reference}
+\label{class_c_wav_player}\index{CWavPlayer@{CWavPlayer}}
+
+
+{\ttfamily \#include $<$Wav\+Player.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_wav_player_a176dadf5afdef4e1979cf0522c10d159}{C\+Wav\+Player}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_wav_player_a4be96650cb81f366c71adb47ebf6bbec}{$\sim$\+C\+Wav\+Player}} ()
+\item 
+\mbox{\hyperlink{class_c_wav_player_a01fd1cf82b6df848f28c9b4b192e36d6}{C\+Wav\+Player}} (const \mbox{\hyperlink{class_c_wav_player}{C\+Wav\+Player}} \&)=delete
+\item 
+void \mbox{\hyperlink{class_c_wav_player_a4f9c5dbc1722804cd0e2c01e70e1c3fe}{operator=}} (const \mbox{\hyperlink{class_c_wav_player}{C\+Wav\+Player}} \&)=delete
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_wav_channel}{C\+Wav\+Channel}} $>$ \mbox{\hyperlink{class_c_wav_player_af718fdf068cfd9c614824051a27a1e8f}{Create\+Channel}} (std\+::wstring audiofile)
+\item 
+I\+X\+Audio2 $\ast$ \mbox{\hyperlink{class_c_wav_player_a1f97647ee97b43c276cb380352d947b8}{Get\+I\+X\+Audio}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that plays W\+AV files. Unique in that it can play many at a time.
+
+Call Create\+Channel with an .wav audio filename to set the file to create a channel that can play a sound. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_wav_player_a176dadf5afdef4e1979cf0522c10d159}\label{class_c_wav_player_a176dadf5afdef4e1979cf0522c10d159}} 
+\index{CWavPlayer@{CWavPlayer}!CWavPlayer@{CWavPlayer}}
+\index{CWavPlayer@{CWavPlayer}!CWavPlayer@{CWavPlayer}}
+\doxysubsubsection{\texorpdfstring{CWavPlayer()}{CWavPlayer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily C\+Wav\+Player\+::\+C\+Wav\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Class to create a player for audio files.
+
+One object of this type must be instantiated and then used to create audio channels that actually play the audio files. \mbox{\Hypertarget{class_c_wav_player_a4be96650cb81f366c71adb47ebf6bbec}\label{class_c_wav_player_a4be96650cb81f366c71adb47ebf6bbec}} 
+\index{CWavPlayer@{CWavPlayer}!````~CWavPlayer@{$\sim$CWavPlayer}}
+\index{````~CWavPlayer@{$\sim$CWavPlayer}!CWavPlayer@{CWavPlayer}}
+\doxysubsubsection{\texorpdfstring{$\sim$CWavPlayer()}{~CWavPlayer()}}
+{\footnotesize\ttfamily C\+Wav\+Player\+::$\sim$\+C\+Wav\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destructor \mbox{\Hypertarget{class_c_wav_player_a01fd1cf82b6df848f28c9b4b192e36d6}\label{class_c_wav_player_a01fd1cf82b6df848f28c9b4b192e36d6}} 
+\index{CWavPlayer@{CWavPlayer}!CWavPlayer@{CWavPlayer}}
+\index{CWavPlayer@{CWavPlayer}!CWavPlayer@{CWavPlayer}}
+\doxysubsubsection{\texorpdfstring{CWavPlayer()}{CWavPlayer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily C\+Wav\+Player\+::\+C\+Wav\+Player (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_wav_player}{C\+Wav\+Player}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Copy constructor disabled 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_wav_player_af718fdf068cfd9c614824051a27a1e8f}\label{class_c_wav_player_af718fdf068cfd9c614824051a27a1e8f}} 
+\index{CWavPlayer@{CWavPlayer}!CreateChannel@{CreateChannel}}
+\index{CreateChannel@{CreateChannel}!CWavPlayer@{CWavPlayer}}
+\doxysubsubsection{\texorpdfstring{CreateChannel()}{CreateChannel()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_wav_channel}{C\+Wav\+Channel}} $>$ C\+Wav\+Player\+::\+Create\+Channel (\begin{DoxyParamCaption}\item[{std\+::wstring}]{audiofile }\end{DoxyParamCaption})}
+
+Create an audio playback channel associated with this player. 
+\begin{DoxyParams}{Parameters}
+{\em audiofile} & Filename for the audio file to play \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Allocated \mbox{\hyperlink{class_c_wav_channel}{C\+Wav\+Channel}} object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_wav_player_a1f97647ee97b43c276cb380352d947b8}\label{class_c_wav_player_a1f97647ee97b43c276cb380352d947b8}} 
+\index{CWavPlayer@{CWavPlayer}!GetIXAudio@{GetIXAudio}}
+\index{GetIXAudio@{GetIXAudio}!CWavPlayer@{CWavPlayer}}
+\doxysubsubsection{\texorpdfstring{GetIXAudio()}{GetIXAudio()}}
+{\footnotesize\ttfamily I\+X\+Audio2$\ast$ C\+Wav\+Player\+::\+Get\+I\+X\+Audio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a pointer to the underlying I\+X\+Audio2 object \begin{DoxyReturn}{Returns}
+Pointer to I\+X\+Audio2 object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_wav_player_a4f9c5dbc1722804cd0e2c01e70e1c3fe}\label{class_c_wav_player_a4f9c5dbc1722804cd0e2c01e70e1c3fe}} 
+\index{CWavPlayer@{CWavPlayer}!operator=@{operator=}}
+\index{operator=@{operator=}!CWavPlayer@{CWavPlayer}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily void C\+Wav\+Player\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_wav_player}{C\+Wav\+Player}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Assignment operator disabled 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_wav_player_8h}{Wav\+Player.\+h}}\item 
+\mbox{\hyperlink{_wav_player_8cpp}{Wav\+Player.\+cpp}}\end{DoxyCompactItemize}
